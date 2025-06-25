@@ -1152,13 +1152,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collectible
       objectReference: {fileID: 0}
+    - target: {fileID: 7474030233545934648, guid: 356b067639c7895469262c0243cf460b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7662185729695401713, guid: 356b067639c7895469262c0243cf460b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.49
+      value: 4.97
       objectReference: {fileID: 0}
     - target: {fileID: 7662185729695401713, guid: 356b067639c7895469262c0243cf460b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 7662185729695401713, guid: 356b067639c7895469262c0243cf460b, type: 3}
       propertyPath: m_LocalPosition.z
