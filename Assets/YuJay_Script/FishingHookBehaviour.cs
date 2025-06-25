@@ -6,13 +6,19 @@ using Unity.VisualScripting;
 public class FishingHookBehaviour : MonoBehaviour
 {
     public float FishingHookZ;
+
     public FishingCameraControler fisihingCameraController;
 
     private Coroutine _waitToTouchedCoroutine;
 
     public float fishPositionGap;
 
+    private Vector2 mousePosition;
     
+
+
+    
+
 
     public List<Collider2D> _myFishesCollider = new List<Collider2D>();
     public List<SpriteRenderer> _myFishesSprite = new List<SpriteRenderer>();
@@ -29,13 +35,35 @@ public class FishingHookBehaviour : MonoBehaviour
     {
         FollowingMouse();
 
+      
         TryCatchFish();
+
+        
     }
 
     void FollowingMouse()
     {
-        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector2(transform.position.x, transform.position.y);
+        switch (fisihingCameraController.cameraMotion)
+        {
+            case FishingCameraControler.CameraMotion.stationary:
+                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = mousePosition;
+                break;
+
+            case FishingCameraControler.CameraMotion.goDown:
+                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).y);
+                break;
+
+            case FishingCameraControler.CameraMotion.goUp:
+                mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).y);
+                break;
+        }
+
+        
+
+        // transform.position = new Vector2(transform.position.x, transform.position.y);
     }
 
     private void OnTriggerEnter2D(Collider2D fishCollider)

@@ -55,6 +55,8 @@ public class FishingCameraControler : MonoBehaviour
 
     void Update()
     {
+        
+
         CheckTouched();
 
         if (Input.GetKeyDown(KeyCode.O))
@@ -82,10 +84,18 @@ public class FishingCameraControler : MonoBehaviour
     }
     void GoUp()
     {
-        if(touched == true && _timeUp == true)
+        // First touch
+        if(touched == true && _timeUp == true && Vector2.Distance(_camera.transform.position, cameraPositionUp) > 0.01f)
         {
             cameraPositionUp = targetPositionUp.transform.position;
             _camera.transform.position = Vector3.MoveTowards(_camera.transform.position, cameraPositionUp, cameraSpeed * Time.deltaTime);
+        }
+        // when the fishing end
+        else if(touched == true && _timeUp == true && Vector2.Distance(_camera.transform.position, cameraPositionUp) <= 0.01f)
+        {    
+            cameraMotion = CameraMotion.stationary;
+            touched = false;
+            _timeUp = false;
         }
         
    
@@ -117,6 +127,8 @@ public class FishingCameraControler : MonoBehaviour
         {
             cameraMotion = CameraMotion.goUp;
         }
+
+        
 
     }
 
