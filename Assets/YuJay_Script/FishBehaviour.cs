@@ -9,6 +9,7 @@ public class FishBehaviour : MonoBehaviour
     public float fishSpeed = 1;
 
      public bool beingTouched = false;
+
     public bool goLeft = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -1,4 +1,4 @@
-using NUnit.Framework;
+
 using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -14,10 +14,11 @@ public class FishingHookBehaviour : MonoBehaviour
     public float fishPositionGap;
 
     private Vector2 mousePosition;
-    
+
+    [Range(0.5f,0.9f)] public float cameraGoDownY = 0.7f;
+    [Range(0.5f, 0f)] public float cameraGoUpY = 0.3f;
 
 
-    
 
 
     public List<Collider2D> _myFishesCollider = new List<Collider2D>();
@@ -43,7 +44,7 @@ public class FishingHookBehaviour : MonoBehaviour
 
     void FollowingMouse()
     {
-        switch (fisihingCameraController.cameraMotion)
+        switch (fisihingCameraController.CurrentMotion)
         {
             case FishingCameraControler.CameraMotion.stationary:
                 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -52,12 +53,12 @@ public class FishingHookBehaviour : MonoBehaviour
 
             case FishingCameraControler.CameraMotion.goDown:
                 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).y);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, cameraGoDownY, 0f)).y);
                 break;
 
             case FishingCameraControler.CameraMotion.goUp:
                 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, 0.5f, 0f)).y);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, cameraGoUpY, 0f)).y);
                 break;
         }
 
@@ -73,8 +74,8 @@ public class FishingHookBehaviour : MonoBehaviour
         _myFishesSprite.Add(fishCollider.GetComponentInChildren<SpriteRenderer>());
 
 
-        fisihingCameraController.touched = true;
-        _waitToTouchedCoroutine = StartCoroutine(fisihingCameraController.WaitToTouchCoroutine());
+        fisihingCameraController.ForceMoveUp();
+
     }
 
     void TryCatchFish()

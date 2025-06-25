@@ -1,32 +1,26 @@
-using System.Collections;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FishingCameraControler : MonoBehaviour
 {
-
-    [Header("Camera Settings: ")]
-    public float targetCameraSize;
-
-    public Vector3 cameraPositionUp;
+    [Header("Camera Settings")]
+    [Range(1, 10)] public float cameraSpeed = 5f;
+    public Transform seaTop;
     public GameObject targetPositionUp;
-    public Vector3 cameraPositionDown;
     public GameObject targetPositiontDown;
-    public bool touched;
-    public float waitToTouchSecond;
 
-    
+    [Header("Movement Profiles")]
+    public MovementHelper movementHelper;
+    public AnimationCurve goDownCurve;
+    public AnimationCurve goUpCurve;
 
-
-
-    [Range(1, 10)] public float cameraSpeed;
-
+    // --- 私有变量 ---
     private Camera _camera;
-    private float _initialCameraSize = 5;
-    private Vector3 _initialCameraPosition;
-    private Coroutine _waitToTouchCoroutine;
-    private bool _timeUp;
-
+    private CameraMotion _currentMotion = CameraMotion.stationary;
+     public CameraMotion CurrentMotion
+     {
+         get { return _currentMotion; }
+     }
+    private bool _canStartDescent = true;
 
     public enum CameraMotion
     {
@@ -35,108 +29,88 @@ public class FishingCameraControler : MonoBehaviour
         goUp
     }
 
-    public CameraMotion cameraMotion = CameraMotion.stationary;
-
     void Start()
     {
         _camera = Camera.main;
 
-        _camera.orthographicSize = _initialCameraSize;
-
-        _initialCameraPosition = _camera.transform.position;
-
-        touched = false;
-
-        cameraPositionUp = targetPositionUp.transform.position;
-        cameraPositionDown = targetPositiontDown.transform.position;
-
-        _timeUp = false;
+        // 确保所有必需的引用都已设置
+        if (targetPositionUp == null || targetPositiontDown == null || movementHelper == null)
+        {
+            
+            this.enabled = false; // 禁用此脚本以防出错
+        }
     }
 
     void Update()
     {
-        
-
-        CheckTouched();
-
-        if (Input.GetKeyDown(KeyCode.O))
+        // 触发条件：只有在静止状态下才能开始下移
+        if (_currentMotion == CameraMotion.stationary)
         {
-            cameraMotion = CameraMotion.goDown;
+            // 当鼠标进入水下时
+            if (_camera.ScreenToWorldPoint(Input.mousePosition).y < seaTop.position.y && _canStartDescent)
+            {
+                StartMovingDown();
+            }
+            // 当鼠标回到水上时，重置触发条件
+            else if (_camera.ScreenToWorldPoint(Input.mousePosition).y > seaTop.position.y)
+            {
+                _canStartDescent = true;
+            }
         }
 
-        switch (cameraMotion)
-        {
-            case CameraMotion.stationary:
-                break;
-            case CameraMotion.goDown:
-                GoDown();
-                break;
-            case CameraMotion.goUp:
-                GoUp();
-                break;
-        }
+        // 持续检查移动状态（是否到达目的地）
+        UpdateMovementStatus();
     }
 
-
-    void Stationary()
+    // --- 公开的“遥控”方法 ---
+    public void ForceMoveUp()
     {
-        _camera.transform.position = _initialCameraPosition;
+        // 已经在上移或静止时忽略命令
+        if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
+
+        
+        _currentMotion = CameraMotion.goUp;
+        movementHelper.StopMoving();
+        movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, goUpCurve);
     }
-    void GoUp()
+
+    // --- 内部逻辑方法 ---
+    private void StartMovingDown()
     {
-        // First touch
-        if(touched == true && _timeUp == true && Vector2.Distance(_camera.transform.position, cameraPositionUp) > 0.01f)
-        {
-            cameraPositionUp = targetPositionUp.transform.position;
-            _camera.transform.position = Vector3.MoveTowards(_camera.transform.position, cameraPositionUp, cameraSpeed * Time.deltaTime);
-        }
-        // when the fishing end
-        else if(touched == true && _timeUp == true && Vector2.Distance(_camera.transform.position, cameraPositionUp) <= 0.01f)
-        {    
-            cameraMotion = CameraMotion.stationary;
-            touched = false;
-            _timeUp = false;
-        }
         
-   
+        _canStartDescent = false;
+        _currentMotion = CameraMotion.goDown;
+        movementHelper.StopMoving();
+        movementHelper.MoveToBySpeed(_camera.transform, targetPositiontDown.transform.position, cameraSpeed, goDownCurve);
     }
 
-    void GoDown()
+    private void UpdateMovementStatus()
     {
-        if (touched == false)
+        // 如果不在移动，就无需检查
+        if (_currentMotion == CameraMotion.stationary) return;
+
+        // 如果正在下移，检查是否触底
+        if (_currentMotion == CameraMotion.goDown)
         {
-            cameraPositionDown = targetPositiontDown.transform.position;
-            _camera.transform.position = Vector3.MoveTowards(_camera.transform.position, cameraPositionDown, cameraSpeed * Time.deltaTime);
+            if (Vector3.Distance(_camera.transform.position, targetPositiontDown.transform.position) < 0.1f)
+            {
+                // 到达底部，立刻切换到上移状态
+                
+                ForceMoveUp(); // 直接调用我们即将创建的遥控方法，代码复用！
+            }
         }
-        
-        
-    }
-
-
-    void CheckTouched()
-    {
-        if (Vector2.Distance(_camera.transform.position, cameraPositionDown) < 0.01f)
+        // 如果正在上移，检查是否到达顶部
+        else if (_currentMotion == CameraMotion.goUp)
         {
-            touched = true;
-            _waitToTouchCoroutine = StartCoroutine(WaitToTouchCoroutine());
-            
+            if (Vector3.Distance(_camera.transform.position, targetPositionUp.transform.position) < 0.1f)
+            {
+                
+                _currentMotion = CameraMotion.stationary;
+                // 确保移动完全停止
+                movementHelper.StopMoving();
+                // 让相机精确停在目标点
+                _camera.transform.position = targetPositionUp.transform.position;
+            }
         }
-
-
-        if (touched == true)
-        {
-            cameraMotion = CameraMotion.goUp;
-        }
-
-        
-
     }
-
-    public IEnumerator WaitToTouchCoroutine()
-    {
-        yield return new WaitForSeconds(waitToTouchSecond);
-        _timeUp = true;
-        
-    }
-
 }
