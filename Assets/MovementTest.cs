@@ -8,6 +8,8 @@ public class MovementTest : MonoBehaviour
     public Vector3 target;
     public float moveDuration;
 
+    public bool BySpeed = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,10 +19,22 @@ public class MovementTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(BySpeed == true)
         {
-            // 调用 MovementHelper 的公开方法来移动自己 (this.transform)
-            movementHelper.MoveToBySpeed(this.transform, target, moveDuration, acceleration);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // 调用 MovementHelper 的公开方法来移动自己 (this.transform)
+                movementHelper.MoveToBySpeed(this.transform, target, moveDuration, acceleration);
+            }
         }
+        else if(BySpeed == false)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // 调用 MovementHelper 的公开方法来移动自己 (this.transform)
+                movementHelper.MoveToByTime(this.transform, target, moveDuration, acceleration);
+            }
+        }
+        
     }
 }

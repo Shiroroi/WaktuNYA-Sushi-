@@ -1,4 +1,4 @@
-
+﻿
 using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -42,6 +42,8 @@ public class FishingHookBehaviour : MonoBehaviour
         
     }
 
+
+    // only if 什么状态检查什么，一检查到了立马调用什么函数并且更改状态不要继续检查 用 movemebnt helper
     void FollowingMouse()
     {
         switch (fisihingCameraController.CurrentMotion)

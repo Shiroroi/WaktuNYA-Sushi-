@@ -11,15 +11,17 @@ public class FishingCameraControler : MonoBehaviour
     [Header("Movement Profiles")]
     public MovementHelper movementHelper;
     public AnimationCurve goDownCurve;
+    public AnimationCurve forceGoUpCurve;
     public AnimationCurve goUpCurve;
 
-    // --- 私有变量 ---
+
+    // private variable
     private Camera _camera;
     private CameraMotion _currentMotion = CameraMotion.stationary;
-     public CameraMotion CurrentMotion
-     {
-         get { return _currentMotion; }
-     }
+    public CameraMotion CurrentMotion // public properties, let other script the access our _currentMotion
+    {
+        get { return _currentMotion; }
+    }
     private bool _canStartDescent = true;
 
     public enum CameraMotion
@@ -33,83 +35,94 @@ public class FishingCameraControler : MonoBehaviour
     {
         _camera = Camera.main;
 
-        // 确保所有必需的引用都已设置
+        // Defensive programming
         if (targetPositionUp == null || targetPositiontDown == null || movementHelper == null)
         {
-            
-            this.enabled = false; // 禁用此脚本以防出错
+            Debug.Log(gameObject.name + " missing something");
+            this.enabled = false; // disable this script
         }
     }
 
     void Update()
     {
-        // 触发条件：只有在静止状态下才能开始下移
+        // Only when camera motion is stationary, will check if
         if (_currentMotion == CameraMotion.stationary)
         {
-            // 当鼠标进入水下时
+            // the mouse pointer is under the sea top
             if (_camera.ScreenToWorldPoint(Input.mousePosition).y < seaTop.position.y && _canStartDescent)
             {
                 StartMovingDown();
             }
-            // 当鼠标回到水上时，重置触发条件
+            // the mouse pointer is above the sea top
             else if (_camera.ScreenToWorldPoint(Input.mousePosition).y > seaTop.position.y)
             {
                 _canStartDescent = true;
             }
         }
 
-        // 持续检查移动状态（是否到达目的地）
+        // continous check whther reach the target position
         UpdateMovementStatus();
     }
 
-    // --- 公开的“遥控”方法 ---
+    // can force camera move up
     public void ForceMoveUp()
     {
-        // 已经在上移或静止时忽略命令
+        // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
 
         
         _currentMotion = CameraMotion.goUp;
-        movementHelper.StopMoving();
+        movementHelper.StopMoving(); // stop thr going down coroutine
+        movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, forceGoUpCurve);
+    }
+
+    public void MoveUp()
+    {
+        // if is going up or is stationary, return
+        if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
+
+
+        _currentMotion = CameraMotion.goUp;
+        movementHelper.StopMoving(); // stop thr going down coroutine
         movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, goUpCurve);
     }
 
-    // --- 内部逻辑方法 ---
+
     private void StartMovingDown()
     {
         
-        _canStartDescent = false;
+        _canStartDescent = false; // if already go down, then next time mouse pointer is over the sea top only can descent again
         _currentMotion = CameraMotion.goDown;
-        movementHelper.StopMoving();
-        movementHelper.MoveToBySpeed(_camera.transform, targetPositiontDown.transform.position, cameraSpeed, goDownCurve);
+        movementHelper.StopMoving(); // stop all coroutine first if got
+        movementHelper.MoveToBySpeed(_camera.transform, targetPositiontDown.transform.position, cameraSpeed, goDownCurve); // move the camera
     }
 
     private void UpdateMovementStatus()
     {
-        // 如果不在移动，就无需检查
+        // if is not moving, no need to check
         if (_currentMotion == CameraMotion.stationary) return;
 
-        // 如果正在下移，检查是否触底
+        // if is going down, check got reach the bottom ?
         if (_currentMotion == CameraMotion.goDown)
         {
+            // is reach the bottom, force move up
             if (Vector3.Distance(_camera.transform.position, targetPositiontDown.transform.position) < 0.1f)
             {
-                // 到达底部，立刻切换到上移状态
-                
-                ForceMoveUp(); // 直接调用我们即将创建的遥控方法，代码复用！
+                MoveUp();
             }
         }
-        // 如果正在上移，检查是否到达顶部
+        // if camera is going up
         else if (_currentMotion == CameraMotion.goUp)
         {
+            // if also reach the position, then sop moving
             if (Vector3.Distance(_camera.transform.position, targetPositionUp.transform.position) < 0.1f)
             {
                 
                 _currentMotion = CameraMotion.stationary;
-                // 确保移动完全停止
-                movementHelper.StopMoving();
-                // 让相机精确停在目标点
-                _camera.transform.position = targetPositionUp.transform.position;
+                
+                movementHelper.StopMoving(); // stop moving coroutine
+                
+                _camera.transform.position = targetPositionUp.transform.position; // mave the posiiton euqavilent
             }
         }
     }
