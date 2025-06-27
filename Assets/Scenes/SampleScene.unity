@@ -410,9 +410,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: Hi.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: I'm Character 3. I've come from the modern era.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: work work work.
+      objectReference: {fileID: 0}
     - target: {fileID: 7119529071298233483, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: m_Name
-      value: Dialogue3
+      value: DialogueChar3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -576,9 +588,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: Heya!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: I'm Character 2! I've come from the future!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: Beep boop bop
+      objectReference: {fileID: 0}
     - target: {fileID: 7119529071298233483, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: m_Name
-      value: Dialogue2
+      value: DialogueChar2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -641,9 +665,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: Hello!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: I'm Character 1. I've come from the old times.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: awoo awoo
+      objectReference: {fileID: 0}
     - target: {fileID: 7119529071298233483, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: m_Name
-      value: Dialogue1
+      value: DialogueChar1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -854,14 +890,26 @@ PrefabInstance:
       propertyPath: dialogueScript
       value: 
       objectReference: {fileID: 193259427}
+    - target: {fileID: 4706417276470434713, guid: 000073f517a3d1747b2d0abe4fd9f1b0, type: 3}
+      propertyPath: m_text
+      value: Character 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4996102440191352974, guid: 000073f517a3d1747b2d0abe4fd9f1b0, type: 3}
       propertyPath: dialogueScript
       value: 
       objectReference: {fileID: 276647019}
+    - target: {fileID: 5126592578591371807, guid: 000073f517a3d1747b2d0abe4fd9f1b0, type: 3}
+      propertyPath: m_text
+      value: Character 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6833084630279220407, guid: 000073f517a3d1747b2d0abe4fd9f1b0, type: 3}
       propertyPath: dialogueScript
       value: 
       objectReference: {fileID: 641786141}
+    - target: {fileID: 7380557787925033278, guid: 000073f517a3d1747b2d0abe4fd9f1b0, type: 3}
+      propertyPath: m_text
+      value: Character 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
