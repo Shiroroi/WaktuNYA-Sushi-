@@ -3,15 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Ground
+  - Collectible
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Collectible
   - 
   - 
   - 
@@ -52,3 +54,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+
