@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Collectible
+  - InventoryBackground
+  - InventoryPanel
+  - UICanvas
   layers:
   - Default
   - TransparentFX
@@ -54,4 +57,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
-
+  - 

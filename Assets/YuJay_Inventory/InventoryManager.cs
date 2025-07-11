@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -7,6 +8,29 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryItemPrefab;
 
     public int selectedSlot = -1;
+
+    public static InventoryManager instance;
+    
+
+    public Item[] itemsToPickup;
+
+    public void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        
+
+    }
+
 
     private void Update()
     {
@@ -18,6 +42,9 @@ public class InventoryManager : MonoBehaviour
                 ChangeSelectedSlot(number - 1);
             }
         }
+
+        
+
     }
 
 
@@ -30,8 +57,10 @@ public class InventoryManager : MonoBehaviour
         selectedSlot = newValue;
     }
 
-    public bool AddItem(Item item)
+    public void AddItem(string itemName)
     {
+        Item item = itemsToPickup.FirstOrDefault(item => item.name == itemName);
+
         // Check if any slot has the same item with count lower than max
         for (int i = 0; i < inventorySlots.Length; ++i)
         {
@@ -42,7 +71,7 @@ public class InventoryManager : MonoBehaviour
             {
                 ++itemInSlot.count;
                 itemInSlot.RefreshCount();
-                return true;
+                return;
             }
         }
 
@@ -55,11 +84,11 @@ public class InventoryManager : MonoBehaviour
             if (itemInSlot == null)
             {
                 SpawnNewItem(item, slot);
-                return true;
+                return;
             }
         }
 
-        return false;
+        return;
     }
 
     void SpawnNewItem(Item item, InventorySlot slot)
@@ -70,7 +99,7 @@ public class InventoryManager : MonoBehaviour
         inventoryItem.InitializeItem(item);
     }
 
-    public Item GetSelectedItem(bool use)
+    public void UseSelectedItem()
     {
         InventorySlot slot = inventorySlots[selectedSlot];
         InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
@@ -79,25 +108,26 @@ public class InventoryManager : MonoBehaviour
         {
             Item item = itemInSlot.item;
 
-            if (use == true)
+            
+            --itemInSlot.count;
+
+            if (itemInSlot.count <= 0)
             {
-                --itemInSlot.count;
-
-                if (itemInSlot.count <= 0)
-                {
-                    Destroy(itemInSlot.gameObject);
-                }
-                else
-                {
-                    itemInSlot.RefreshCount();
-                }
+                Destroy(itemInSlot.gameObject);
             }
+            else
+            {
+                itemInSlot.RefreshCount();
+            }
+            
 
-            return item;
+            return;
         }
         else
         {
-            return null;
+            return;
         }
     }
+
+    
 }
