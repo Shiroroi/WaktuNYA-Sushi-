@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 4752978235476682656}
   - component: {fileID: 6921581727298191966}
   m_Layer: 0
-  m_Name: Dialogue3
+  m_Name: DialogueChar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -393,7 +393,7 @@ MonoBehaviour:
   window: {fileID: 6462026533409736007}
   dialogueText: {fileID: 7649335877925650226}
   dialogues:
-  - aaaaaaaaa
-  - bbbbbbbbbbb
-  - ccccccccc
+  - Hi.
+  - I'm Character 3. I've come from the modern era.
+  - work work work.
   writingSpeed: 0.01
