@@ -89,9 +89,11 @@ public class FishingHookBehaviour : MonoBehaviour
                 _myFishesCollider[i].transform.position = transform.position;
                 _myFishesCollider[i].transform.position = new Vector2(transform.position.x, transform.position.y - i * fishPositionGap);
 
+                
 
+            }
 
-            }    
+            
         }
         if (_myFishesSprite != null)
         {

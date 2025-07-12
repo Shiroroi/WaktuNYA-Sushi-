@@ -12,6 +12,8 @@ public class FishBehaviour : MonoBehaviour
 
     public bool goLeft = true;
 
+    public string isWhichItem_Name;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,6 +46,14 @@ public class FishBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         beingTouched = true;
+
+
+        if (isWhichItem_Name != null && isWhichItem_Name!= "" ) 
+        {
+            
+            AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(isWhichItem_Name);
+        }
+        
     }
 
     void CheckDistance()

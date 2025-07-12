@@ -32,6 +32,7 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
+            
         }
     }
 
