@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class Dialogue_menu : MonoBehaviour
 {
     [Header("Core Components")]
     public GameObject window;         

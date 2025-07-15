@@ -21,6 +21,6 @@ public class ScoreManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = score.ToString();
+            scoreText.text = "Current Score: " + score.ToString();
     }
 }

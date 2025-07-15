@@ -9,6 +9,12 @@ TagManager:
   - InventoryBackground
   - InventoryPanel
   - UICanvas
+  - ThrowRope
+  - RopeController
+  - LightEnemy
+  - ViewportRuler
+  - HeavyEnemy
+  - Thrower
   layers:
   - Default
   - TransparentFX
@@ -17,9 +23,9 @@ TagManager:
   - Water
   - UI
   - Collectible
-  - 
-  - 
-  - 
+  - Enemy
+  - Grabable
+  - SonOfFireball
   - 
   - 
   - 

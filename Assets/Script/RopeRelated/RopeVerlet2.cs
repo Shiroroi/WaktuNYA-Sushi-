@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RopeVerlet2 : MonoBehaviour
@@ -9,11 +10,10 @@ public class RopeVerlet2 : MonoBehaviour
     public float ropeSegLen = 0.25f; // distance between 2 point
     public int segmentlength = 35; // how many point
     public Vector2 gravityForce = new Vector2(0f, 0f);
-    public Transform fishingHookTop;
 
     private float lineWidth = 0.1f;
 
-
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +21,7 @@ public class RopeVerlet2 : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
         Vector3 ropeStartPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        for (int i = 0; i < segmentlength; ++i)
+        for(int i = 0; i < segmentlength; ++i)
         {
             ropeSegments.Add(new RopeSegment(ropeStartPoint)); // use current ropeStartPoint as this segment's head position
             ropeStartPoint.y -= ropeSegLen; //  move ropeStartPoint down for the next segment
@@ -45,7 +45,7 @@ public class RopeVerlet2 : MonoBehaviour
         //Vector2 forceGravity = new Vector2(0f, -1f);
 
 
-        for (int i = 0; i < this.segmentlength; ++i)
+        for(int i = 0; i < this.segmentlength; ++i)
         {
             RopeSegment eachSegment = this.ropeSegments[i]; // loop each point
             Vector2 velocity = eachSegment.posNow - eachSegment.posOld; // calculate the delta position now - old
@@ -56,7 +56,7 @@ public class RopeVerlet2 : MonoBehaviour
         }
 
         // Constraints
-        for (int i = 0; i < 50; ++i)
+        for(int i = 0; i < 50; ++i)
         {
             this.ApplyConstraint();
         }
@@ -67,28 +67,28 @@ public class RopeVerlet2 : MonoBehaviour
         // Constarints ( First segment alaways follow mosue position )
 
         RopeSegment firstSegment = this.ropeSegments[0];
-        firstSegment.posNow = fishingHookTop.position; // Define the first point position
+        firstSegment.posNow = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Define the first point position
         this.ropeSegments[0] = firstSegment;
 
         // Keep distance
-        for (int i = 0; i < this.segmentlength - 1; ++i)
+        for(int i = 0; i < this.segmentlength - 1; ++i)
         {
             RopeSegment firstSeg = ropeSegments[i];
             RopeSegment secondSeg = ropeSegments[i + 1];
 
-
+            
             Vector2 delta = firstSeg.posNow - secondSeg.posNow;  // Calculate the Vector2 between current i point and its next point
-
-
+            
+            
             if (delta.magnitude == 0f) continue;  // if the length of the Vector2 is 0 (no error, excatly at the correct position), continue 
 
             float error = delta.magnitude - ropeSegLen;  // calculate the different legth, delta.magnitue is our actual punya, ropeSegLen is should punya
-
+          
             Vector2 changeAmount = delta.normalized * error; // Give the error length a direction (delta),  
 
             // applying the error value to current and its next point
 
-
+            
             if (i == 0) // If this is the first segment (anchored), only move the second point to correct the distance error
             {
                 secondSeg.posNow += changeAmount;
@@ -102,7 +102,7 @@ public class RopeVerlet2 : MonoBehaviour
             //}
             else // else, both of them move away or to the center by half of the error to match the expected  length
             {
-                // for the relativly first point  
+                                                        // for the relativly first point  
                 firstSeg.posNow -= changeAmount * 0.5f; // positive error mean current length is over long, first point should go behind using -
                 ropeSegments[i] = firstSeg;             // negative error mean current length is shotter than expected, first point -- = +, go forwards
 
@@ -116,11 +116,12 @@ public class RopeVerlet2 : MonoBehaviour
 
 
         }
-        RopeSegment lastSegment = ropeSegments[ropeSegments.Count - 1];
-        lastSegment.posNow = Vector2.zero;
-        ropeSegments[ropeSegments.Count - 1] = lastSegment;
+        //RopeSegment lastSegment = ropeSegments[ropeSegments.Count - 1];
+        //lastSegment.posNow = Vector2.zero;
+        //ropeSegments[ropeSegments.Count - 1] = lastSegment;
 
     }
+
 
     private void DrawRope() // Take the posNow each frame to draw the position
     {
@@ -141,7 +142,6 @@ public class RopeVerlet2 : MonoBehaviour
         lineRenderer.SetPositions(ropePositions);
     }
 
-
     public struct RopeSegment
     {
         public Vector2 posNow;
@@ -154,4 +154,5 @@ public class RopeVerlet2 : MonoBehaviour
         }
 
     }
+
 }

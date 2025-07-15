@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class MovementHelper : MonoBehaviour
+public class MovementHelper_original : MonoBehaviour
 {
     // version 1: the object will reach the destination in given time how ever
     // animation curve x is the time (0 -> 1), y is the distance form the origin (0 -> 1)

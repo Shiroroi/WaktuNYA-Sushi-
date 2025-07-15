@@ -2,7 +2,7 @@
 
 public class ButtonPressDetector : MonoBehaviour
 {
-    public Dialogue dialogueScript;
+    public Dialogue_menu dialogueScript;
 
     
     public void OnContinueButtonPressed()
