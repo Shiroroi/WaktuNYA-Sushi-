@@ -6,6 +6,8 @@ public class Collectible : MonoBehaviour
     private bool playerInRange = false;
     private SpriteRenderer sr;
 
+    public string itemName;
+
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -51,6 +53,8 @@ public class Collectible : MonoBehaviour
             ScoreManager scoreManager = FindFirstObjectByType<ScoreManager>();
             if (scoreManager != null)
             {
+                AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(itemName);
+                
                 scoreManager.AddScore(1);
             }
 

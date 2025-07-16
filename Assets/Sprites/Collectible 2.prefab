@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df329509b0ceaf44aa9fce318edc5e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Fish
 --- !u!50 &-9124462408421647316
 Rigidbody2D:
   serializedVersion: 5

@@ -11,7 +11,8 @@ public class UIController : MonoBehaviour
     public void TogglePause()
     {
         isPauseOpen = !isPauseOpen;
-        pausePanel.SetActive(isPauseOpen);
+        if(this !=null)
+            pausePanel.SetActive(isPauseOpen);
 
         // Optional: close journal if open
         if (isPauseOpen && isJournalOpen)
