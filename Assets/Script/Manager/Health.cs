@@ -119,8 +119,8 @@ public class Health : MonoBehaviour
                 
                 if (this== null)
                     return; 
-                
-                StopCoroutine(_changeColorCoroutine);
+                if(_changeColorCoroutine != null)
+                    StopCoroutine(_changeColorCoroutine);
      
                 Destroy(this.gameObject);
                 break;

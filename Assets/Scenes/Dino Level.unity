@@ -1273,6 +1273,30 @@ PrefabInstance:
       propertyPath: fireBallPrefab
       value: 
       objectReference: {fileID: 2545828086761178252, guid: b00a4e8270a19de4db2e9099130667e1, type: 3}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: collectiblePrefabs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: 'collectiblePrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7474030233545934648, guid: b0933454720113245a18f8022b38c21e, type: 3}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: 'collectiblePrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7474030233545934648, guid: 6e5ca849b5481e847ad5727de66d0e29, type: 3}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: 'collectiblePrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7474030233545934648, guid: c0d46ae6e9486594c8d64aae757aaa03, type: 3}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: 'collectiblePrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7474030233545934648, guid: 1cb398aba52f26741bf927a330db513a, type: 3}
+    - target: {fileID: 2703406012408403084, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
+      propertyPath: 'collectiblePrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 7474030233545934648, guid: 356b067639c7895469262c0243cf460b, type: 3}
     - target: {fileID: 2873879453012038574, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.26

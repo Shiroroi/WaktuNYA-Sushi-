@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyThrower : MonoBehaviour
 {
-    public GameObject collectiblePrefab;
+    public GameObject[] collectiblePrefabs;
     public GameObject fireBallPrefab;
     public List<GameObject> exsitsThingToThrow = new List<GameObject>();
     public Transform throwPoint;
@@ -72,6 +72,16 @@ public class EnemyThrower : MonoBehaviour
             ThrowCollectible(thrownGO);
         }
     }
+    
+    private void ThrowNTimesGO(GameObject[] thrownGO ,int howManyTimes)
+    {
+        for (int i = 1; i <= howManyTimes; ++i)
+        {
+            int randomArrayIndex = Random.Range(0, thrownGO.Length);
+            Debug.Log(randomArrayIndex);
+            ThrowCollectible(thrownGO[randomArrayIndex]);
+        }
+    }
 
     void ThrowCollectible(GameObject prefab)
     {
@@ -98,7 +108,7 @@ public class EnemyThrower : MonoBehaviour
         
         Debug.Log("Enemy is stunning");
         isStunning = true;
-        ThrowNTimesGO(collectiblePrefab,3);
+        ThrowNTimesGO(collectiblePrefabs,3);
         Destroy(fireBallCollider.gameObject);
         
         
