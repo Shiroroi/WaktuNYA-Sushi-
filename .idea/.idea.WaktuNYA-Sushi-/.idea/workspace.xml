@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FireballBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FireballBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Helper/IgnoreColisionBetween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Helper/IgnoreColisionBetween.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +118,8 @@
       <workItem from="1752645016574" duration="429000" />
       <workItem from="1752646653087" duration="5000" />
       <workItem from="1752646670087" duration="8000" />
+      <workItem from="1752648875161" duration="623000" />
+      <workItem from="1752649565241" duration="1392000" />
     </task>
     <servers />
   </component>

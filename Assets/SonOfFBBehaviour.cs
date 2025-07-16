@@ -17,6 +17,9 @@ public class SonOfFBBehaviour : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.layer == LayerMask.NameToLayer("SonOfFireball"))
+            return;
+        
         Destroy(gameObject);
-    }
+    }   
 }

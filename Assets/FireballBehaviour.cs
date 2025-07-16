@@ -35,7 +35,7 @@ public class FireballBehaviour : MonoBehaviour
             
             for (int i = 1; i <= numberOfSon_smallThenRaycount; ++i)
             {
-                float randomOfset = Random.Range(45f, 135f);
+                float randomOfset = Random.Range(75f, 105f);
                 float finalAngle = (randomOfset) * Mathf.Deg2Rad;
                 Vector2 direction = new Vector2(Mathf.Cos(finalAngle), Mathf.Sin(finalAngle)).normalized;
 
