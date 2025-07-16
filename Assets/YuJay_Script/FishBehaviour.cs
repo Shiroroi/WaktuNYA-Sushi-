@@ -48,7 +48,7 @@ public class FishBehaviour : MonoBehaviour
         beingTouched = true;
 
 
-        if (isWhichItem_Name != null && isWhichItem_Name!= "" ) 
+        if (isWhichItem_Name != null && isWhichItem_Name!= "") 
         {
             
             AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(isWhichItem_Name);

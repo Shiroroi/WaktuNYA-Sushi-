@@ -15,6 +15,7 @@ TagManager:
   - ViewportRuler
   - HeavyEnemy
   - Thrower
+  - CharacterCanvas
   layers:
   - Default
   - TransparentFX

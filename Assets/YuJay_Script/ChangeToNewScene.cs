@@ -10,6 +10,7 @@ public class ChangeToNewScene : MonoBehaviour
     {
 
         SingletonUICanvas.theStaticCanvas.gameObject.SetActive(!SingletonUICanvas.theStaticCanvas.gameObject.activeSelf);
+        SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.SetActive(!SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.activeSelf);
         SceneManager.LoadScene(sceneName);
         
 

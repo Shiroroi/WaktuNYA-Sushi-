@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
+  m_Name: tBoneSteak
+  m_EditorClassIdentifier: 
+  image: {fileID: 5117351343161606964, guid: 39144e198c5756b4b93b8bade247317d, type: 3}

@@ -5,9 +5,28 @@ public class UIController : MonoBehaviour
     public GameObject pausePanel;
     public GameObject journalPanel;
 
+    public Transform inventoryTransform;
+    public Transform inventoryOriginalParent;
+    public Transform inventoryCraftingParent;
+
     private bool isPauseOpen = false;
     private bool isJournalOpen = false;
 
+    public static UIController instance;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+            
+        else
+            Destroy(gameObject);
+    
+    }
+    
     public void TogglePause()
     {
         isPauseOpen = !isPauseOpen;
@@ -50,5 +69,14 @@ public class UIController : MonoBehaviour
                 TogglePause();
             }
         }
+    }
+
+    public void OpenCraftingMenu()
+    {
+        inventoryTransform.SetParent(inventoryCraftingParent,false);
+    }
+    public void CloseCraftingMenu()
+    {
+        inventoryTransform.SetParent(inventoryOriginalParent,false);
     }
 }

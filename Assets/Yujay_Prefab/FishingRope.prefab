@@ -57,7 +57,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: c46b234dcf524dd488a409d5b63e2065, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58f8d42ea0158ea40a54cd6d35680cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 2045911372819948232}
+  lineRenderer: {fileID: 0}
   ropeSegLen: 0.25
   segmentlength: 40
   gravityForce: {x: 0, y: -1}
+  fishingHookTop: {fileID: 0}

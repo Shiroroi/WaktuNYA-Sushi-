@@ -4,7 +4,7 @@ public class SingletonUICanvas : MonoBehaviour
 {
  
     public static GameObject theStaticCanvas;
-    void Start()
+    void Awake()
     {
         if(theStaticCanvas == null)
         {
