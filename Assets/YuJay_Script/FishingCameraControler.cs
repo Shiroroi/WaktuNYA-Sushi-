@@ -9,7 +9,7 @@ public class FishingCameraControler : MonoBehaviour
     public GameObject targetPositiontDown;
 
     [Header("Movement Profiles")]
-    public MovementHelper movementHelper;
+    public MovementHelper_original movementHelper;
     public AnimationCurve goDownCurve;
     public AnimationCurve forceGoUpCurve;
     public AnimationCurve goUpCurve;
