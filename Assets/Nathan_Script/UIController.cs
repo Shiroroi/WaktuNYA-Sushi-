@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
 
     public static UIController instance;
 
+    
     void Awake()
     {
         if (instance == null)
@@ -74,6 +75,7 @@ public class UIController : MonoBehaviour
     public void OpenCraftingMenu()
     {
         inventoryTransform.SetParent(inventoryCraftingParent,false);
+        
     }
     public void CloseCraftingMenu()
     {

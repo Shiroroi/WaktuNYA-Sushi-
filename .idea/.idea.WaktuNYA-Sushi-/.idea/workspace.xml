@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PointerBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
     </list>
@@ -26,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/SingletonCraftingCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -126,6 +126,7 @@
       <workItem from="1752666742405" duration="6684000" />
       <workItem from="1752717707948" duration="687000" />
       <workItem from="1752719030969" duration="3648000" />
+      <workItem from="1752736971520" duration="5839000" />
     </task>
     <servers />
   </component>

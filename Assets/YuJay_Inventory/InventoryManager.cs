@@ -28,7 +28,17 @@ public class InventoryManager : MonoBehaviour
         }
 
         
+        
+        
 
+    }
+
+    void Start()
+    {
+        for (int i = 1; i <= 6; ++i)
+        {
+            AddItem("rice");
+        }
     }
 
 
@@ -99,18 +109,15 @@ public class InventoryManager : MonoBehaviour
         inventoryItem.InitializeItem(item);
     }
 
-    public void UseSelectedItem()
+    public void UseSelectedItem(InventorySlot slot)
     {
-        InventorySlot slot = inventorySlots[selectedSlot];
+        
         InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
 
         if (itemInSlot != null)
         {
-            Item item = itemInSlot.item;
-
+            -- itemInSlot.count;
             
-            --itemInSlot.count;
-
             if (itemInSlot.count <= 0)
             {
                 Destroy(itemInSlot.gameObject);
@@ -120,13 +127,9 @@ public class InventoryManager : MonoBehaviour
                 itemInSlot.RefreshCount();
             }
             
-
             return;
         }
-        else
-        {
-            return;
-        }
+        
     }
 
     
