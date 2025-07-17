@@ -78,7 +78,7 @@ public class EnemyThrower : MonoBehaviour
         for (int i = 1; i <= howManyTimes; ++i)
         {
             int randomArrayIndex = Random.Range(0, thrownGO.Length);
-            Debug.Log(randomArrayIndex);
+            
             ThrowCollectible(thrownGO[randomArrayIndex]);
         }
     }

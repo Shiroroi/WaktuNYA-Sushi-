@@ -6,32 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddToSmallInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddToSmallInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI_Canvas.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/ChracterCanvas.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Collectible 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Collectible 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Collectible 3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/Fish.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/Fish.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/Flower.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/Flower.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventorySlot.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventorySlot.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/SingletonUICanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/SingletonUICanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/FishingRope.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/FishingRope.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Yujay-doing-crafting",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Yujay-doing-crafting&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Unity.exe" />
@@ -145,6 +124,8 @@
       <workItem from="1752648875161" duration="623000" />
       <workItem from="1752649565241" duration="1392000" />
       <workItem from="1752666742405" duration="6684000" />
+      <workItem from="1752717707948" duration="687000" />
+      <workItem from="1752719030969" duration="3648000" />
     </task>
     <servers />
   </component>
