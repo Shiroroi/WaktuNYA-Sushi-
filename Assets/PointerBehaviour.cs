@@ -102,8 +102,8 @@ public class PointerBehaviour : MonoBehaviour
 
             if (CraftBlock3.GetComponentInChildren<InventoryItem>()?.item.name == "rice")
             {
-                string material1 = CraftBlock1.GetComponentInChildren<InventoryItem>().item.name;
-                string material2 = CraftBlock2.GetComponentInChildren<InventoryItem>().item.name;
+                string material1 = CraftBlock1.GetComponentInChildren<InventoryItem>()?.item.name;
+                string material2 = CraftBlock2.GetComponentInChildren<InventoryItem>()?.item.name;
 
                 bool foundMatch = false;
                 
