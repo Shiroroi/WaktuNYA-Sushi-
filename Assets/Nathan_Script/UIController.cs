@@ -3,7 +3,8 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     public GameObject pausePanel;
-    public GameObject journalPanel;
+    public GameObject balatoPanel;
+    public GameObject recipePanel;
 
     public Transform inventoryTransform;
     public Transform inventoryOriginalParent;
@@ -30,28 +31,41 @@ public class UIController : MonoBehaviour
     
     public void TogglePause()
     {
-        isPauseOpen = !isPauseOpen;
-        if(this !=null)
-            pausePanel.SetActive(isPauseOpen);
+        //isPauseOpen = !isPauseOpen;
+        //if(this !=null)
+        pausePanel.SetActive(true);
 
         // Optional: close journal if open
-        if (isPauseOpen && isJournalOpen)
-        {
-            journalPanel.SetActive(false);
-            isJournalOpen = false;
-        }
+        //if (isPauseOpen && isJournalOpen)
+        //{
+        //    balatoPanel.SetActive(false);
+        //    isJournalOpen = false;
+        //}
     }
 
-    public void ToggleJournal()
+    public void ToggleBalato()
     {
-        isJournalOpen = !isJournalOpen;
-        journalPanel.SetActive(isJournalOpen);
+        //isJournalOpen = !isJournalOpen;
+        balatoPanel.SetActive(true);
 
-        if (isJournalOpen && isPauseOpen)
-        {
-            pausePanel.SetActive(false);
-            isPauseOpen = false;
-        }
+        //if (isJournalOpen && isPauseOpen)
+        //{
+        //    pausePanel.SetActive(false);
+        //    isPauseOpen = false;
+        //}
+    }
+
+    public void ToggleRecipe()
+    {
+        recipePanel.SetActive(true);
+
+        //if (isJournalOpen && isPauseOpen)
+        //{
+        //    pausePanel.SetActive(false);
+        //    balatoPanel.SetActive(false );
+        //    isPauseOpen = false;
+        //    isJournalOpen = false;
+        //}
     }
 
     private void Update()
@@ -61,7 +75,7 @@ public class UIController : MonoBehaviour
             if (isPauseOpen || isJournalOpen)
             {
                 pausePanel.SetActive(false);
-                journalPanel.SetActive(false);
+                balatoPanel.SetActive(false);
                 isPauseOpen = false;
                 isJournalOpen = false;
             }
@@ -80,5 +94,20 @@ public class UIController : MonoBehaviour
     public void CloseCraftingMenu()
     {
         inventoryTransform.SetParent(inventoryOriginalParent,false);
+    }
+
+    public void ClosePauseMenu()
+    {
+        pausePanel.SetActive(false);
+    }
+
+    public void CloseBalatoPanel()
+    {
+        balatoPanel.SetActive(false);
+    }
+
+    public void CloseRecipePanel()
+    {
+        recipePanel.SetActive(false);
     }
 }
