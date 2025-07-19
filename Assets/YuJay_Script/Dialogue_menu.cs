@@ -1,125 +1,187 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using TMPro;
 
 public class Dialogue_menu : MonoBehaviour
 {
+
     [Header("Core Components")]
     public GameObject window;         
     public TMP_Text dialogueText;     
 
     [Header("Dialogue Content")]
     public List<string> dialogues;    
+    public List<AllPossibleDialogue> allPossibleDialogue;
+    public string whenEndPossibleDialogueName_1;
+    public string whenEndPossibleDialogueName_2;
+    public string o_whenEndPossibleDialogueName_1;
+    public string o_whenEndPossibleDialogueName_2;
+    public int o_listSize;
     public float writingSpeed = 0.05f; 
 
     private int index;
     private bool started = false;
     private bool isWriting = false;
 
+    [Header("Player react dependency")]
+    public GameObject playerReactPanel;
+    public Button firstChoiceButton;
+    public Button secondChoiceButton;
+
+    // disable window
     private void Awake()
     {
-        ToggleWindow(false);
+        window.SetActive(false);
     }
 
-    // --- 主控制方法 ---
-    public void ContinueDialogue()
+    public void Start()
     {
-        if (!started)
-        {
-            StartDialogue();
-        }
-        else if (isWriting)
-        {
-            CompleteCurrentLine();
-        }
-        else
-        {
-            NextDialogue();
-        }
-    }
-
-    public void EndDialogue()
-    {
-        started = false;
-        isWriting = false;
-        StopAllCoroutines();
-        ToggleWindow(false);
-    }
-
-    
-    private void Update()
-    {
+        o_whenEndPossibleDialogueName_1 = whenEndPossibleDialogueName_1;
+        o_whenEndPossibleDialogueName_2 = whenEndPossibleDialogueName_2;
         
+        o_listSize = dialogues.Count;
+    }
+
+    // when every frame
+    private void Update() 
+    {
+        // first two return condition is use to return when im not clicking
         if (!started || !Input.GetMouseButtonDown(0))
         {
-            return;
+            
+            return; // when i havent start, or when i havent press down my left mouse
+            
+            // only when I have started the talking and I have click the right mouse only will going down
+            
+            // can filter alot of unused frame
         }
 
         
         if (EventSystem.current.IsPointerOverGameObject())
         {
+            
+            // prevent keep repeating the first dialogue
+            
+            // because the in the next frame immediatley will activate the continue dialogue bla bla bla...
             return;
         }
 
-        
+        // get mouse position in world
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
+        // raycast at this point
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
         
+        // if hit a collider
         if (hit.collider != null)
         {
             
-            if (hit.collider.gameObject == window)
+            if (hit.collider.gameObject == window) // collider is our window
             {
-                
-                ContinueDialogue();
+                ContinueDialogue(); // speak, got different behaviour inside
             }
-            else 
+            else  // collider is not our window
             {
-                EndDialogue();
+                Debug.Log("End1");
+                EndDialogue(); // end the talking 
             }
         }
-        else 
+        else // does not hit a colldier
         {
-            
-            EndDialogue();
+            Debug.Log("End2");
+            EndDialogue(); // end the talking
         }
     }
-
-
-    
+    // main control function
+    public void ContinueDialogue() // when the button press
+    {
+        if (!started)
+        {
+            
+            StartDialogue(); // no start before, i will behave like start
+        }
+        else if (isWriting)
+        {
+            CompleteCurrentLine(); // when im writting but you still press the button, directly complete the line
+        }
+        else
+        {
+            NextDialogue(); // show up next dialogue
+        }
+    }
     private void StartDialogue()
     {
         started = true;
         isWriting = true;
         index = 0;
-        ToggleWindow(true);
+        window.SetActive(true);
         StartCoroutine(Writing(dialogues[index]));
     }
-
     private void NextDialogue()
     {
-        index++;
+        ++ index;
         if (index < dialogues.Count)
         {
             isWriting = true;
             StartCoroutine(Writing(dialogues[index]));
+        }
+        else if (index == dialogues.Count && whenEndPossibleDialogueName_1 != null && whenEndPossibleDialogueName_2 != null && whenEndPossibleDialogueName_1 != "" && whenEndPossibleDialogueName_2 != "") 
+        {
+            playerReactPanel.SetActive(true);
+            
+            firstChoiceButton.onClick.RemoveAllListeners();
+            secondChoiceButton.onClick.RemoveAllListeners();
+            
+            firstChoiceButton.onClick.AddListener(
+                () =>
+            {
+                AddDialogueToButton(whenEndPossibleDialogueName_1);
+                ContinueDialogue();
+            }
+                );
+            secondChoiceButton.onClick.AddListener(
+                () =>
+            {
+                AddDialogueToButton(whenEndPossibleDialogueName_2);
+                ContinueDialogue();
+            }
+                );
+            
+            firstChoiceButton.GetComponentInChildren<TextMeshProUGUI>().text = whenEndPossibleDialogueName_1;
+            secondChoiceButton.GetComponentInChildren<TextMeshProUGUI>().text = whenEndPossibleDialogueName_2;
+            
+
+            // player multiple option dialogue
+            // at the same time, the dialogue will just stay there
         }
         else
         {
             EndDialogue();
         }
     }
-
     private void CompleteCurrentLine()
     {
         StopAllCoroutines();
         dialogueText.text = dialogues[index];
         isWriting = false;
     }
-
+    public void EndDialogue()
+    {
+        whenEndPossibleDialogueName_1 = o_whenEndPossibleDialogueName_1;
+        whenEndPossibleDialogueName_2 = o_whenEndPossibleDialogueName_2;
+        
+        dialogues.RemoveRange(o_listSize,dialogues.Count - o_listSize);
+        
+        started = false;
+        isWriting = false;
+        StopAllCoroutines();
+        window.SetActive(false);
+    }
     private IEnumerator Writing(string currentDialogue)
     {
         isWriting = true;
@@ -134,8 +196,38 @@ public class Dialogue_menu : MonoBehaviour
         isWriting = false;
     }
 
-    private void ToggleWindow(bool show)
+    public void AddDialogueToButton(string whenEndPossibleDialogueName)
     {
-        window.SetActive(show);
+        bool finded = false;
+   
+        foreach (AllPossibleDialogue possibleDialogue in allPossibleDialogue)
+        {
+            
+            if (possibleDialogue.dialogueName == whenEndPossibleDialogueName)
+            {
+                finded = true;
+
+                foreach (string line in possibleDialogue.dialogue_LEAVE_A_BLANK_ON_FIRST_ONE)
+                {
+                    dialogues.Add(line);
+                }
+
+                whenEndPossibleDialogueName_1 = possibleDialogue.whenEndPossibleDialogueName_1;
+                whenEndPossibleDialogueName_2 = possibleDialogue.whenEndPossibleDialogueName_2;
+                
+                break;
+            }
+            
+        }
+
+        if (finded == false)
+        {
+            Debug.Log("Cant find possible dialogue with the name");
+        }
+        else
+        {
+            Debug.Log("Find the possibe dialogue");
+        }
     }
+
 }

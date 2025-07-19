@@ -6,10 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PointerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddToSmallInventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddToSmallInventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DealDamageOnTouch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DealDamageOnTouch.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FireballBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FireballBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PointerBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PointerBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UIManager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UIManager.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SingletonCharacterCanvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SingletonCharacterCanvas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SingletonCraftingCanvas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SingletonCraftingCanvas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/ButtonPressDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/ButtonPressDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar3.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +39,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/29/598d8241/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/947c566dcd374e379abfce2ae0b65eaf2f200/95/26b343d2/Rigidbody2D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DealDamageOnTouch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SingletonCraftingCanvas.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SonOfFBBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -35,22 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Yujay-doing-crafting&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Yujay-is-making-game-manager",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Unity.exe" />
@@ -127,6 +144,7 @@
       <workItem from="1752717707948" duration="687000" />
       <workItem from="1752719030969" duration="3648000" />
       <workItem from="1752736971520" duration="5839000" />
+      <workItem from="1752925823631" duration="15258000" />
     </task>
     <servers />
   </component>

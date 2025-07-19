@@ -10,7 +10,7 @@ public class ButtonPressDetector : MonoBehaviour
         // Every time click use the function
         if (dialogueScript != null)
         {
-            dialogueScript.ContinueDialogue();
+            dialogueScript.ContinueDialogue(); // directly continue dialgue with character button
         }
     }
 }
