@@ -33,6 +33,7 @@ public class Dialogue_menu : MonoBehaviour
     [HideInInspector] public Button firstChoiceButton;
     public Button secondChoiceButton;
     [HideInInspector] public bool stopBefore;
+    [HideInInspector] public bool pauseWhenEnd;
     
 
     // disable window
@@ -48,8 +49,8 @@ public class Dialogue_menu : MonoBehaviour
         o_whenEndPossibleDialogueName_2 = whenEndPossibleDialogueName_2;
         
         o_listSize = dialogues.Count;
-        
-        
+        pauseWhenEnd = true;
+
     }
 
     // when every frame
@@ -144,25 +145,27 @@ public class Dialogue_menu : MonoBehaviour
             window.SetActive(true);
             
         }
-        
-        // i want to stop, but got condition
-        if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";"))
+
+        if (index < dialogues.Count - 1)
         {
-            if (stopBefore == true && canContinue == true)
+            // i want to stop, but got condition
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";"))
             {
-                stopBefore = false;
+                if (stopBefore == true && canContinue == true)
+                {
+                    stopBefore = false;
+                }
+                else if (stopBefore == false)
+                {
+                    stopBefore = true;
+                    canContinue = false;
+                    window.SetActive(false);
+                    return;
+                }
+
             }
-            else if (stopBefore == false)
-            {
-                stopBefore = true;
-                canContinue = false;
-                window.SetActive(false);
-                return;
-            }
-            
-            
-            
         }
+        
         
         ++ index;
         if (index < dialogues.Count)
@@ -210,17 +213,52 @@ public class Dialogue_menu : MonoBehaviour
         dialogueText.text = dialogues[index];
         isWriting = false;
     }
-    public void EndDialogue()
+    public void EndDialogue() // when the npc turns end
     {
+
+        isWriting = false;
+        StopAllCoroutines();
+        window.SetActive(false);
+
+
+        if (pauseWhenEnd == true)
+        {
+            pauseWhenEnd = false;
+            return;
+        }
+            
+        
+        started = false;
+        
+        
+        Debug.Log("Should change character");
         whenEndPossibleDialogueName_1 = o_whenEndPossibleDialogueName_1;
         whenEndPossibleDialogueName_2 = o_whenEndPossibleDialogueName_2;
         
         dialogues.RemoveRange(o_listSize,dialogues.Count - o_listSize);
         
-        started = false;
-        isWriting = false;
-        StopAllCoroutines();
-        window.SetActive(false);
+        
+
+        
+        
+        
+
+        if (gameObject.CompareTag("npc1"))
+        {
+            GameManager.instance.EnableNpc(1, false, GameManager.instance.npcMiddlePosition);
+            GameManager.instance.EnableNpc(2, true, GameManager.instance.npcMiddlePosition);
+        }
+        else if (gameObject.CompareTag("npc2"))
+        {
+            GameManager.instance.EnableNpc(2, false, GameManager.instance.npcMiddlePosition);
+            GameManager.instance.EnableNpc(3, true, GameManager.instance.npcMiddlePosition);
+        }
+        else if (gameObject.CompareTag("npc3"))
+        {
+            GameManager.instance.EnableNpc(3, false, GameManager.instance.npcMiddlePosition);
+        }
+            
+        
     }
     private IEnumerator Writing(string currentDialogue)
     {

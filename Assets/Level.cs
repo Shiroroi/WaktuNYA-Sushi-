@@ -4,13 +4,7 @@ using UnityEngine;
 [Serializable]
 public class Level
 {
-    public enum Progress
-    {
-        tutorial,
-        story,
-        normal
-    }
-
+ 
     public enum Type
     {
         dino,
@@ -19,6 +13,6 @@ public class Level
         mainMenu
     }
     
-    public Progress progress;
+    
     public Type type;
 }

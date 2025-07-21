@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
-    [HideInInspector] public GameManager instance;
+    [HideInInspector] public static GameManager instance;
 
     public GameObject npc1;
     public GameObject npc2;
@@ -14,7 +14,8 @@ public class GameManager : MonoBehaviour
     public const string fishingSceneName = "YuJay_Fishing";
     public const string cyberpunkSceneName = "CyberpunkLevel";
     public const string mainMenuSceneName = "MainMenu";
-    
+
+    public Vector2 npcMiddlePosition =  new Vector2(0, 82);
     public enum PlayMode
     {
         Debug,
@@ -47,7 +48,9 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        EnableNpc(1, true, npcMiddlePosition);
+        EnableNpc(2, false, npcMiddlePosition);
+        EnableNpc(3, false, npcMiddlePosition);
     }
 
     // Update is called once per frame
@@ -95,23 +98,7 @@ public class GameManager : MonoBehaviour
     }
 
     // let other class change level and progress
-    public void ChangeLevelProgress(Level.Type type, Level.Progress progress)
-    {
-        switch (type)
-        {
-            case Level.Type.dino:
-                break;
-            
-            case Level.Type.fishing:
-                break;
-            
-            case Level.Type.cyberpunk:
-                break;
-            
-            case Level.Type.mainMenu:
-                break;
-        }
-    }
+    
     private void CheckSceneType()
     {
         switch (SceneManager.GetActiveScene().name)
@@ -140,17 +127,17 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 npc1.SetActive(enable);
-                npc2.GetComponent<RectTransform>().position = position;
+                npc1.GetComponent<RectTransform>().localPosition = position;
                 break;
             
             case 2:
                 npc2.SetActive(enable);
-                npc2.GetComponent<RectTransform>().position = position;
+                npc2.GetComponent<RectTransform>().localPosition = position;
                 break;
             
             case 3:
                 npc3.SetActive(enable);
-                npc3.GetComponent<RectTransform>().position = position;
+                npc3.GetComponent<RectTransform>().localPosition = position;
                 break;
         }
     }
