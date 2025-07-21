@@ -14,13 +14,14 @@ public class Dialogue_menu : MonoBehaviour
     public TMP_Text dialogueText;     
 
     [Header("Dialogue Content")]
+    public bool canContinue;    
     public List<string> dialogues;    
-    public List<AllPossibleDialogue> allPossibleDialogue;
     public string whenEndPossibleDialogueName_1;
     public string whenEndPossibleDialogueName_2;
-    public string o_whenEndPossibleDialogueName_1;
-    public string o_whenEndPossibleDialogueName_2;
-    public int o_listSize;
+    public List<AllPossibleDialogue> allPossibleDialogue;
+    [HideInInspector] public string o_whenEndPossibleDialogueName_1;
+    [HideInInspector] public string o_whenEndPossibleDialogueName_2;
+    [HideInInspector] public int o_listSize;
     public float writingSpeed = 0.05f; 
 
     private int index;
@@ -29,8 +30,10 @@ public class Dialogue_menu : MonoBehaviour
 
     [Header("Player react dependency")]
     public GameObject playerReactPanel;
-    public Button firstChoiceButton;
+    [HideInInspector] public Button firstChoiceButton;
     public Button secondChoiceButton;
+    [HideInInspector] public bool stopBefore;
+    
 
     // disable window
     private void Awake()
@@ -40,19 +43,25 @@ public class Dialogue_menu : MonoBehaviour
 
     public void Start()
     {
+        canContinue = true;
         o_whenEndPossibleDialogueName_1 = whenEndPossibleDialogueName_1;
         o_whenEndPossibleDialogueName_2 = whenEndPossibleDialogueName_2;
         
         o_listSize = dialogues.Count;
+        
+        
     }
 
     // when every frame
     private void Update() 
     {
+        
+        
         // first two return condition is use to return when im not clicking
-        if (!started || !Input.GetMouseButtonDown(0))
+        if (  !started || !Input.GetMouseButtonDown(0))  
         {
             
+
             return; // when i havent start, or when i havent press down my left mouse
             
             // only when I have started the talking and I have click the right mouse only will going down
@@ -85,24 +94,29 @@ public class Dialogue_menu : MonoBehaviour
             {
                 ContinueDialogue(); // speak, got different behaviour inside
             }
-            else  // collider is not our window
-            {
-                Debug.Log("End1");
-                EndDialogue(); // end the talking 
-            }
+            // else  // collider is not our window
+            // {
+            //     Debug.Log("End1");
+            //     EndDialogue(); // end the talking 
+            // }
         }
-        else // does not hit a colldier
-        {
-            Debug.Log("End2");
-            EndDialogue(); // end the talking
-        }
+        // else // does not hit a colldier
+        // {
+        //     Debug.Log("End2");
+        //     EndDialogue(); // end the talking
+        // }
     }
     // main control function
     public void ContinueDialogue() // when the button press
     {
+        if(canContinue == false)
+        {
+            window.SetActive(!window.activeSelf);
+            return;
+        }
+
         if (!started)
         {
-            
             StartDialogue(); // no start before, i will behave like start
         }
         else if (isWriting)
@@ -116,6 +130,7 @@ public class Dialogue_menu : MonoBehaviour
     }
     private void StartDialogue()
     {
+        // Debug.Log("Start");
         started = true;
         isWriting = true;
         index = 0;
@@ -124,6 +139,31 @@ public class Dialogue_menu : MonoBehaviour
     }
     private void NextDialogue()
     {
+        if (canContinue == true && window.activeSelf == false)
+        {
+            window.SetActive(true);
+            
+        }
+        
+        // i want to stop, but got condition
+        if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";"))
+        {
+            if (stopBefore == true && canContinue == true)
+            {
+                stopBefore = false;
+            }
+            else if (stopBefore == false)
+            {
+                stopBefore = true;
+                canContinue = false;
+                window.SetActive(false);
+                return;
+            }
+            
+            
+            
+        }
+        
         ++ index;
         if (index < dialogues.Count)
         {
@@ -184,11 +224,16 @@ public class Dialogue_menu : MonoBehaviour
     }
     private IEnumerator Writing(string currentDialogue)
     {
+        currentDialogue = currentDialogue.Replace(";", "");
+        
         isWriting = true;
         dialogueText.text = "";
 
+       
+        
         foreach (char letter in currentDialogue.ToCharArray())
         {
+            
             dialogueText.text += letter;
             yield return new WaitForSeconds(writingSpeed);
         }
@@ -222,12 +267,14 @@ public class Dialogue_menu : MonoBehaviour
 
         if (finded == false)
         {
-            Debug.Log("Cant find possible dialogue with the name");
+            // Debug.Log("Cant find possible dialogue with the name");
         }
         else
         {
-            Debug.Log("Find the possibe dialogue");
+            // Debug.Log("Find the possibe dialogue");
         }
     }
+
+    
 
 }

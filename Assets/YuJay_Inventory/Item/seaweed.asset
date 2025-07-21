@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: seaweed
   m_EditorClassIdentifier: 
-  image: {fileID: 5117351343161606964, guid: 39144e198c5756b4b93b8bade247317d, type: 3}
+  image: {fileID: 908046490, guid: fbaab84148a3f154fab5b573fdfd7f13, type: 3}

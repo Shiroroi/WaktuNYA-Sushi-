@@ -16,6 +16,9 @@ TagManager:
   - HeavyEnemy
   - Thrower
   - CharacterCanvas
+  - npc1
+  - npc2
+  - npc3
   layers:
   - Default
   - TransparentFX

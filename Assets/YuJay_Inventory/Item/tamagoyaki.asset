@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: tamagoyaki
   m_EditorClassIdentifier: 
-  image: {fileID: 5117351343161606964, guid: 39144e198c5756b4b93b8bade247317d, type: 3}
+  image: {fileID: 4543780545026768281, guid: c17d2e7e7fe60c049afdde50e3fe0ffe, type: 3}
