@@ -2,6 +2,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
 
+using System.Collections;
+
 public class PointerBehaviour : MonoBehaviour
 {
     public RectTransform pointA;
@@ -26,6 +28,8 @@ public class PointerBehaviour : MonoBehaviour
     public InventorySlot CraftBlock3;
 
     public Sushi[] sushi;
+    
+    public Dialogue_menu[]  dialogue_menus; 
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -92,10 +96,25 @@ public class PointerBehaviour : MonoBehaviour
 
     }
 
+    public void CheckAndWaitFirst()
+    {
+        nowCheck = true;
+        StartCoroutine(WaitOneFramee());
+    }
+    
+    public IEnumerator WaitOneFramee()
+    {
+        
+        yield return null;
+        CheckFunction();
+    }
     public void CheckFunction()
     {
-        if (nowCheck == false)
+        
+        if (suces == true)
         {
+            
+            
             InventoryManager.instance.UseSelectedItem(CraftBlock1);
             InventoryManager.instance.UseSelectedItem(CraftBlock2);
             InventoryManager.instance.UseSelectedItem(CraftBlock3);
@@ -109,9 +128,15 @@ public class PointerBehaviour : MonoBehaviour
                 
                 foreach (Sushi s in sushi)
                 {
-                    if (s.m1 == material1 && s.m2 == material2)
+                    if ((s.m1 == material1 && s.m2 == material2) || (s.m1 == material2 && s.m2 == material1))
                     {
                         Debug.Log(s.name + " is created");
+                        
+                        foreach (Dialogue_menu m in dialogue_menus)
+                        {
+                            m.canContinue = true;
+                        }
+                        
                         foundMatch = true;
                         break;
                     }
@@ -124,11 +149,12 @@ public class PointerBehaviour : MonoBehaviour
                 
 
 
-
+            
         }
         
-        
         nowCheck = !nowCheck;
+        
+        
     }
 }
     

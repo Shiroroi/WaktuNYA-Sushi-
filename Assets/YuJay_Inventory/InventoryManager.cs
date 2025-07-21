@@ -39,6 +39,15 @@ public class InventoryManager : MonoBehaviour
         {
             AddItem("rice");
         }
+        AddItem("coconutPufferfish");
+        AddItem("coconutPufferfish");
+        AddItem("coconutPufferfish");
+        
+        AddItem("tamagoyaki");
+        AddItem("tamagoyaki");
+        AddItem("tamagoyaki");
+        
+        
     }
 
 

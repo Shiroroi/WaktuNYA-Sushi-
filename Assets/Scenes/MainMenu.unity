@@ -2587,6 +2587,13 @@ MonoBehaviour:
   - name: Sushi Salmon and Tuna !
     m1: tuna
     m2: salmon
+  - name: Sushi CP and tamagoyaki
+    m1: tamagoyaki
+    m2: coconutPufferfish
+  dialogue_menus:
+  - {fileID: 641786141}
+  - {fileID: 276647019}
+  - {fileID: 193259427}
 --- !u!1 &1063227676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4166,7 +4173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: 8;
+      value: i want a sushi grey and character in jurasic wolrd;
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
@@ -4174,7 +4181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
-      value: 10
+      value: i want a sushi grey and character in jurasic wolrd;
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
