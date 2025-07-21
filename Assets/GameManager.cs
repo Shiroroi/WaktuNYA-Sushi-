@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     private PlayMode o_playMode;
     public PlayMode playMode;
     
-    public static Level currentCevel;
+    public Level currentCevel;
     
     
     void Awake()
