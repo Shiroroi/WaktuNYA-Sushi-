@@ -8485,8 +8485,8 @@ MonoBehaviour:
   inventoryTransform: {fileID: 3083386371836810202}
   inventoryOriginalParent: {fileID: 1651330663}
   inventoryCraftingParent: {fileID: 469835058}
-  startPanel: {fileID: 0}
-  closeStartPanelButton: {fileID: 0}
+  startPanel: {fileID: 554725382}
+  closeStartPanelButton: {fileID: 1395617023}
 --- !u!114 &5173188812903863726
 MonoBehaviour:
   m_ObjectHideFlags: 0
