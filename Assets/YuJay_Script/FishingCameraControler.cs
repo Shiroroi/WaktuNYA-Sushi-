@@ -30,7 +30,7 @@ public class FishingCameraControler : MonoBehaviour
         goDown,
         goUp
     }
-
+    
     void Start()
     {
         _camera = Camera.main;
@@ -42,7 +42,8 @@ public class FishingCameraControler : MonoBehaviour
             this.enabled = false; // disable this script
         }
     }
-
+    
+    
     void Update()
     {
         // Only when camera motion is stationary, will check if
@@ -69,8 +70,7 @@ public class FishingCameraControler : MonoBehaviour
     {
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
-
-        
+ 
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
         movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, forceGoUpCurve);
@@ -80,7 +80,7 @@ public class FishingCameraControler : MonoBehaviour
     {
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
-
+        
 
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
@@ -117,7 +117,7 @@ public class FishingCameraControler : MonoBehaviour
             // if also reach the position, then sop moving
             if (Vector3.Distance(_camera.transform.position, targetPositionUp.transform.position) < 0.1f)
             {
-                
+
                 _currentMotion = CameraMotion.stationary;
                 
                 movementHelper.StopMoving(); // stop moving coroutine

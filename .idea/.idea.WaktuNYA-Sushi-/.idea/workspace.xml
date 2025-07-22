@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Helper/ViewportRuler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Helper/ViewportRuler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingHookBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingHookBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +133,7 @@
       <workItem from="1753099808085" duration="3673000" />
       <workItem from="1753108932757" duration="2978000" />
       <workItem from="1753151565653" duration="5482000" />
+      <workItem from="1753164975866" duration="3400000" />
     </task>
     <servers />
   </component>

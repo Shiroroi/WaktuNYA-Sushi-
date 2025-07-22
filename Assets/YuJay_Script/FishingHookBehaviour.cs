@@ -35,10 +35,8 @@ public class FishingHookBehaviour : MonoBehaviour
     void Update()
     {
         FollowingMouse();
-
-      
+        
         TryCatchFish();
-
         
     }
 
@@ -74,7 +72,6 @@ public class FishingHookBehaviour : MonoBehaviour
 
         _myFishesCollider.Add(fishCollider);
         _myFishesSprite.Add(fishCollider.GetComponentInChildren<SpriteRenderer>());
-
 
         fisihingCameraController.ForceMoveUp();
 
