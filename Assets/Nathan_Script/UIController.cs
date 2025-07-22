@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class UIController : MonoBehaviour
 {
@@ -9,6 +11,10 @@ public class UIController : MonoBehaviour
     public Transform inventoryTransform;
     public Transform inventoryOriginalParent;
     public Transform inventoryCraftingParent;
+
+    public GameObject startPanel;
+
+    public Button closeStartPanelButton;
 
     private bool isPauseOpen = false;
     private bool isJournalOpen = false;
@@ -28,7 +34,19 @@ public class UIController : MonoBehaviour
             Destroy(gameObject);
     
     }
-    
+
+    void Start()
+    {
+        
+        Time.timeScale = 0f;
+
+        // Add a listener to the close button
+        if (closeStartPanelButton != null)
+        {
+            closeStartPanelButton.onClick.AddListener(OnCloseAnnouncementButtonClicked);
+        }
+    }
+
     public void TogglePause()
     {
         //isPauseOpen = !isPauseOpen;
@@ -109,5 +127,17 @@ public class UIController : MonoBehaviour
     public void CloseRecipePanel()
     {
         recipePanel.SetActive(false);
+    }
+
+    public void OnCloseAnnouncementButtonClicked()
+    {
+        Debug.Log("Announcement panel closed.");
+
+        if (startPanel != null)
+        {
+            startPanel.SetActive(false); 
+        }
+
+        Time.timeScale = 1f;
     }
 }
