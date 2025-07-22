@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -141,6 +142,20 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    
-    
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit button clicked! Exiting application...");
+
+        // If running in a built application (Windows, Mac, Android, iOS, WebGL, etc.)
+        Application.Quit();
+
+        // If running in the Unity Editor
+        // This line only works in the Editor and will not be included in a built game.
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#endif
+    }
+
+
 }
