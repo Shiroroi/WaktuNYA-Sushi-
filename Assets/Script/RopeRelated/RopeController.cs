@@ -106,6 +106,9 @@ public class RopeController : MonoBehaviour
     // for heavy enemy need to update anchor
     public Transform targetTransform;
     public Vector3 targetOriginalPosiiton;
+    
+    // for viewport
+    public bool shouldReset = true;
 
     private void Awake()
     {
@@ -150,7 +153,6 @@ public class RopeController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1) == true)
         {
-            
             SetGrapplePoint();
         }
 
@@ -211,8 +213,6 @@ public class RopeController : MonoBehaviour
     
     private void RopeSwing() // this need continuos update anchor
     {
-        
-        
 
         if (swingType == SwingType.Physic)
         {
@@ -230,6 +230,8 @@ public class RopeController : MonoBehaviour
 
     void RopeThrow()
     {
+        Debug.Log("Hit!");
+        
         
         lineRenderer.enabled = false; // close own line renderer
 
@@ -249,6 +251,7 @@ public class RopeController : MonoBehaviour
         targetRigidbody.mass = 2f; // set to suitable mass  for throw
         
 
+        
         //  add a box collider detector to him
         if (targetRigidbody.gameObject.GetComponent<BlockCollisionDetector>() == false)
         {
@@ -280,8 +283,17 @@ public class RopeController : MonoBehaviour
         playerDirectionToBlock = (targetRigidbody.transform.position - gameObject.transform.position).normalized;
         Debug.DrawRay(transform.position, playerDirectionToBlock, Color.red);
         _blockPrependicularDirectionToPlayer = Vector2.Perpendicular(playerDirectionToBlock);
+        
+        
+        if (shouldReset == true)
+        {
+            Debug.Log("previous zone = current zone activate");
+            _viewportRuler.ResetForNewSwipe();
+            shouldReset = false;
 
-
+            return;
+        }
+        
         // check if need to throw, then throw
         if (_viewportRuler.HasDirectionReversed == true && canThrow == true ) 
         {
@@ -299,6 +311,7 @@ public class RopeController : MonoBehaviour
 
     public void Throw(int i)
     {
+        
         canThrow = false;
         isThrowing = true;
 
@@ -404,7 +417,8 @@ public class RopeController : MonoBehaviour
             throwRope.SetActive(false); // disable my verlet rope for throw
         }
 
-        
+        shouldReset = true;
+
     }
 
     private void TryDetermineRopeMode()

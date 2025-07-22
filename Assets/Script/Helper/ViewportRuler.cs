@@ -16,6 +16,10 @@ public class ViewportRuler : MonoBehaviour
 
     public bool needDraw = true;
 
+    public bool shouldReturn;
+    
+    
+
     public int GetMouseMoveDirection // 
     {
         get { return _mouseMoveDirection; }
@@ -24,6 +28,8 @@ public class ViewportRuler : MonoBehaviour
     public bool HasDirectionReversed //  这个值可以被外部读取（get），但只能被这个脚本自己修改（private set）。
     { get; private set; }
 
+    
+    
     public int GetCurrentMouseZone
     {
         get { return currentZone; }
@@ -36,11 +42,16 @@ public class ViewportRuler : MonoBehaviour
         currentZone = CalculateCurrentZone();
         previousZone = currentZone;
     }
+    
+    
 
     
     void Update()
     {
+        
+        
         CalculateZone();
+        
         
        if (needDraw == false)
             return;
@@ -49,15 +60,34 @@ public class ViewportRuler : MonoBehaviour
         
     }
 
+    
+    
+    public void ResetForNewSwipe()
+    {
+        // 计算并同步当前区域
+        currentZone = CalculateCurrentZone();
+        previousZone = currentZone;
+        
+        // 【关键修复】: 重置鼠标移动方向的记忆。
+        // 设置为 0 (静止)，这样下一次任何方向的移动都会被检测为“变化”。
+        _mouseMoveDirection = 0;
+        
+        // 也顺便重置一下这个标志位，确保状态干净
+        HasDirectionReversed = false; 
+
+        Debug.Log("ViewportRuler state has been reset for a new swipe.");
+    }
+    
     private void CalculateZone()
     {
         CalculateCurrentZone();
-
-
+        
         HasDirectionReversed = false;
 
         if (currentZone != previousZone)
         {
+            
+            
             int newDirection = 0;
 
             if (currentZone > previousZone)
