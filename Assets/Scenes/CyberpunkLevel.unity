@@ -238,7 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileImage: {fileID: 7832928}
-  uiManager: {fileID: 0}
 --- !u!1 &16696408
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 416, y: 106}
+  m_AnchoredPosition: {x: 454, y: -70}
   m_SizeDelta: {x: 286.9166, y: 93.4887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195353599
@@ -970,18 +969,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SelectRed
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 808294583}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectTool
-        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1249,7 +1236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &614378163
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1520,7 +1507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileImage: {fileID: 765577258}
-  uiManager: {fileID: 0}
 --- !u!1 &796825848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6c4f799cbbc4e4abd2eb7de9322650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentTool: 1
+  currentTool: 0
   selectedNamedColor:
     colorName: 
     colorValue: {r: 0, g: 0, b: 0, a: 0}
@@ -2516,7 +2502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 754.9203, y: 102.88371}
+  m_AnchoredPosition: {x: 792.9203, y: -73.11633}
   m_SizeDelta: {x: 286.9166, y: 93.4887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426971375
@@ -2567,18 +2553,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SelectYellow
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 808294583}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectTool
-        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3100,8 +3074,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 223, y: -228}
-  m_SizeDelta: {x: 86.7953, y: 86.2434}
+  m_AnchoredPosition: {x: 167.59824, y: 59.549}
+  m_SizeDelta: {x: 148.8033, y: 131.5571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623258789
 MonoBehaviour:
@@ -3233,7 +3207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 583, y: -31.999958}
+  m_AnchoredPosition: {x: 621, y: -208}
   m_SizeDelta: {x: 286.9166, y: 93.4887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830104306
@@ -3284,18 +3258,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SelectBlue
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 808294583}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectTool
-        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3737,7 +3699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileImage: {fileID: 1913565748}
-  uiManager: {fileID: 0}
 --- !u!1 &1974402428
 GameObject:
   m_ObjectHideFlags: 0

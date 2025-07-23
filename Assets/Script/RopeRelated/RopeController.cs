@@ -424,7 +424,7 @@ public class RopeController : MonoBehaviour
     private void TryDetermineRopeMode()
     {
         // daZhong = when curve rope reach the hit point
-        if ( gotHold == true && grappleRope.enabled == true) // Hold
+        if (gotHold == true && grappleRope.enabled == true) // Hold
         {
             _holdBefore = true;
 
