@@ -8,6 +8,9 @@ public class TileSlot : MonoBehaviour
 
     private List<NamedColor> stack = new List<NamedColor>();
 
+    public UIManager uiManager;
+
+  
     public void AddColor(NamedColor color)
     {
         if (stack.Count == 0)

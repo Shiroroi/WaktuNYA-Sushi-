@@ -3,7 +3,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public enum Tool { Pencil, Eraser }
-    public Tool currentTool = Tool.Pencil;
+    public Tool currentTool = Tool.Eraser;
 
     public NamedColor selectedNamedColor;
 
@@ -16,12 +16,27 @@ public class UIManager : MonoBehaviour
         currentTool = (Tool)toolId;
     }
 
+
+    private void Start()
+    {
+        
+    }
+
     public void UseToolOnTile(TileSlot tile)
     {
         if (currentTool == Tool.Pencil)
+        {
+            
             tile.AddColor(selectedNamedColor);
-        else
+        }
+        else if (currentTool == Tool.Eraser)
+        {
+            
             tile.EraseColor();
+        }
+        
+
+        
     }
 }
 
