@@ -230,7 +230,7 @@ public class RopeController : MonoBehaviour
 
     void RopeThrow()
     {
-        Debug.Log("Hit!");
+        
         
         
         lineRenderer.enabled = false; // close own line renderer
@@ -424,7 +424,7 @@ public class RopeController : MonoBehaviour
     private void TryDetermineRopeMode()
     {
         // daZhong = when curve rope reach the hit point
-        if (grappleRope.daZhong == true && gotHold == true && grappleRope.enabled == true) // Hold
+        if (gotHold == true && grappleRope.enabled == true) // Hold
         {
             _holdBefore = true;
 

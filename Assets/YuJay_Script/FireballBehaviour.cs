@@ -49,7 +49,7 @@ public class FireballBehaviour : MonoBehaviour
             
             
             
-            Destroy(gameObject);
+            GetComponent<Health>().TakeDamage(1000);
             
             canEndDetection = true;
         }
