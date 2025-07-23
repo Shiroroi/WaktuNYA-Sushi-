@@ -14,7 +14,7 @@ public class UIController : MonoBehaviour
 
     public GameObject startPanel;
 
-    public Button closeStartPanelButton;
+    
 
     private bool isPauseOpen = false;
     private bool isJournalOpen = false;
@@ -38,13 +38,9 @@ public class UIController : MonoBehaviour
     void Start()
     {
         
-        Time.timeScale = 0f;
+        
 
-        // Add a listener to the close button
-        if (closeStartPanelButton != null)
-        {
-            closeStartPanelButton.onClick.AddListener(OnCloseAnnouncementButtonClicked);
-        }
+        
     }
 
     public void TogglePause()
