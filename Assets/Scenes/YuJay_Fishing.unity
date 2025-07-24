@@ -4388,6 +4388,10 @@ PrefabInstance:
       value: 7.72
       objectReference: {fileID: 0}
     - target: {fileID: 445580089040024614, guid: 7571c5c26a8ab0a47a4147945023d02f, type: 3}
+      propertyPath: stationaryAdjustSpeed
+      value: 25.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 445580089040024614, guid: 7571c5c26a8ab0a47a4147945023d02f, type: 3}
       propertyPath: fisihingCameraController
       value: 
       objectReference: {fileID: 1671260851}
