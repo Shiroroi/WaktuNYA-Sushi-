@@ -1,12 +1,14 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     public Item item;
     public Text countText;
+    public GameObject itemName;
 
 
     [Header("UI")]
@@ -19,6 +21,13 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         item = newItem;
         image.sprite = newItem.image;
         RefreshCount();
+        
+        string name = newItem.name;
+        if (!string.IsNullOrEmpty(name))
+        {
+            name = char.ToUpper(name[0]) + name.Substring(1);
+        }
+        itemName.GetComponent<TMP_Text>().text = name;
     }
 
     public void RefreshCount()
@@ -45,5 +54,15 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         image.raycastTarget = true;
         transform.SetParent(parentAfterDrag);
+    }
+    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        itemName.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        itemName.SetActive(false);
     }
 }

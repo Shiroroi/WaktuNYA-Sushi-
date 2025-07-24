@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventoryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventoryItem.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +32,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "yujay-making-inventory-text-and-camera-shake",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Unity.exe" />
@@ -133,6 +133,7 @@
       <workItem from="1753108932757" duration="2978000" />
       <workItem from="1753151565653" duration="5482000" />
       <workItem from="1753164975866" duration="3400000" />
+      <workItem from="1753346620607" duration="2180000" />
     </task>
     <servers />
   </component>
