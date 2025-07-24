@@ -18,8 +18,10 @@ public class FishingHookBehaviour : MonoBehaviour
     [Range(0.5f,0.9f)] public float cameraGoDownY = 0.7f;
     [Range(0.5f, 0f)] public float cameraGoUpY = 0.3f;
 
+    [Range(.1f,10f)] public float goUpAdjustSpeed = 1f;
+    [Range(1f,10f)] public float goDownAdjustSpeed = 1f;
 
-
+ 
 
     public List<Collider2D> _myFishesCollider = new List<Collider2D>();
     public List<SpriteRenderer> _myFishesSprite = new List<SpriteRenderer>();
@@ -53,12 +55,12 @@ public class FishingHookBehaviour : MonoBehaviour
 
             case FishingCameraControler.CameraMotion.goDown:
                 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, cameraGoDownY, 0f)).y);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, Mathf.MoveTowards(Camera.main.WorldToViewportPoint(new Vector3(0f,transform.position.y,0f)).y,cameraGoDownY,goDownAdjustSpeed * Time.deltaTime ), 0f)).y);
                 break;
 
             case FishingCameraControler.CameraMotion.goUp:
                 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, cameraGoUpY, 0f)).y);
+                transform.position = new Vector2(mousePosition.x, Camera.main.ViewportToWorldPoint(new Vector3(0f, Mathf.MoveTowards(Camera.main.WorldToViewportPoint(new Vector3(0f,transform.position.y,0f)).y,cameraGoUpY,goUpAdjustSpeed * Time.deltaTime ), 0f)).y);
                 break;
         }
 
