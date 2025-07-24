@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingHookBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingHookBehaviour.cs" afterDir="false" />
-    </list>
+    <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +129,7 @@
       <workItem from="1753108932757" duration="2978000" />
       <workItem from="1753151565653" duration="5482000" />
       <workItem from="1753164975866" duration="3400000" />
-      <workItem from="1753346620607" duration="5686000" />
+      <workItem from="1753346620607" duration="6254000" />
     </task>
     <servers />
   </component>
