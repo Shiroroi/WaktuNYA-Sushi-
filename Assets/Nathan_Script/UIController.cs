@@ -7,14 +7,20 @@ public class UIController : MonoBehaviour
     public GameObject pausePanel;
     public GameObject balatoPanel;
     public GameObject recipePanel;
+    public GameObject inventoryPanel;
 
     public Transform inventoryTransform;
     public Transform inventoryOriginalParent;
     public Transform inventoryCraftingParent;
 
-    public GameObject startPanel;
+    public DOTweenUIAnimator pausePanelAnimator;
+    public DOTweenUIAnimator balatoPanelAnimator;
+    public DOTweenUIAnimator recipePanelAnimator;
+    public DOTweenUIAnimator inventoryPanelAnimator;
 
-    
+
+
+
 
     private bool isPauseOpen = false;
     private bool isJournalOpen = false;
@@ -48,6 +54,7 @@ public class UIController : MonoBehaviour
         //isPauseOpen = !isPauseOpen;
         //if(this !=null)
         pausePanel.SetActive(true);
+        pausePanelAnimator.OpenUI();
 
         // Optional: close journal if open
         //if (isPauseOpen && isJournalOpen)
@@ -61,6 +68,7 @@ public class UIController : MonoBehaviour
     {
         //isJournalOpen = !isJournalOpen;
         balatoPanel.SetActive(true);
+        balatoPanelAnimator.OpenUI();
 
         //if (isJournalOpen && isPauseOpen)
         //{
@@ -72,6 +80,8 @@ public class UIController : MonoBehaviour
     public void ToggleRecipe()
     {
         recipePanel.SetActive(true);
+        recipePanelAnimator.OpenUI();
+
 
         //if (isJournalOpen && isPauseOpen)
         //{
@@ -81,6 +91,12 @@ public class UIController : MonoBehaviour
         //    isJournalOpen = false;
         //}
     }
+
+    public void ToggleInventory()
+    {
+        inventoryPanel.SetActive(true);
+        inventoryPanelAnimator.OpenUI();
+    }    
 
     private void Update()
     {
@@ -125,15 +141,8 @@ public class UIController : MonoBehaviour
         recipePanel.SetActive(false);
     }
 
-    public void OnCloseAnnouncementButtonClicked()
+    public void CloseInventoryPanel()
     {
-        Debug.Log("Announcement panel closed.");
-
-        if (startPanel != null)
-        {
-            startPanel.SetActive(false); 
-        }
-
-        Time.timeScale = 1f;
+        inventoryPanel.SetActive(false);
     }
 }
