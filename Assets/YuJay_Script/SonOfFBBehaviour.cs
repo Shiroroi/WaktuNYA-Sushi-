@@ -20,6 +20,12 @@ public class SonOfFBBehaviour : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("SonOfFireball"))
             return;
         
+        if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+            return;
+
+        if (other.gameObject.tag == "Vertical wall")
+            return;
+        
         Destroy(gameObject);
     }   
 }

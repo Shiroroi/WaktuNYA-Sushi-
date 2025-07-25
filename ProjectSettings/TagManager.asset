@@ -19,6 +19,8 @@ TagManager:
   - npc1
   - npc2
   - npc3
+  - sonOfFB
+  - Vertical wall
   layers:
   - Default
   - TransparentFX

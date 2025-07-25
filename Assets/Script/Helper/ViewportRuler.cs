@@ -75,7 +75,7 @@ public class ViewportRuler : MonoBehaviour
         // 也顺便重置一下这个标志位，确保状态干净
         HasDirectionReversed = false; 
 
-        Debug.Log("ViewportRuler state has been reset for a new swipe.");
+        
     }
     
     private void CalculateZone()

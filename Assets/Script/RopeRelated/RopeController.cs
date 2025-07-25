@@ -287,7 +287,7 @@ public class RopeController : MonoBehaviour
         
         if (shouldReset == true)
         {
-            Debug.Log("previous zone = current zone activate");
+            
             _viewportRuler.ResetForNewSwipe();
             shouldReset = false;
 
@@ -346,6 +346,11 @@ public class RopeController : MonoBehaviour
         if (gotHold == true)
             return;
 
+        
+        if (_hitInformation.collider.GetComponent<FireballBehaviour>() != null)
+        {
+            _hitInformation.collider.GetComponent<FireballBehaviour>().canEndDetection = false;
+        }
         
         if (m_playerController.enabled == false) 
         {
