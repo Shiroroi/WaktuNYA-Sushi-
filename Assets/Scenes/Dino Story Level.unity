@@ -809,14 +809,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683938812}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 962a0f67ea2fc5d4b9004449b42a8509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   vcam: {fileID: 1289768315}
-  targetOffset: {x: 0, y: 1, z: -10}
-  transitionSpeed: 1.5
+  targetOffset: {x: 5.75, y: 1, z: -10}
+  transitionSpeed: 3.5
 --- !u!61 &683938816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2328,7 +2328,7 @@ GameObject:
   - component: {fileID: 1593406341}
   - component: {fileID: 1593406340}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2398,7 +2398,7 @@ Transform:
   m_GameObject: {fileID: 1593406339}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.21, y: 1.74, z: 0}
+  m_LocalPosition: {x: 30.41, y: 1.74, z: 0}
   m_LocalScale: {x: 4.3582, y: 3.7229, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3056,7 +3056,7 @@ PrefabInstance:
       objectReference: {fileID: 7474030233545934648, guid: 356b067639c7895469262c0243cf460b, type: 3}
     - target: {fileID: 2873879453012038574, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.48
+      value: 26.68
       objectReference: {fileID: 0}
     - target: {fileID: 2873879453012038574, guid: ccff2d3f90ad35147ae078ac04947253, type: 3}
       propertyPath: m_LocalPosition.y
