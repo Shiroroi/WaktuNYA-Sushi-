@@ -8,6 +8,7 @@ public class TutorialManager : MonoBehaviour
     public string tutorialPlayerPrefKey = "HasShownDinoGameTutorial"; // Example key for this mini-game
     public Button closeTutorialButton;
 
+
     void Start()
     {
         if (PlayerPrefs.GetInt(tutorialPlayerPrefKey, 0) == 0)
@@ -76,5 +77,19 @@ public class TutorialManager : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
+    }
+
+    public void ToggleTutorial()
+    {
+        tutorialPanel.SetActive(true);
+        if (Time.timeScale == 1f)
+        {
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void CloseTutorialPanel()
+    {
+        tutorialPanel.SetActive(false);
     }
 }

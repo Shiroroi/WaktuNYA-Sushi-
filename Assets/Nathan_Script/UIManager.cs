@@ -23,5 +23,7 @@ public class UIManager : MonoBehaviour
         else
             tile.EraseColor();
     }
+    
+
 }
 
