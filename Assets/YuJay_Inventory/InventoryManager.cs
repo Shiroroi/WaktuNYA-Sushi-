@@ -35,18 +35,19 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
-        for (int i = 1; i <= 6; ++i)
-        {
-            AddItem("rice");
-        }
-        AddItem("coconutPufferfish");
-        AddItem("coconutPufferfish");
-        AddItem("coconutPufferfish");
+        
+        AddItem("rice");
+        AddItem("rice");
+        AddItem("rice");
+        AddItem("rice");
+        AddItem("rice");
+        AddItem("rice");
+        
+        AddItem("tBoneSteak");
+        AddItem("tBoneSteak");
         
         AddItem("tamagoyaki");
         AddItem("tamagoyaki");
-        AddItem("tamagoyaki");
-        
         
     }
 
@@ -139,6 +140,29 @@ public class InventoryManager : MonoBehaviour
             return;
         }
         
+    }
+    
+    public void UseItemByName(string itemName)
+    {
+        // 遍历所有的物品槽
+        foreach (InventorySlot slot in inventorySlots)
+        {
+            InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+
+            // 检查这个槽里是否有物品，并且物品的名字是否是我们想要的
+            if (itemInSlot != null && itemInSlot.item.name == itemName)
+            {
+                // 找到了！调用现有的消耗逻辑
+                UseSelectedItem(slot); 
+                
+                Debug.Log("Use selected item with name");
+                // 消耗一个后就退出，防止一次消耗多个
+                return; 
+            }
+        }
+        
+        // 如果循环走完了还没找到
+        Debug.LogWarning("在背包中找不到名为 '" + itemName + "' 的物品。");
     }
 
     

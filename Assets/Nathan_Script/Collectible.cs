@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    private bool canBeCollected = false;
-    private bool playerInRange = false;
+    public bool canBeCollected = false;
+    public bool playerInRange = false;
     private SpriteRenderer sr;
 
     public string itemName;
+    public bool isRock = false;
+    
+    
 
     void Start()
     {
@@ -15,6 +18,13 @@ public class Collectible : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (isRock == true)
+        {
+            canBeCollected = true;
+            return;
+        }
+            
+        
         if (collision.collider.CompareTag("Ground") && !canBeCollected)
         {
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -34,7 +44,6 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = true;
-            
         }
     }
 
@@ -51,6 +60,7 @@ public class Collectible : MonoBehaviour
         if (canBeCollected && playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             ScoreManager scoreManager = FindFirstObjectByType<ScoreManager>();
+            
             if (scoreManager != null)
             {
                 AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(itemName);
@@ -58,7 +68,13 @@ public class Collectible : MonoBehaviour
                 scoreManager.AddScore(1);
             }
 
+            if (isRock == true)
+            {
+                SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
+            }
+
             Destroy(gameObject);
+            Debug.Log("Collectible added");
         }
     }
 

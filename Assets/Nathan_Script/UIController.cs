@@ -119,7 +119,6 @@ public class UIController : MonoBehaviour
     public void OpenCraftingMenu()
     {
         inventoryTransform.SetParent(inventoryCraftingParent,false);
-        
     }
     public void CloseCraftingMenu()
     {

@@ -11,7 +11,10 @@ public class Dialogue_menu : MonoBehaviour
 
     [Header("Core Components")]
     public GameObject window;         
-    public TMP_Text dialogueText;     
+    public TMP_Text dialogueText;
+    public Button toDinoButton;
+    public Button toFishingButton;
+    public Button toCyberButton;
 
     [Header("Dialogue Content")]
     public bool canContinue;    
@@ -148,8 +151,48 @@ public class Dialogue_menu : MonoBehaviour
 
         if (index < dialogues.Count - 1)
         {
+            
+
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("{"))
+            {
+                
+                if (gameObject.CompareTag("npc1"))
+                {
+                    
+                    toDinoButton.onClick.RemoveAllListeners();
+
+                    toDinoButton.onClick.AddListener(() => {toDinoButton.GetComponent<ChangeToNewScene>().ChangeSceneToDinoStory(); });
+                }
+                else if (gameObject.CompareTag("npc2"))
+                {
+                    
+                }
+                else if (gameObject.CompareTag("npc3"))
+                {
+                    
+                }
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("}"))
+            {
+                if (gameObject.CompareTag("npc1"))
+                {
+                    toDinoButton.onClick.RemoveAllListeners();
+                    toDinoButton.onClick.AddListener(() => {toDinoButton.GetComponent<ChangeToNewScene>().ChangeSceneToDino(); });
+                    InventoryManager.instance.UseItemByName("rock");
+                }
+                else if (gameObject.CompareTag("npc2"))
+                {
+                    
+                }
+                else if (gameObject.CompareTag("npc3"))
+                {
+                    
+                }
+            }
+            
             // i want to stop, but got condition
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";"))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith(";") ))
             {
                 if (stopBefore == true && canContinue == true)
                 {
@@ -162,7 +205,6 @@ public class Dialogue_menu : MonoBehaviour
                     window.SetActive(false);
                     return;
                 }
-
             }
         }
         
@@ -263,7 +305,8 @@ public class Dialogue_menu : MonoBehaviour
     private IEnumerator Writing(string currentDialogue)
     {
         currentDialogue = currentDialogue.Replace(";", "");
-        
+        currentDialogue = currentDialogue.Replace("{", "");
+        currentDialogue = currentDialogue.Replace("}", "");
         isWriting = true;
         dialogueText.text = "";
 

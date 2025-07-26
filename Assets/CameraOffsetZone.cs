@@ -8,7 +8,7 @@ public class CameraOffsetZone : MonoBehaviour
     public float transitionSpeed = 2f;
 
     private CinemachineFollow followComponent;
-    private bool transitioning = false;
+    // private bool transitioning = false;
 
     private void Start()
     {

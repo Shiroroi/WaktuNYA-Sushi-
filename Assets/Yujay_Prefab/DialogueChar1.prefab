@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 6921581727298191966}
   m_Layer: 0
   m_Name: DialogueChar1
-  m_TagString: Untagged
+  m_TagString: npc1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -392,9 +392,97 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   window: {fileID: 6462026533409736007}
   dialogueText: {fileID: 7649335877925650226}
+  toDinoButton: {fileID: 0}
+  toFishingButton: {fileID: 0}
+  toCyberButton: {fileID: 0}
+  canContinue: 0
   dialogues:
-  - Hello!
-  - I'm Character 1. I've come from the old times.
-  - awoo awoo
-  allPossibleDialogue: []
+  - ...
+  whenEndPossibleDialogueName_1: "Hello\u2026..?"
+  whenEndPossibleDialogueName_2: "\u2026"
+  allPossibleDialogue:
+  - dialogueName: "\u2026"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - ...
+    whenEndPossibleDialogueName_1: "Hello\u2026..?"
+    whenEndPossibleDialogueName_2: "\u2026"
+  - dialogueName: "Hello\u2026..?"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - "hungry\u2026."
+    - "sad\u2026."
+    - Bob wants Sushi!!!
+    whenEndPossibleDialogueName_1: Ok Bob, what sushi do you want?
+    whenEndPossibleDialogueName_2: '"What kind of sushi are you in the mood for Bob?"'
+  - dialogueName: "Sorry bob, i\u2019m quite busy\u2026."
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - "Bob sad\u2026."
+    - ....
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  - dialogueName: Ok Bob, what sushi do you want?
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Egg (font color yellow) and MEAT!;
+    - nom nom nom nom nom
+    - "Bob sad\u2026."
+    - "Dino steal bob\u2019s family!!!"
+    - 'Kitty help bob? '
+    whenEndPossibleDialogueName_1: "I\u2019ll see what I can do"
+    whenEndPossibleDialogueName_2: "Sorry bob, i\u2019m quite busy\u2026."
+  - dialogueName: '"What kind of sushi are you in the mood for Bob?"'
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Egg (font color yellow) and MEAT!;
+    - nom nom nom nom nom
+    - "Bob sad\u2026."
+    - "Dino steal bob\u2019s family!!!"
+    - 'Kitty help bob? '
+    whenEndPossibleDialogueName_1: "I\u2019ll see what I can do"
+    whenEndPossibleDialogueName_2: "Sorry bob, i\u2019m quite busy\u2026."
+  - dialogueName: "I\u2019ll see what I can do"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - ....{
+    - hey}
+    whenEndPossibleDialogueName_1: "This Rock is all I\u2019ve found Bob\u2026"
+    whenEndPossibleDialogueName_2: "I didn\u2019t see anyone. Only these rocks\u2026"
+  - dialogueName: "This Rock is all I\u2019ve found Bob\u2026"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Rocks? *angry face*
+    - "NO! This Bob\u2019s Family!! *happy face*"
+    whenEndPossibleDialogueName_1: "Oh yeah sure\u2026.That\u2019s your family."
+    whenEndPossibleDialogueName_2: No Bob, those are just rocks.
+  - dialogueName: "I didn\u2019t see anyone. Only these rocks\u2026"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Rocks? *angry face*
+    - "NO! This Bob\u2019s Family!! *happy face*"
+    whenEndPossibleDialogueName_1: "Oh yeah sure\u2026.That\u2019s your family."
+    whenEndPossibleDialogueName_2: No Bob, those are just rocks.
+  - dialogueName: "Oh yeah sure\u2026.That\u2019s your family."
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - "Yes! Bob loves Bob\u2019s family!"
+    - Thank you Kitty!
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  - dialogueName: No Bob, those are just rocks.
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - NO! Dumb kitty!
+    - "This Bob\u2019s Family!"
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  o_whenEndPossibleDialogueName_1: 
+  o_whenEndPossibleDialogueName_2: 
+  o_listSize: 0
   writingSpeed: 0.01
+  playerReactPanel: {fileID: 0}
+  firstChoiceButton: {fileID: 0}
+  secondChoiceButton: {fileID: 0}
+  stopBefore: 0
+  pauseWhenEnd: 0

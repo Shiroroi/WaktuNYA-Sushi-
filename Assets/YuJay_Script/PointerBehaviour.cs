@@ -132,10 +132,7 @@ public class PointerBehaviour : MonoBehaviour
                     {
                         Debug.Log(s.name + " is created");
                         
-                        foreach (Dialogue_menu m in dialogue_menus)
-                        {
-                            m.canContinue = true;
-                        }
+                        CanContinueToTrue();
                         
                         foundMatch = true;
                         break;
@@ -155,6 +152,14 @@ public class PointerBehaviour : MonoBehaviour
         nowCheck = !nowCheck;
         
         
+    }
+
+    public void CanContinueToTrue()
+    {
+        foreach (Dialogue_menu m in dialogue_menus)
+        {
+            m.canContinue = true;
+        }
     }
 }
     
