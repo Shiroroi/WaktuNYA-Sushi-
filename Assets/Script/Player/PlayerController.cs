@@ -222,6 +222,12 @@ public class PlayerController : MonoBehaviour
             _jumpCount = _maxJumps;
            
         }
+        if (collision.gameObject.CompareTag("Vertical wall"))
+        {
+            
+            _jumpCount = _maxJumps;
+
+        }
 
     }
 
