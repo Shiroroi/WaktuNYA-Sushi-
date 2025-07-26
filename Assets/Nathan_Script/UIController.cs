@@ -16,7 +16,7 @@ public class UIController : MonoBehaviour
     public DOTweenUIAnimator pausePanelAnimator;
     public DOTweenUIAnimator balatoPanelAnimator;
     public DOTweenUIAnimator recipePanelAnimator;
-    public DOTweenUIAnimator inventoryPanelAnimator;
+   // public DOTweenUIAnimator inventoryPanelAnimator;
 
 
 
@@ -95,7 +95,7 @@ public class UIController : MonoBehaviour
     public void ToggleInventory()
     {
         inventoryPanel.SetActive(true);
-        inventoryPanelAnimator.OpenUI();
+        //inventoryPanelAnimator.OpenUI();
     }    
 
     private void Update()
