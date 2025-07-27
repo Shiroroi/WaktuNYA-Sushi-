@@ -6,18 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraOffsetZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraOffsetZone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/UIController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +137,7 @@
       <workItem from="1753346620607" duration="6254000" />
       <workItem from="1753438735921" duration="2016000" />
       <workItem from="1753541071691" duration="5513000" />
+      <workItem from="1753582078915" duration="3482000" />
     </task>
     <servers />
   </component>

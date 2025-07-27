@@ -45,7 +45,9 @@ public class InventoryManager : MonoBehaviour
         
         AddItem("tBoneSteak");
         AddItem("tBoneSteak");
+        AddItem("tBoneSteak");
         
+        AddItem("tamagoyaki");
         AddItem("tamagoyaki");
         AddItem("tamagoyaki");
         

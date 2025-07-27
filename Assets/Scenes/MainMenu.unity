@@ -2293,7 +2293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &646844778
 Transform:
   m_ObjectHideFlags: 0
@@ -3520,7 +3520,7 @@ MonoBehaviour:
   moveSpeed: 500
   nowCheck: 0
   myCheckSize: {x: 32.3, y: 110}
-  suces: 0
+  contain: 0
   canCraft: 0
   CraftBlock1: {fileID: 1768904841}
   CraftBlock2: {fileID: 1397916721}
@@ -3905,7 +3905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1327638109
 Transform:
   m_ObjectHideFlags: 0

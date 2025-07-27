@@ -19,7 +19,7 @@ public class PointerBehaviour : MonoBehaviour
 
     [HideInInspector]public bool nowCheck;
     public Vector2 myCheckSize;
-    [HideInInspector] public bool suces;
+    [HideInInspector] public bool contain;
 
     public bool canCraft;
 
@@ -29,7 +29,9 @@ public class PointerBehaviour : MonoBehaviour
 
     public Sushi[] sushi;
     
-    public Dialogue_menu[]  dialogue_menus; 
+    public Dialogue_menu[]  dialogue_menus;
+
+    
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,10 +39,7 @@ public class PointerBehaviour : MonoBehaviour
     {
         leftBound = pointA.position;
         rightBound = pointB.position;
-        
         target = leftBound;
-        
-        
         canCraft = false;
     }
 
@@ -52,31 +51,26 @@ public class PointerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         PingPongAndCheck();
     }
 
     private void PingPongAndCheck()
     {
         Collider2D[] checkToWhatCollier2D = Physics2D.OverlapBoxAll(transform.position, myCheckSize, 0f);
-        suces = checkToWhatCollier2D.Contains(goodAreaCollider);
+        contain = checkToWhatCollier2D.Contains(goodAreaCollider);
         
         
-        if (nowCheck == true && suces == false)
+        if (nowCheck == true && contain == false)
         {
-            canCraft = false;
             nowCheck = false;
-            
         }
-        else if (nowCheck == true && suces == true)  
+        else if (nowCheck == true && contain == true && canCraft == true)
         {
-            canCraft = true;
-            
             return;
         }
-        else
-        {
-            canCraft = false;
-        }
+        
         
         transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
 
@@ -89,67 +83,56 @@ public class PointerBehaviour : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position, myCheckSize);
 
-    }
-
-    public void CheckAndWaitFirst()
-    {
-        nowCheck = true;
-        StartCoroutine(WaitOneFramee());
-    }
-    
-    public IEnumerator WaitOneFramee()
+    public void CheckCanCraft()
     {
         
-        yield return null;
-        CheckFunction();
-    }
-    public void CheckFunction()
-    {
         
-        if (suces == true)
+        string material1 = CraftBlock1.GetComponentInChildren<InventoryItem>()?.item.name;
+        string material2 = CraftBlock2.GetComponentInChildren<InventoryItem>()?.item.name;
+        string material3 = CraftBlock3.GetComponentInChildren<InventoryItem>()?.item.name;
+        
+        if (material1 == "rice" || material2 == "rice" || material3 == "rice")
         {
             
+            foreach (Sushi s in sushi)
+            {
+                if ((s.m1 == material1 || s.m1 == material2 || s.m1 == material3) &&
+                    (s.m2 == material1 || s.m2 == material2 || s.m2 == material3))
+                {
+                    canCraft = true;
+                }
+                else
+                {
+                    canCraft = false;
+                }
+ 
+            }
+        }
+        else
+        {
+            canCraft = false;
+        }
+        
+    }
+    
+    public void CheckFunction()
+    {
+        CheckCanCraft();
+        
+        nowCheck = !nowCheck;
+        
+        if (contain == true && canCraft == true && nowCheck)
+        {
             
             InventoryManager.instance.UseSelectedItem(CraftBlock1);
             InventoryManager.instance.UseSelectedItem(CraftBlock2);
             InventoryManager.instance.UseSelectedItem(CraftBlock3);
-
-            if (CraftBlock3.GetComponentInChildren<InventoryItem>()?.item.name == "rice")
-            {
-                string material1 = CraftBlock1.GetComponentInChildren<InventoryItem>()?.item.name;
-                string material2 = CraftBlock2.GetComponentInChildren<InventoryItem>()?.item.name;
-
-                bool foundMatch = false;
-                
-                foreach (Sushi s in sushi)
-                {
-                    if ((s.m1 == material1 && s.m2 == material2) || (s.m1 == material2 && s.m2 == material1))
-                    {
-                        Debug.Log(s.name + " is created");
-                        
-                        CanContinueToTrue();
-                        
-                        foundMatch = true;
-                        break;
-                    }
-                }
-                
-                if(foundMatch == false)
-                    Debug.Log("No this recipe");
-                
-            }
-                
-
-
             
+            Debug.Log("Sushi has been created");
+            CanContinueToTrue();
         }
         
-        nowCheck = !nowCheck;
         
         
     }
@@ -160,6 +143,13 @@ public class PointerBehaviour : MonoBehaviour
         {
             m.canContinue = true;
         }
+    }
+    
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, myCheckSize);
+
     }
 }
     
