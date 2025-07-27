@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using Unity.Cinemachine;
+
 
 public class Dialogue_menu : MonoBehaviour
 {
@@ -12,9 +14,12 @@ public class Dialogue_menu : MonoBehaviour
     [Header("Core Components")]
     public GameObject window;         
     public TMP_Text dialogueText;
+    public TMP_Text nameText;
+    public string npcName;
     public Button toDinoButton;
     public Button toFishingButton;
     public Button toCyberButton;
+    public CinemachineImpulseSource impulseSource;
 
     [Header("Dialogue Content")]
     public bool canContinue;    
@@ -50,6 +55,7 @@ public class Dialogue_menu : MonoBehaviour
         canContinue = true;
         o_whenEndPossibleDialogueName_1 = whenEndPossibleDialogueName_1;
         o_whenEndPossibleDialogueName_2 = whenEndPossibleDialogueName_2;
+        
         
         o_listSize = dialogues.Count;
         pauseWhenEnd = true;
@@ -191,6 +197,16 @@ public class Dialogue_menu : MonoBehaviour
                 }
             }
             
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("="))
+            {
+                nameText.text = npcName;
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("-"))
+            {
+                impulseSource.GenerateImpulse();
+            }
+            
             // i want to stop, but got condition
             if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith(";") ))
             {
@@ -307,6 +323,9 @@ public class Dialogue_menu : MonoBehaviour
         currentDialogue = currentDialogue.Replace(";", "");
         currentDialogue = currentDialogue.Replace("{", "");
         currentDialogue = currentDialogue.Replace("}", "");
+        currentDialogue = currentDialogue.Replace("=", "");
+        currentDialogue = currentDialogue.Replace("-", "");
+        
         isWriting = true;
         dialogueText.text = "";
 

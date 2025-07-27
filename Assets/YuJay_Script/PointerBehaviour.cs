@@ -31,6 +31,8 @@ public class PointerBehaviour : MonoBehaviour
     
     public Dialogue_menu[]  dialogue_menus;
 
+    public bool haveStartCoroutine;
+
     
     
     
@@ -118,8 +120,10 @@ public class PointerBehaviour : MonoBehaviour
     
     public void CheckFunction()
     {
-        CheckCanCraft();
+        // if(haveStartCoroutine == false)
+        //     StartCoroutine(GoAutoOnceLater());
         
+        CheckCanCraft();
         nowCheck = !nowCheck;
         
         if (contain == true && canCraft == true && nowCheck)
@@ -133,10 +137,36 @@ public class PointerBehaviour : MonoBehaviour
             CanContinueToTrue();
         }
         
-        
-        
     }
-
+    
+    // public void CheckFunction2()
+    // {
+    //     
+    //     
+    //     CheckCanCraft();
+    //     nowCheck = !nowCheck;
+    //     
+    //     if (contain == true && canCraft == true && nowCheck)
+    //     {
+    //         
+    //         InventoryManager.instance.UseSelectedItem(CraftBlock1);
+    //         InventoryManager.instance.UseSelectedItem(CraftBlock2);
+    //         InventoryManager.instance.UseSelectedItem(CraftBlock3);
+    //         
+    //         Debug.Log("Sushi has been created");
+    //         CanContinueToTrue();
+    //     }
+    //     
+    // }
+    //
+    // public IEnumerator GoAutoOnceLater()
+    // {
+    //     haveStartCoroutine = true;
+    //     yield return new WaitForSeconds(2f);
+    //     CheckFunction2();
+    //     haveStartCoroutine = false;
+    // }
+    
     public void CanContinueToTrue()
     {
         foreach (Dialogue_menu m in dialogue_menus)
