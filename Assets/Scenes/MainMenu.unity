@@ -5609,7 +5609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1456216149
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6858,6 +6858,58 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 476893851}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].dialogueName
+      value: Ok Bob, what sushi do you want?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[3].dialogueName
+      value: '"What kind of sushi are you in the mood for Bob?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogueName
+      value: "I\u2019ll see what I can do"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].dialogueName
+      value: "Sorry bob, i\u2019m quite busy\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_1
+      value: "I\u2019ll see what I can do"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_2
+      value: "Sorry bob, i\u2019m quite busy\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].whenEndPossibleDialogueName_1
+      value: "This Rock is all I\u2019ve found Bob\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].whenEndPossibleDialogueName_2
+      value: "I didn\u2019t see anyone. Only these rocks\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].whenEndPossibleDialogueName_1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].whenEndPossibleDialogueName_2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -6875,11 +6927,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: "sad\u2026.-"
+      value: "sad\u2026.="
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
       value: Bob wants Sushi!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: Bob wants Sushi!!!-
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Egg (font color yellow) and MEAT!;
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: nom nom nom nom nom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "Bob sad\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "Dino steal bob\u2019s family!!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: 'Kitty help bob? '
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
@@ -6887,19 +6967,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
-      value: =
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
-      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
       value: '{'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
-      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
       value: ...;
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
-      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
       value: Kitty back!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: "Bob sad\u2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: ....
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
@@ -11317,7 +11405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368, y: 0}
+  m_AnchoredPosition: {x: -377, y: 0}
   m_SizeDelta: {x: 300.2833, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5626003584003083974

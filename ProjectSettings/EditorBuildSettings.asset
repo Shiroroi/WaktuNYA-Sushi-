@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/YuJay_Fishing.unity
     guid: df06bec295fef3b48b4d4f534ad25f0e
   - enabled: 1
-    path: Assets/Scenes/CyberpunkLevel.unity
+    path: Assets/Scenes/Cyberpunk Level.unity
     guid: 86812c9802955374a82902cb3d417849
   - enabled: 1
     path: Assets/Scenes/Dino Level.unity

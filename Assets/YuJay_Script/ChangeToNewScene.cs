@@ -12,7 +12,7 @@ public class ChangeToNewScene : MonoBehaviour
         SingletonUICanvas.theStaticCanvas.gameObject.SetActive(false);
         SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.SetActive(false);
         balatoGroup.SetActive(false);
-        SceneManager.LoadScene("CyberpunkLevel");
+        SceneManager.LoadScene("Cyberpunk Level");
 
     }
     public void ChangeSceneToFishing()
