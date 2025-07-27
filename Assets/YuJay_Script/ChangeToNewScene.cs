@@ -49,4 +49,21 @@ public class ChangeToNewScene : MonoBehaviour
         balatoGroup.SetActive(false);
         SceneManager.LoadScene("Dino Story Level");
     }
+    
+    public void ChangeSceneToCyberStory()
+    {
+        SingletonUICanvas.theStaticCanvas.gameObject.SetActive(false);
+        SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.SetActive(false);
+        balatoGroup.SetActive(false);
+        SceneManager.LoadScene("Cyberpunk Story Level");
+    }
+    
+    
+    public void ChangeSceneToFishingStory()
+    {
+        SingletonUICanvas.theStaticCanvas.gameObject.SetActive(false);
+        SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.SetActive(false);
+        balatoGroup.SetActive(false);
+        SceneManager.LoadScene("YuJay_Fishing Story");
+    }
 }

@@ -146,25 +146,25 @@ public class InventoryManager : MonoBehaviour
     
     public void UseItemByName(string itemName)
     {
-        // 遍历所有的物品槽
+        // foreach inventory slot
         foreach (InventorySlot slot in inventorySlots)
         {
             InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
 
-            // 检查这个槽里是否有物品，并且物品的名字是否是我们想要的
+            // cgeck the slot got item and item.name is what we want
             if (itemInSlot != null && itemInSlot.item.name == itemName)
             {
                 // 找到了！调用现有的消耗逻辑
                 UseSelectedItem(slot); 
                 
                 Debug.Log("Use selected item with name");
-                // 消耗一个后就退出，防止一次消耗多个
+                // use one is enough
                 return; 
             }
         }
         
-        // 如果循环走完了还没找到
-        Debug.LogWarning("在背包中找不到名为 '" + itemName + "' 的物品。");
+        // if the loop end still not find
+        Debug.LogWarning("bag no have " + itemName );
     }
 
     

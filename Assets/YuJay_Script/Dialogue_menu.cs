@@ -158,28 +158,43 @@ public class Dialogue_menu : MonoBehaviour
         if (index < dialogues.Count - 1)
         {
             
+            //  comment effect { } = - : ;
+            
+            //  { , after the string start or end with { is being press, will change corressponding level to story mode
+            //  } , when the string that end with } is typing, will immedieately end change the level back to normal mode
+            //  = , after the string start or end with = is being press, will show customer to npc name
+            //  - , after the string start or end with - is being press, will shake the camera
+            //  : , after the string end with : is being press, canContinue will truns into false
+            //  ; , if current string end with ; and canContinue is false but i still press, will just close and open current dialogue until canContinue is true
+            //
+            //  if i say being press means, the dialogue showing current string, and when i try to press to show the next string
+            //  element 0 punya comment will execute after player choosing the option, so use comment that is after pressing only got effect
+            //  not put ; on element 0
+            //  not put comment on the last element in list (not last char in string) except }
 
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("{"))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("{")||dialogues[index].StartsWith("{")))
             {
                 
                 if (gameObject.CompareTag("npc1"))
                 {
-                    
                     toDinoButton.onClick.RemoveAllListeners();
-
                     toDinoButton.onClick.AddListener(() => {toDinoButton.GetComponent<ChangeToNewScene>().ChangeSceneToDinoStory(); });
                 }
                 else if (gameObject.CompareTag("npc2"))
                 {
-                    
+                    toCyberButton.onClick.RemoveAllListeners();
+
+                    toCyberButton.onClick.AddListener(() => {toCyberButton.GetComponent<ChangeToNewScene>().ChangeSceneToCyberStory(); });
                 }
                 else if (gameObject.CompareTag("npc3"))
                 {
-                    
+                    toFishingButton.onClick.RemoveAllListeners();
+
+                    toFishingButton.onClick.AddListener(() => {toFishingButton.GetComponent<ChangeToNewScene>().ChangeSceneToFishingStory(); });
                 }
             }
             
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("}"))
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && dialogues[index+1].EndsWith("}"))
             {
                 if (gameObject.CompareTag("npc1"))
                 {
@@ -189,12 +204,20 @@ public class Dialogue_menu : MonoBehaviour
                 }
                 else if (gameObject.CompareTag("npc2"))
                 {
-                    
+                    toCyberButton.onClick.RemoveAllListeners();
+                    toCyberButton.onClick.AddListener(() => {toCyberButton.GetComponent<ChangeToNewScene>().ChangeSceneToCyber(); });
+                    // InventoryManager.instance.UseItemByName("rock");
                 }
                 else if (gameObject.CompareTag("npc3"))
                 {
-                    
+                    toFishingButton.onClick.RemoveAllListeners();
+                    toFishingButton.onClick.AddListener(() => {toFishingButton.GetComponent<ChangeToNewScene>().ChangeSceneToFishing(); });
                 }
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].StartsWith("="))
+            {
+                nameText.text = npcName;
             }
             
             if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("="))
@@ -202,13 +225,18 @@ public class Dialogue_menu : MonoBehaviour
                 nameText.text = npcName;
             }
             
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("-"))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("-")||dialogues[index].StartsWith("-")))
             {
                 impulseSource.GenerateImpulse();
             }
+
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(":"))
+            {
+                canContinue = false;
+            }
             
             // i want to stop, but got condition
-            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith(";") ))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";") && canContinue == false)
             {
                 if (stopBefore == true && canContinue == true)
                 {
@@ -217,7 +245,6 @@ public class Dialogue_menu : MonoBehaviour
                 else if (stopBefore == false)
                 {
                     stopBefore = true;
-                    canContinue = false;
                     window.SetActive(false);
                     return;
                 }
@@ -226,6 +253,7 @@ public class Dialogue_menu : MonoBehaviour
         
         
         ++ index;
+        
         if (index < dialogues.Count)
         {
             isWriting = true;
@@ -325,15 +353,13 @@ public class Dialogue_menu : MonoBehaviour
         currentDialogue = currentDialogue.Replace("}", "");
         currentDialogue = currentDialogue.Replace("=", "");
         currentDialogue = currentDialogue.Replace("-", "");
+        currentDialogue = currentDialogue.Replace(":", "");
         
         isWriting = true;
         dialogueText.text = "";
-
-       
         
         foreach (char letter in currentDialogue.ToCharArray())
         {
-            
             dialogueText.text += letter;
             yield return new WaitForSeconds(writingSpeed);
         }

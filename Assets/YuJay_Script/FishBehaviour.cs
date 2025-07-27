@@ -14,6 +14,8 @@ public class FishBehaviour : MonoBehaviour
 
     public string isWhichItem_Name;
 
+    public bool isMermaid;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,7 +27,10 @@ public class FishBehaviour : MonoBehaviour
     {
         if (beingTouched == true)
             return;
-    
+
+        if (isMermaid == true)
+            return;
+        
         FlipFish();
 
         if (goLeft == true)
@@ -47,10 +52,14 @@ public class FishBehaviour : MonoBehaviour
     {
         beingTouched = true;
 
-
+        if (isMermaid == true)
+        {
+            SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
+            return;
+        }
+        
         if (isWhichItem_Name != null && isWhichItem_Name!= "") 
         {
-            
             AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(isWhichItem_Name);
         }
         
