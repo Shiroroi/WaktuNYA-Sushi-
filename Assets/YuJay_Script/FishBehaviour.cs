@@ -55,7 +55,7 @@ public class FishBehaviour : MonoBehaviour
         if (isMermaid == true)
         {
             SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
-            return;
+            
         }
         
         if (isWhichItem_Name != null && isWhichItem_Name!= "") 

@@ -21,12 +21,24 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         item = newItem;
         image.sprite = newItem.image;
         RefreshCount();
+
+        string name;
+
+        if (newItem.displayName == null || newItem.displayName == "")
+        {
+            name = newItem.name;
+        }
+        else
+        {
+            name  = newItem.displayName;
+        }
         
-        string name = newItem.name;
+        
         if (!string.IsNullOrEmpty(name))
         {
             name = char.ToUpper(name[0]) + name.Substring(1);
         }
+        
         itemName.GetComponent<TMP_Text>().text = name;
     }
 

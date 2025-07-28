@@ -161,7 +161,10 @@ public class Dialogue_menu : MonoBehaviour
             //  comment effect { } = - : ;
             
             //  { , after the string start or end with { is being press, will change corressponding level to story mode
-            //  } , when the string that end with } is typing, will immedieately end change the level back to normal mode
+            //  } , when the string that start or end with } is typing, will immedieately end change the level back to normal mode and use story item
+                    // the stroy item for dino and fishing level is same. so start or end is not important
+                    // whereas for cyber level, start with } will use pc mouse, end with } will use realmouse, see line 211 and 233
+                    
             //  = , after the string start or end with = is being press, will show customer to npc name
             //  - , after the string start or end with - is being press, will shake the camera
             //  : , after the string end with : is being press, canContinue will truns into false
@@ -194,7 +197,7 @@ public class Dialogue_menu : MonoBehaviour
                 }
             }
             
-            if (string.IsNullOrEmpty(dialogues[index+1]) == false && dialogues[index+1].EndsWith("}"))
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && dialogues[index+1].EndsWith("}") )
             {
                 if (gameObject.CompareTag("npc1"))
                 {
@@ -206,12 +209,35 @@ public class Dialogue_menu : MonoBehaviour
                 {
                     toCyberButton.onClick.RemoveAllListeners();
                     toCyberButton.onClick.AddListener(() => {toCyberButton.GetComponent<ChangeToNewScene>().ChangeSceneToCyber(); });
-                    // InventoryManager.instance.UseItemByName("rock");
+                    InventoryManager.instance.UseItemByName("realMouse");
                 }
                 else if (gameObject.CompareTag("npc3"))
                 {
                     toFishingButton.onClick.RemoveAllListeners();
                     toFishingButton.onClick.AddListener(() => {toFishingButton.GetComponent<ChangeToNewScene>().ChangeSceneToFishing(); });
+                    InventoryManager.instance.UseItemByName("mermaid");
+                }
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && dialogues[index+1].StartsWith("}"))
+            {
+                if (gameObject.CompareTag("npc1"))
+                {
+                    toDinoButton.onClick.RemoveAllListeners();
+                    toDinoButton.onClick.AddListener(() => {toDinoButton.GetComponent<ChangeToNewScene>().ChangeSceneToDino(); });
+                    InventoryManager.instance.UseItemByName("rock");
+                }
+                else if (gameObject.CompareTag("npc2"))
+                {
+                    toCyberButton.onClick.RemoveAllListeners();
+                    toCyberButton.onClick.AddListener(() => {toCyberButton.GetComponent<ChangeToNewScene>().ChangeSceneToCyber(); });
+                    InventoryManager.instance.UseItemByName("pcMouse");
+                }
+                else if (gameObject.CompareTag("npc3"))
+                {
+                    toFishingButton.onClick.RemoveAllListeners();
+                    toFishingButton.onClick.AddListener(() => {toFishingButton.GetComponent<ChangeToNewScene>().ChangeSceneToFishing(); });
+                    InventoryManager.instance.UseItemByName("mermaid");
                 }
             }
             

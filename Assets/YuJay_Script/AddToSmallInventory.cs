@@ -16,8 +16,6 @@ public class AddToSmallInventory : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            
-
         }
         else
         {

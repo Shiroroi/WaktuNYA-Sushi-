@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CyberStroyButtonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CyberStroyButtonEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/rice.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/rice.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +151,7 @@
       <workItem from="1753582078915" duration="8859000" />
       <workItem from="1753632874763" duration="7690000" />
       <workItem from="1753640803224" duration="78000" />
+      <workItem from="1753686884993" duration="3292000" />
     </task>
     <servers />
   </component>

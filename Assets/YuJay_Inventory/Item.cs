@@ -9,5 +9,6 @@ using UnityEngine.Tilemaps;
 public class Item : ScriptableObject
 {
     public Sprite image;
+    public string displayName;
 }
 

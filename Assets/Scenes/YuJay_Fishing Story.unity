@@ -546,7 +546,7 @@ MonoBehaviour:
   fishSpeed: 7.7
   beingTouched: 0
   goLeft: 1
-  isWhichItem_Name: seaweed
+  isWhichItem_Name: mermaid
   isMermaid: 1
 --- !u!58 &336117811
 CircleCollider2D:
@@ -1231,7 +1231,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.48584324}
+  m_Offset: {x: 0.044798136, y: 0.50264263}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1241,7 +1241,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.964666}
+  m_Size: {x: 0.9104037, y: 0.86387026}
   m_EdgeRadius: 0
 --- !u!50 &1069421176
 Rigidbody2D:
@@ -3467,12 +3467,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3381633133621661093, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: itemsToPickUp.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3381633133621661093, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: 'itemsToPickUp.Array.data[2]'
       value: 
       objectReference: {fileID: 11400000, guid: 2574d2efaa1f8c040bf138bc87d2c848, type: 2}
+    - target: {fileID: 3381633133621661093, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: 'itemsToPickUp.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 5a9bf2808bf53804dacb111d566a116f, type: 2}
     - target: {fileID: 4891298683948225102, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

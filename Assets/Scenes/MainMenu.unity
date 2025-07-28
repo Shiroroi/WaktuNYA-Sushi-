@@ -3462,7 +3462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: I'm Character 2! I've come from the future!
+      value: '{I''m Character 2! I''ve come from the future!'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
@@ -3470,7 +3470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: Beep boop bop
+      value: Beep boop bop}
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: whenEndPossibleDialogueName_1
@@ -4202,6 +4202,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59709835ebad9ea488ebc77efe6af497, type: 2}
   - {fileID: 11400000, guid: c734e22c5fbb65c4894760087bafcf58, type: 2}
   - {fileID: 11400000, guid: 4b24348d7eb72434d818564bf27f7eae, type: 2}
+  - {fileID: 11400000, guid: 20cf9b2abf5855641bac6bba14b63c81, type: 2}
+  - {fileID: 11400000, guid: 057a558a781fc5147b1f04c54e839458, type: 2}
+  - {fileID: 11400000, guid: 5a9bf2808bf53804dacb111d566a116f, type: 2}
 --- !u!4 &1016211580
 Transform:
   m_ObjectHideFlags: 0
