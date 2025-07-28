@@ -46,6 +46,10 @@ public class FishingCameraControler : MonoBehaviour
     
     void Update()
     {
+        
+        if (Mathf.Approximately(Time.timeScale, 0f))
+            return;
+        
         // Only when camera motion is stationary, will check if
         if (_currentMotion == CameraMotion.stationary)
         {

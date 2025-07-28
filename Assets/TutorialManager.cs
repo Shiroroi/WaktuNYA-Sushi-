@@ -7,9 +7,12 @@ public class TutorialManager : MonoBehaviour
     public GameObject tutorialPanel;
     public string tutorialPlayerPrefKey = "HasShownDinoGameTutorial"; // Example key for this mini-game
     public Button closeTutorialButton;
+    public GameObject bG;
+
+    
 
 
-    void Start()
+    public void MyStart()
     {
         if (PlayerPrefs.GetInt(tutorialPlayerPrefKey, 0) == 0)
         {
@@ -26,12 +29,14 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
+    
+
     void ShowTutorial()
     {
         if (tutorialPanel != null)
         {
             tutorialPanel.SetActive(true); // Make the panel visible
-
+            bG.SetActive(true);
             // --- IMPORTANT: Pause the game ---
             Time.timeScale = 0f; // Setting timeScale to 0 pauses all time-dependent operations
 
@@ -46,13 +51,13 @@ public class TutorialManager : MonoBehaviour
         if (tutorialPanel != null)
         {
             tutorialPanel.SetActive(false); // Make the panel invisible
-
+            bG.SetActive(false);
             // --- IMPORTANT: Resume the game ---
             Time.timeScale = 1f; // Setting timeScale back to 1 resumes the game
         }
     }
 
-    void OnCloseTutorialButtonClicked()
+    public void OnCloseTutorialButtonClicked()
     {
         HideTutorial();
     }
