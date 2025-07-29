@@ -4504,6 +4504,9 @@ MonoBehaviour:
   - name: Bob sushi
     m1: tamagoyaki
     m2: tBoneSteak
+  - name: Semicolon 3 Sushi
+    m1: nanoCarrot
+    m2: jelloWasabi
   dialogue_menus:
   - {fileID: 641786141}
   - {fileID: 276647019}

@@ -34,7 +34,7 @@ public class TileSlot : MonoBehaviour
     public void EraseColor()
     {
         stack.Clear();
-        tileImage.color = Color.white;
+        tileImage.color = new Color(0, 0, 0, 0.294f);
     }
 
     public Color GetColor()

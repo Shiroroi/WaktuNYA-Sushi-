@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     public void SelectRed() => selectedNamedColor = new NamedColor("Red", Color.red);
     public void SelectYellow() => selectedNamedColor = new NamedColor("Yellow", Color.yellow);
     public void SelectBlue() => selectedNamedColor = new NamedColor("Blue", Color.blue);
+    public void SelectWhite() => selectedNamedColor = new NamedColor("White", Color.white);
+    public void SelectBlack() => selectedNamedColor = new NamedColor("Black", Color.black);
 
     public void SelectTool(int toolId)
     {

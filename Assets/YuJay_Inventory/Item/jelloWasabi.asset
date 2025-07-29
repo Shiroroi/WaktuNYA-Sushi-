@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: jelloWasabi
   m_EditorClassIdentifier: 
-  image: {fileID: -232524532, guid: fbaab84148a3f154fab5b573fdfd7f13, type: 3}
+  image: {fileID: -2464848784007903790, guid: f279ef3ea701ae3439aebaf49d541959, type: 3}
+  displayName: 

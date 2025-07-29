@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: nanoCarrot
   m_EditorClassIdentifier: 
-  image: {fileID: 8936991535378814020, guid: c17d2e7e7fe60c049afdde50e3fe0ffe, type: 3}
+  image: {fileID: -853403248333623800, guid: 3355b65ea7b35b546b2ef438b0e73a5f, type: 3}
+  displayName: 
