@@ -103,6 +103,7 @@ public class PointerBehaviour : MonoBehaviour
                     (s.m2 == material1 || s.m2 == material2 || s.m2 == material3))
                 {
                     canCraft = true;
+                    break;
                 }
                 else
                 {

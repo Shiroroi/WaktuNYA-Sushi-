@@ -2423,7 +2423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: npcName
-      value: Girl
+      value: Chelley
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: nameText
@@ -2462,16 +2462,434 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: Ugh...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: '{I''m Character 3. I''ve come from the modern era.:'
+      value: Another day, another keyboard.
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
-      value: work work work.;
+      value: I swear, my eyeballs are turning into Excel sheets.
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: work work work.}
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: whenEndPossibleDialogueName_1
+      value: "Uhm\u2026 Are you ok miss?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: whenEndPossibleDialogueName_2
+      value: "\u2026Hi?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[0].dialogueName
+      value: "Uhm\u2026 Are you ok miss?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[1].dialogueName
+      value: "\u2026Hi?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].dialogueName
+      value: I can try. What are you craving?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[3].dialogueName
+      value: "I\u2019ll give it a shot. What do you want?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogueName
+      value: "Do you\u2026want to talk about it?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].dialogueName
+      value: "Poetic\u2026Give me the details."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[6].dialogueName
+      value: I'll see what I can do. (Take the bracelet)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[7].dialogueName
+      value: "I\u2019m sorry, I don\u2019t think I can take this bracelet. (Don't
+        take the bracelet)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[0].whenEndPossibleDialogueName_1
+      value: I can try. What are you craving?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[0].whenEndPossibleDialogueName_2
+      value: "I\u2019ll give it a shot. What do you want?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[1].whenEndPossibleDialogueName_1
+      value: I can try. What are you craving?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[1].whenEndPossibleDialogueName_2
+      value: "I\u2019ll give it a shot. What do you want?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_1
+      value: "Do you\u2026want to talk about it?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_2
+      value: "Poetic\u2026Give me the details."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[3].whenEndPossibleDialogueName_1
+      value: "Do you\u2026want to talk about it?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[3].whenEndPossibleDialogueName_2
+      value: "Poetic\u2026Give me the details."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].whenEndPossibleDialogueName_1
+      value: I'll see what I can do. (Take the bracelet)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].whenEndPossibleDialogueName_2
+      value: "I\u2019m sorry, I don\u2019t think I can take this bracelet. (Don't
+        take the bracelet)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].whenEndPossibleDialogueName_1
+      value: I'll see what I can do. (Take the bracelet)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].whenEndPossibleDialogueName_2
+      value: "I\u2019m sorry, I don\u2019t think I can take this bracelet. (Don't
+        take the bracelet)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[6].whenEndPossibleDialogueName_1
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[6].whenEndPossibleDialogueName_2
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[7].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: "Oh\u2014sorry, I didn\u2019t mean to dump that on you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "You\u2019re the chef, right?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "My name\u2019s Chelley. Intern. Tired. Emotionally ruined."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: Do you serve sushi that can fix those symptoms?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Huh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: "Oh\u2014sorry, I didn\u2019t mean to dump that on you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "You\u2019re the chef, right?="
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "My name\u2019s Chelley. Intern. Tired. Emotionally ruined."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: Do you serve sushi that can fix those symptoms?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: ':'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Just gimme some tuna and seaweed.;
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "It\u2019s exactly like the ocean breeze."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "You\u2019re cruel, you know. This tastes like memories."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: I really thought I moved on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: "But maybe some things aren\u2019t meant to be moved on from."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: ':'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Just gimme some tuna and seaweed.;
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "It\u2019s exactly like the ocean breeze."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "You\u2019re cruel, you know. This tastes like memories."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: I really thought I moved on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: "But maybe some things aren\u2019t meant to be moved on from."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: He was a merman.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "\u2026Don\u2019t laugh."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "We met every night. I\u2019d go out and bring him snacks."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: He said the sea was lonely. I said the city was worse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: Then I got reassigned. And he got called back to the deep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: Before he left, he gave me this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[8]'
+      value: "Said if fate allows\u2026 we\u2019ll meet again."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[9]'
+      value: "Hey, Chef\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: He was a merman.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "\u2026Don\u2019t laugh."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "We met every night. I\u2019d go out and bring him snacks."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: He said the sea was lonely. I said the city was worse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: Then I got reassigned. And he got called back to the deep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: Before he left, he gave me this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[8]'
+      value: "Said if fate allows\u2026 we\u2019ll meet again."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[9]'
+      value: "Hey, Chef\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: He was a merman.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: "\u2026Don\u2019t laugh."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "We met every night. I\u2019d go out and bring him snacks."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: He said the sea was lonely. I said the city was worse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: Then I got reassigned. And he got called back to the deep.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: Before he left, he gave me this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: "Said if fate allows\u2026 we\u2019ll meet again."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[8]'
+      value: "Hey, Chef\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[9]'
+      value: I want to give you this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[10]'
+      value: I want to give you this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[11]'
+      value: "He said it worked on \u201Cfate.\u201D I don\u2019t know what that
+        means."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[12]'
+      value: "But if you ever go fishing\u2026 maybe try using it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[13]'
+      value: Just once.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[14]'
+      value: Maybe he'll see it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[10]'
+      value: I want to give you this bracelet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[11]'
+      value: "He said it worked on \u201Cfate.\u201D I don\u2019t know what that
+        means."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[12]'
+      value: "But if you ever go fishing\u2026 maybe try using it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[13]'
+      value: Just once.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[14]'
+      value: Maybe he'll see it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[10]'
+      value: "He said it worked on \u201Cfate.\u201D I don\u2019t know what that
+        means."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[11]'
+      value: "But if you ever go fishing\u2026 maybe try using it."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[12]'
+      value: Just once.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[6].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[13]'
+      value: Maybe he'll see it.
       objectReference: {fileID: 0}
     - target: {fileID: 7119529071298233483, guid: e4d0ff31171561f44a5a554edc45eb86, type: 3}
       propertyPath: m_Name
@@ -3521,7 +3939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: npcName
-      value: Semicolon
+      value: Semicolon 3
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: nameText
@@ -3557,75 +3975,103 @@ PrefabInstance:
       objectReference: {fileID: 476893851}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: dialogues.Array.size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
-      value: Heya!
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: '{I''m Character 2! I''ve come from the future!'
+      value: Smells nice in here.
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
-      value: Beep boop bop
+      value: You're the chef right?=
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: Beep boop bop}
+      value: "Name\u2019s Semicolon 3. Long story."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: 'I used to work security. Now I mostly wander and think about jazz. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[5]'
+      value: "Anyway\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'dialogues.Array.data[6]'
+      value: 'Got anything for this old machine? '
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: whenEndPossibleDialogueName_1
-      value: true
+      value: I always have something for anyone. What are you feeling?
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: whenEndPossibleDialogueName_2
-      value: false
+      value: "I\u2019ve got a few things. What are you in the mood for?"
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[0].dialogueName
-      value: true
+      value: I always have something for anyone. What are you feeling?
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[1].dialogueName
-      value: false
+      value: "I\u2019ve got a few things. What are you in the mood for?"
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[2].dialogueName
-      value: true2
+      value: "Of course. I\u2019ll keep an eye out."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[3].dialogueName
-      value: false2
+      value: "Sorry, I don\u2019t have the time mate."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogueName
+      value: I found this. Thought it might be Mousey. (Give a real mouse)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].dialogueName
+      value: I found this. Thought it might be Mousey. (Give a PC mouse)
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[0].whenEndPossibleDialogueName_1
-      value: true2
+      value: "Of course. I\u2019ll keep an eye out."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[0].whenEndPossibleDialogueName_2
-      value: false2
+      value: "Sorry, I don\u2019t have the time mate."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[1].whenEndPossibleDialogueName_1
-      value: true2
+      value: "Of course. I\u2019ll keep an eye out."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[1].whenEndPossibleDialogueName_2
-      value: false2
+      value: "Sorry, I don\u2019t have the time mate."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_1
+      value: I found this. Thought it might be Mousey. (Give a real mouse)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[2].whenEndPossibleDialogueName_2
+      value: I found this. Thought it might be Mousey. (Give a PC mouse)
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
-      value: 4
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
-      value: 4
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
@@ -3633,55 +4079,217 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: ':'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
-      value: a;
+      value: "I\u2019ll take one sushi with some gear grease soy sauce and jello
+        wasabi.; "
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: b
+      value: '*eating*'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
-      value: c
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "Wow. That\u2019s\u2026 unexpectedly nostalgic."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: "You\u2019ve got talent, Chef. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: "Actually\u2026 while I\u2019ve got you\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: Have you seen a mouse wandering here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[8]'
+      value: I used to be a guard robot. All sharp edges and yelling.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[9]'
+      value: Then I met Mousey.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: ':'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
-      value: d
+      value: "I\u2019ll take one sushi with some gear grease soy sauce and jello
+        wasabi.; "
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: e
+      value: '*eating*'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
-      value: f
+      value: "\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "Wow. That\u2019s\u2026 unexpectedly nostalgic."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: "You\u2019ve got talent, Chef. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: "Actually\u2026 while I\u2019ve got you\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: Have you seen a mouse wandering here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[8]'
+      value: I used to be a guard robot. All sharp edges and yelling.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[9]'
+      value: Then I met Mousey.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
+      value: '{'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
-      value: g
+      value: "You\u2019re a good one, Chef."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: h
+      value: "I\u2019ll be around.:"
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
-      value: j
+      value: ...;
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: Ah, You're back.
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
-      value: j
+      value: "That\u2019s fair."
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: k
+      value: Thanks for the sushi, though.
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
       value: l
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Ah, You're back.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "That\u2019s them.}"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "That\u2019s really them."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: "You found Mousey\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: I owe you, Chef. Big time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[4].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: I gotta go now, but I'll be back to return the favor.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
+      value: Ah, You're back.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: "}Huh\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
+      value: "Not sure if this is Mousey\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[5]'
+      value: But it kinda feels like them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[6]'
+      value: Thank you, Chef.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[7]'
+      value: For trying.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[10]'
+      value: Small. Soft. Squeaky.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[11]'
+      value: "Mousey taught me kindness\u2026 then disappeared."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[12]'
+      value: "I\u2019ve been looking ever since. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[0].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[13]'
+      value: 'Will you help me find them? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[10]'
+      value: Small. Soft. Squeaky.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[11]'
+      value: "Mousey taught me kindness\u2026 then disappeared."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[12]'
+      value: "I\u2019ve been looking ever since. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[13]'
+      value: 'Will you help me find them? '
       objectReference: {fileID: 0}
     - target: {fileID: 7119529071298233483, guid: 4fb750d53952449469c18ee62146ef7d, type: 3}
       propertyPath: m_Name
@@ -4505,8 +5113,11 @@ MonoBehaviour:
     m1: tamagoyaki
     m2: tBoneSteak
   - name: Semicolon 3 Sushi
-    m1: nanoCarrot
+    m1: soySauce
     m2: jelloWasabi
+  - name: Chelley Sushi
+    m1: tuna
+    m2: seaweed
   dialogue_menus:
   - {fileID: 641786141}
   - {fileID: 276647019}
@@ -7107,7 +7718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: npcName
-      value: Bob
+      value: Bob the Caveman
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: nameText
@@ -7215,11 +7826,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: "sad\u2026."
+      value: "sad\u2026. ="
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
-      value: Bob wants Sushi!!!=
+      value: 'Bob wants Sushi!!! '
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[4]'
@@ -7227,7 +7838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
-      value: '=:'
+      value: ':'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
@@ -7235,7 +7846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
-      value: nom nom nom nom nom;
+      value: nom nom nom nom nom
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[2].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
@@ -7255,7 +7866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[0]'
-      value: '=:'
+      value: ':'
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
