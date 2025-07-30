@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.UI;
 public class FishingCameraControler : MonoBehaviour
 {
     [Header("Camera Settings")]
@@ -30,7 +30,7 @@ public class FishingCameraControler : MonoBehaviour
         goDown,
         goUp
     }
-    
+
     void Start()
     {
         _camera = Camera.main;
@@ -42,14 +42,14 @@ public class FishingCameraControler : MonoBehaviour
             this.enabled = false; // disable this script
         }
     }
-    
-    
+
+
     void Update()
     {
-        
+
         if (Mathf.Approximately(Time.timeScale, 0f))
             return;
-        
+
         // Only when camera motion is stationary, will check if
         if (_currentMotion == CameraMotion.stationary)
         {
@@ -74,7 +74,7 @@ public class FishingCameraControler : MonoBehaviour
     {
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
- 
+
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
         movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, forceGoUpCurve);
@@ -84,7 +84,7 @@ public class FishingCameraControler : MonoBehaviour
     {
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
-        
+
 
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
@@ -94,7 +94,7 @@ public class FishingCameraControler : MonoBehaviour
 
     private void StartMovingDown()
     {
-        
+
         _canStartDescent = false; // if already go down, then next time mouse pointer is over the sea top only can descent again
         _currentMotion = CameraMotion.goDown;
         movementHelper.StopMoving(); // stop all coroutine first if got
@@ -123,9 +123,9 @@ public class FishingCameraControler : MonoBehaviour
             {
 
                 _currentMotion = CameraMotion.stationary;
-                
+
                 movementHelper.StopMoving(); // stop moving coroutine
-                
+
                 _camera.transform.position = targetPositionUp.transform.position; // mave the posiiton euqavilent
             }
         }
