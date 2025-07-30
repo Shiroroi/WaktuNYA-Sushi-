@@ -167,6 +167,7 @@ public class Dialogue_menu : MonoBehaviour
                     
             //  = , after the string start or end with = is being press, will show customer to npc name
             //  - , after the string start or end with - is being press, will shake the camera
+            //  % , after the string start or end with % is being press, will add bracelet to inventory
             //  : , after the string end with : is being press, canContinue will truns into false
             //  ; , if current string end with ; and canContinue is false but i still press, will just close and open current dialogue until canContinue is true
             //
@@ -256,6 +257,11 @@ public class Dialogue_menu : MonoBehaviour
                 impulseSource.GenerateImpulse();
             }
 
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("%") || dialogues[index].StartsWith("%")))
+            {
+                InventoryManager.instance.AddItem("bracelet");
+            }
+            
             if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(":"))
             {
                 canContinue = false;
@@ -380,6 +386,7 @@ public class Dialogue_menu : MonoBehaviour
         currentDialogue = currentDialogue.Replace("=", "");
         currentDialogue = currentDialogue.Replace("-", "");
         currentDialogue = currentDialogue.Replace(":", "");
+        currentDialogue = currentDialogue.Replace("%", "");
         
         isWriting = true;
         dialogueText.text = "";
