@@ -365,11 +365,13 @@ public class Dialogue_menu : MonoBehaviour
         {
             GameManager.instance.EnableNpc(1, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(2, true, GameManager.instance.npcMiddlePosition);
+            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 2");
         }
         else if (gameObject.CompareTag("npc2"))
         {
             GameManager.instance.EnableNpc(2, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(3, true, GameManager.instance.npcMiddlePosition);
+            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 3");
         }
         else if (gameObject.CompareTag("npc3"))
         {

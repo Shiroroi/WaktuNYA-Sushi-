@@ -57,14 +57,19 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         EnableNpc(1, true, npcMiddlePosition);
+        AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        
         if (playMode != o_playMode)
             playMode = o_playMode;
+        
+        
         
         
         switch (playMode)
@@ -100,6 +105,7 @@ public class GameManager : MonoBehaviour
                 break;
             
             case Level.Type.mainMenu:
+                
                 break;
         }
     }
