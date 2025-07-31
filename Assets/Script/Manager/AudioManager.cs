@@ -13,13 +13,13 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music Settings")]
     [Tooltip("BGM fade time")]
-    [SerializeField] float musicFadeDuration = 2.0f;
+    public float musicFadeDuration = 2.0f;
 
     [Header("SFX Settings")]
     
-    [SerializeField] float sfxMinPitch = 0.9f;
+    [SerializeField] float sfxMinPitch = 0.8f;
     
-    [SerializeField] float sfxMaxPitch = 1.1f;
+    [SerializeField] float sfxMaxPitch = 1.5f;
     
     [Header("Audio Sources & Clips")]
     public Sound[] musicSounds;
@@ -29,6 +29,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance;
     private Coroutine activeMusicCoroutine; 
+    
+    
     
     
     private void Awake()
@@ -54,6 +56,10 @@ public class AudioManager : MonoBehaviour
         if (volumeSlider != null) volumeSlider.onValueChanged.AddListener(ChangeMasterVolume);
         if (musicSlider != null) musicSlider.onValueChanged.AddListener(ChangeMusicVolume);
         if (sfxSlider != null) sfxSlider.onValueChanged.AddListener(ChangeSfxVolume);
+        
+        
+        
+        
     }
 
     public void ChangeMasterVolume(float value)
@@ -102,16 +108,25 @@ public class AudioManager : MonoBehaviour
     
     public void PlayMusic(string _name)
     {
+        Debug.Log("Changing Bgm to: " + _name);
+        
         Sound s = Array.Find(musicSounds, x => x.name == _name);
         if (s == null)
         {
-            Debug.LogWarning($"名为 '{_name}' 的音乐未找到");
+            Debug.LogWarning($"Bgm {_name} not found");
+            return;
+        }
+
+        if (s.clip == null)
+        {
+            Debug.LogWarning($"Bgm {_name} no clip");
             return;
         }
 
         
         if (musicSource.clip == s.clip && musicSource.isPlaying)
         {
+            Debug.Log("Return");
             return; 
         }
 
@@ -172,9 +187,10 @@ public class AudioManager : MonoBehaviour
         activeMusicCoroutine = null; 
     }
 
-    // --- SFX 播放函数保持不变 ---
+    // 
     public void PlaySfx(bool randomPitch, params string[] _names)
     {
+        
         
         if (_names == null || _names.Length == 0)
         {
@@ -186,27 +202,39 @@ public class AudioManager : MonoBehaviour
 
         if (s == null)
         {
-            Debug.Log($"Sfx {nameToPlay} not found");
+            Debug.LogWarning($"Sfx {nameToPlay} not found");
             return;
         }
 
         if (s.clip == null)
         {
-            Debug.Log($"Sfx {nameToPlay} no clip");
+            Debug.LogWarning($"Sfx {nameToPlay} no clip");
             return;
         }
         
         if(randomPitch == true)
         {
-            float o_pitch = sfxSource.pitch;
+            
             sfxSource.pitch = UnityEngine.Random.Range(sfxMinPitch, sfxMaxPitch);
             sfxSource.PlayOneShot(s.clip);
-            sfxSource.pitch = o_pitch;
+            Debug.Log(sfxSource.pitch);
+            
         }
         else
         {
+            sfxSource.pitch = 1f;
             sfxSource.PlayOneShot(s.clip);
         }
     }
+
+    
+    
+    // default state no random 
     public void PlaySfx(params string[] _names) => PlaySfx(true, _names);
+
+    // only one string then is no random pitch
+    public void PlaySfx(string _name)
+    {
+        PlaySfx(false, _name);
+    }
 }

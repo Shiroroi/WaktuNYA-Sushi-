@@ -133,9 +133,12 @@ public class PointerBehaviour : MonoBehaviour
             InventoryManager.instance.UseSelectedItem(CraftBlock1);
             InventoryManager.instance.UseSelectedItem(CraftBlock2);
             InventoryManager.instance.UseSelectedItem(CraftBlock3);
-            
+            AudioManager.Instance.PlaySfx("Main_When click craft button");
             Debug.Log("Sushi has been created");
             CanContinueToTrue();
+            
+            
+            
         }
         
     }

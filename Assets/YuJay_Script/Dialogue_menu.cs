@@ -42,12 +42,15 @@ public class Dialogue_menu : MonoBehaviour
     public Button secondChoiceButton;
     [HideInInspector] public bool stopBefore;
     [HideInInspector] public bool pauseWhenEnd;
+
+    public float o_musicFadeDuration;
     
 
     // disable window
     private void Awake()
     {
         window.SetActive(false);
+        o_musicFadeDuration = AudioManager.Instance.musicFadeDuration;
     }
 
     public void Start()
@@ -60,6 +63,28 @@ public class Dialogue_menu : MonoBehaviour
         o_listSize = dialogues.Count;
         pauseWhenEnd = true;
 
+        
+
+    }
+
+    void OnEnable()
+    {
+        AudioManager.Instance.musicFadeDuration = o_musicFadeDuration;
+        
+        if (gameObject.CompareTag("npc1"))
+        {
+            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");
+        }
+        else if (gameObject.CompareTag("npc2"))
+        {
+            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 2");
+        }
+        else if (gameObject.CompareTag("npc3"))
+        {
+            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 3");
+        }
+        
+        
     }
 
     // when every frame
@@ -119,6 +144,20 @@ public class Dialogue_menu : MonoBehaviour
     // main control function
     public void ContinueDialogue() // when the button press
     {
+        
+        if (gameObject.CompareTag("npc1"))
+        {
+            AudioManager.Instance.PlaySfx("Main_When click npc1 to talk");
+        }
+        else if (gameObject.CompareTag("npc2"))
+        {
+            AudioManager.Instance.PlaySfx("Main_When click npc2 to talk");
+        }
+        else if (gameObject.CompareTag("npc3"))
+        {
+            AudioManager.Instance.PlaySfx("Main_When click npc3 to talk");
+        }
+        
         if(canContinue == false)
         {
             window.SetActive(!window.activeSelf);
@@ -365,13 +404,13 @@ public class Dialogue_menu : MonoBehaviour
         {
             GameManager.instance.EnableNpc(1, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(2, true, GameManager.instance.npcMiddlePosition);
-            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 2");
+            
         }
         else if (gameObject.CompareTag("npc2"))
         {
             GameManager.instance.EnableNpc(2, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(3, true, GameManager.instance.npcMiddlePosition);
-            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 3");
+            
         }
         else if (gameObject.CompareTag("npc3"))
         {
@@ -389,6 +428,21 @@ public class Dialogue_menu : MonoBehaviour
         currentDialogue = currentDialogue.Replace("-", "");
         currentDialogue = currentDialogue.Replace(":", "");
         currentDialogue = currentDialogue.Replace("%", "");
+        
+        if (gameObject.CompareTag("npc1"))
+        {
+            AudioManager.Instance.PlaySfx(true,"Main_When npc1 talk", "Main_When npc1 talk v2");
+        }
+        else if (gameObject.CompareTag("npc2"))
+        {
+            AudioManager.Instance.PlaySfx(true,"Main_When npc2 talk");
+        }
+        else if (gameObject.CompareTag("npc3"))
+        {
+            AudioManager.Instance.PlaySfx(true, "Main_When npc3 talk");
+        }
+        
+        
         
         isWriting = true;
         dialogueText.text = "";

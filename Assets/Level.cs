@@ -8,8 +8,11 @@ public class Level
     public enum Type
     {
         dino,
+        dino_s,
         fishing,
+        fishing_s,
         cyberpunk,
+        cyberpunk_s,
         mainMenu
     }
     

@@ -16,29 +16,22 @@ public class GameManager : MonoBehaviour
     public GameObject npc1;
     public GameObject npc2;
     public GameObject npc3;
+
     
-    public const string dinoeSceneName = "Dino Level";
-    public const string fishingSceneName = "YuJay_Fishing";
-    public const string cyberpunkSceneName = "CyberpunkLevel";
+    
     public const string mainMenuSceneName = "MainMenu";
 
     public Vector2 npcMiddlePosition =  new Vector2(0f, 82f);
     public Vector2 npcEndPosition = new Vector2(1570f, 82f);
-    public enum PlayMode
-    {
-        Debug,
-        Play
-    }
     
-    private PlayMode o_playMode;
-    public PlayMode playMode;
     
-    public Level currentCevel;
+    
+    
     
     
     void Awake()
     {
-        o_playMode  = playMode;
+        
             
         if(instance == null)
         {
@@ -53,12 +46,11 @@ public class GameManager : MonoBehaviour
         if(SingletonCharacterCanvas.theStaticChracterCanvas == null)
             singletonCraftingCanvas.HelpCraftingCanvasSingelton();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
+    
     void Start()
     {
         EnableNpc(1, true, npcMiddlePosition);
-        AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");
-        
     }
 
     // Update is called once per frame
@@ -66,73 +58,14 @@ public class GameManager : MonoBehaviour
     {
         
         
-        if (playMode != o_playMode)
-            playMode = o_playMode;
-        
-        
-        
-        
-        switch (playMode)
-        {
-            case PlayMode.Debug:
-                DebugUpdate();
-                break;
-            
-            case PlayMode.Play:
-                PlayUpdate();
-                break;
-        }
-    }
-
-    void DebugUpdate()
-    {
         
     }
 
-    void PlayUpdate()
-    {
-        CheckSceneType(); // check what scene type is now, auto udate
-
-        switch (currentCevel.type)
-        {
-            case Level.Type.dino:
-                break;
-            
-            case Level.Type.fishing:
-                break;
-            
-            case Level.Type.cyberpunk:
-                break;
-            
-            case Level.Type.mainMenu:
-                
-                break;
-        }
-    }
-
-    // let other class change level and progress
     
-    private void CheckSceneType()
-    {
-        switch (SceneManager.GetActiveScene().name)
-        {
-            case dinoeSceneName:
-                currentCevel.type =  Level.Type.dino;
-                break;
-            
-            case fishingSceneName:
-                currentCevel.type =  Level.Type.fishing;
-                break;
-            
-            case cyberpunkSceneName:
-                currentCevel.type =  Level.Type.cyberpunk;
-                break;
-            
-            case mainMenuSceneName:
-                currentCevel.type =  Level.Type.mainMenu;
-                break;
-        }
-    }
+    
+    
+      
+    
 
     public void EnableNpc(int npcWhat, bool enable, Vector2 position )
     {
@@ -142,10 +75,12 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc1.SetActive(true);
+                    
                     StartCoroutine(npcMovementCoroutine(npc1, position));
                 }
                 else
                 {
+                    
                     StartCoroutine(npcMovementCoroutine_End(npc1, position));
                 }
                 
@@ -155,10 +90,12 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc2.SetActive(true);
+                    
                     StartCoroutine(npcMovementCoroutine(npc2, position));
                 }
                 else
                 {
+                    
                     StartCoroutine(npcMovementCoroutine_End(npc2, position));
                 }
                 break;
@@ -167,10 +104,12 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc3.SetActive(true);
+                    
                     StartCoroutine(npcMovementCoroutine(npc3, position));
                 }
                 else 
                 {
+                    
                     StartCoroutine(npcMovementCoroutine_End(npc3, position));
                 }
                 

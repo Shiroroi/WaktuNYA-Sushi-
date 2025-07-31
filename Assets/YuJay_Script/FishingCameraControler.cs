@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class FishingCameraControler : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class FishingCameraControler : MonoBehaviour
     public AnimationCurve goDownCurve;
     public AnimationCurve forceGoUpCurve;
     public AnimationCurve goUpCurve;
+
+    public bool normalMode = false;
+    
+    private bool canNormalBgm = false;
 
 
     // private variable
@@ -57,11 +62,22 @@ public class FishingCameraControler : MonoBehaviour
             if (_camera.ScreenToWorldPoint(Input.mousePosition).y < seaTop.position.y && _canStartDescent)
             {
                 StartMovingDown();
+                
+                
+                
+                
             }
             // the mouse pointer is above the sea top
             else if (_camera.ScreenToWorldPoint(Input.mousePosition).y > seaTop.position.y)
             {
                 _canStartDescent = true;
+                
+                if (canNormalBgm == true)
+                {
+                    canNormalBgm = false;
+                    AudioManager.Instance.PlayMusic("Fishing_Bgm when the game haven't start");
+                }
+                
             }
         }
 
@@ -94,7 +110,12 @@ public class FishingCameraControler : MonoBehaviour
 
     private void StartMovingDown()
     {
-
+        if (normalMode == true)
+        {
+            AudioManager.Instance.PlayMusic("Fishing_Bgm when the game start");
+            canNormalBgm = true;
+        }
+        
         _canStartDescent = false; // if already go down, then next time mouse pointer is over the sea top only can descent again
         _currentMotion = CameraMotion.goDown;
         movementHelper.StopMoving(); // stop all coroutine first if got

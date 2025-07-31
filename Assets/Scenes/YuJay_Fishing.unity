@@ -1706,6 +1706,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692044221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692044223}
+  - component: {fileID: 692044222}
+  m_Layer: 0
+  m_Name: BgmSoundActivater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &692044222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692044221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f3bd82c9026fc42b93139eba9efd46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmName: Fishing_Bgm when the game haven't start
+  tempAudioFadeDuration: 0.08
+  useTempAudioFadeDuration: 1
+--- !u!4 &692044223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692044221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8376546, y: 4.4522905, z: -0.037816443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727575668
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,6 +4064,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 853234014}
     - target: {fileID: 104188778158702870, guid: 041778e147c7da34ab1df46b5a8f98f2, type: 3}
+      propertyPath: normalMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 104188778158702870, guid: 041778e147c7da34ab1df46b5a8f98f2, type: 3}
       propertyPath: cameraGoUpY
       value: 5
       objectReference: {fileID: 0}
@@ -5541,3 +5592,4 @@ SceneRoots:
   - {fileID: 173155114}
   - {fileID: 670165862}
   - {fileID: 310946234}
+  - {fileID: 692044223}

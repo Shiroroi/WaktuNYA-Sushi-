@@ -49,14 +49,173 @@ MonoBehaviour:
   volumeSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   sfxSlider: {fileID: 0}
+  musicFadeDuration: 2
+  sfxMinPitch: 1.1
+  sfxMaxPitch: 0.9
   musicSounds:
-  - name: BGM
-    clip: {fileID: 8300000, guid: 033766cc31c97904bae4404b8a079544, type: 3}
+  - name: Menu_Bgm
+    clip: {fileID: 8300000, guid: 75f5d6b09a16ed7428df0364e0ce97bb, type: 3}
+    doneApply: 0
+  - name: Main_Bgm when npc is npc 1
+    clip: {fileID: 8300000, guid: 944c70a3f620ba2448576e10a9e44053, type: 3}
+    doneApply: 0
+  - name: Main_Bgm when npc is npc 2
+    clip: {fileID: 8300000, guid: b25b86a568c3fa84b863206d0da2a8ec, type: 3}
+    doneApply: 0
+  - name: Main_Bgm when npc is npc 3
+    clip: {fileID: 8300000, guid: c4eb66d8b5180cc44a8bb9bfd6fd1c01, type: 3}
+    doneApply: 0
+  - name: Fishing_Bgm when the game haven't start
+    clip: {fileID: 8300000, guid: 973db18c538c86645b5a5142b8038da7, type: 3}
+    doneApply: 0
+  - name: Fishing_Bgm when the game start
+    clip: {fileID: 8300000, guid: 4876a010763af1241af60f345a00c9dd, type: 3}
+    doneApply: 0
+  - name: Fishing_Bgm when is story mode
+    clip: {fileID: 8300000, guid: ec050b9d53308d9459af68a53848bb1b, type: 3}
+    doneApply: 0
+  - name: Fishing_Bgm Cutscene Story
+    clip: {fileID: 8300000, guid: ec050b9d53308d9459af68a53848bb1b, type: 3}
+    doneApply: 0
+  - name: Dino_Bgm
+    clip: {fileID: 8300000, guid: 94b055081f7035d4db0594df94b5328e, type: 3}
+    doneApply: 0
+  - name: Dino_Bgm when is story mode
+    clip: {fileID: 8300000, guid: e9bdd53e23c397e48a6d2e4fc05169ad, type: 3}
+    doneApply: 0
+  - name: Cyber_Bgm
+    clip: {fileID: 8300000, guid: 6b00743cd54c13c4996a3ad75d8245ea, type: 3}
+    doneApply: 0
   sfxSounds:
-  - name: Jump
-    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
-  - name: ThrowHit
-    clip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  - name: Menu_Button click sound
+    clip: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+    doneApply: 0
+  - name: Main_When click craft button
+    clip: {fileID: 8300000, guid: 12715e721079c504ebf42bb514254c9f, type: 3}
+    doneApply: 0
+  - name: Main_When click inventory button
+    clip: {fileID: 8300000, guid: b34c48df1f3d5fb48a971b7b50f3e0da, type: 3}
+    doneApply: 0
+  - name: Main_When click pause
+    clip: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+    doneApply: 0
+  - name: Main_When click the button in pause
+    clip: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+    doneApply: 0
+  - name: Main_When click recipe button
+    clip: {fileID: 8300000, guid: ebf3a798a1576a94fb3fc4ea4cb89512, type: 3}
+    doneApply: 0
+  - name: Main_When click balato button
+    clip: {fileID: 8300000, guid: 952812cbf786aa043a64a7f880d67609, type: 3}
+    doneApply: 0
+  - name: Main_When balato choose go to Dino
+    clip: {fileID: 8300000, guid: 40d010f13f97e1e4db58f950b175b0ab, type: 3}
+    doneApply: 0
+  - name: Main_When balato choose go to Fishing
+    clip: {fileID: 8300000, guid: c005fba73e574c648ad0ab6e133ddbda, type: 3}
+    doneApply: 0
+  - name: Main_When balato choose go to Cyber
+    clip: {fileID: 8300000, guid: d91430e5b9433744494e962e9a01be51, type: 3}
+    doneApply: 0
+  - name: Fishing_When the hook fall into water and the game start
+    clip: {fileID: 8300000, guid: cd06c378d98cacc46acc4d4d61914f82, type: 3}
+    doneApply: 0
+  - name: Fishing_When the hook is come up from water
+    clip: {fileID: 8300000, guid: 61953f653866ac045bb085d4ef660c54, type: 3}
+    doneApply: 0
+  - name: Fishing_When catching fish
+    clip: {fileID: 8300000, guid: 8c6991f82f80d0245a18736a2045ab80, type: 3}
+    doneApply: 0
+  - name: Fishing_When catch the mermaid
+    clip: {fileID: 8300000, guid: 11723c47e11193f4eabf7292f3389b51, type: 3}
+    doneApply: 0
+  - name: Fishing_Mermaid swimming sound
+    clip: {fileID: 8300000, guid: 1f10c038eeb6a3946bc60341371de410, type: 3}
+    doneApply: 0
+  - name: Fishing_When the rope get stretch
+    clip: {fileID: 8300000, guid: 1a59942e4da62f64080a225628574843, type: 3}
+    doneApply: 0
+  - name: Fishing_When exit level
+    clip: {fileID: 8300000, guid: 15ebbad7449787348be95517c3bbe23a, type: 3}
+    doneApply: 0
+  - name: Dino_Player walking
+    clip: {fileID: 8300000, guid: 30bf18e5aea82c1459fcf51f5c0cfb48, type: 3}
+    doneApply: 0
+  - name: Dino_Player jump
+    clip: {fileID: 8300000, guid: e2f8af75415fcae46ae460e06f70b646, type: 3}
+    doneApply: 0
+  - name: Dino_When player grab a fire ball
+    clip: {fileID: 8300000, guid: 1e14fb749b4b8ab4fbb03d5d2d4ae555, type: 3}
+    doneApply: 0
+  - name: Dino_When player is throwing the fireball back and fore
+    clip: {fileID: 8300000, guid: de8bb2fde9511244287b4373270e016b, type: 3}
+    doneApply: 0
+  - name: Dino_When player release the rope
+    clip: {fileID: 8300000, guid: c043af8d7260ec941a3e070e126b5af3, type: 3}
+    doneApply: 0
+  - name: Dino_When dino spray shoot fireball
+    clip: {fileID: 8300000, guid: 3af8eb168f28dff4b94a4ceb8e95c65d, type: 3}
+    doneApply: 0
+  - name: Dino_When fireball touch the ground
+    clip: {fileID: 8300000, guid: 9d01d16b0e491784d92695fb0a0546bb, type: 3}
+    doneApply: 0
+  - name: Dino_When small fireball touch the ground
+    clip: {fileID: 8300000, guid: fb41fd3059c18f7419d672b5b6b1c06d, type: 3}
+    doneApply: 0
+  - name: Dino_When dino get stun
+    clip: {fileID: 8300000, guid: 469fd328ba757c84c81d2bcd045d74da, type: 3}
+    doneApply: 0
+  - name: Dino_When player collect the item
+    clip: {fileID: 8300000, guid: f22660a0f27951145a45ad31b8d480d9, type: 3}
+    doneApply: 0
+  - name: Dino_When player collect the stone
+    clip: {fileID: 8300000, guid: 7ac57ceff6190f44994b5d92e69d6ca5, type: 3}
+    doneApply: 0
+  - name: Dino_When exit level
+    clip: {fileID: 8300000, guid: 15ebbad7449787348be95517c3bbe23a, type: 3}
+    doneApply: 0
+  - name: Cyber_When click eraser
+    clip: {fileID: 8300000, guid: cbf118c8996e3b14082110d912955822, type: 3}
+    doneApply: 0
+  - name: Cyber_When choose color
+    clip: {fileID: 8300000, guid: 3f97b867a3a0b1c4c9d274bdac4ebe8e, type: 3}
+    doneApply: 0
+  - name: Cyber_When erase color
+    clip: {fileID: 8300000, guid: b0330454529a09e4ca6bc4eb0fbb0b4d, type: 3}
+    doneApply: 0
+  - name: Cyber_When putting color
+    clip: {fileID: 8300000, guid: aa9550b944553f3448d6ff8876d0f46d, type: 3}
+    doneApply: 0
+  - name: Cyber_When success craft a material
+    clip: {fileID: 8300000, guid: 5d16b22cff71b7e4fb1720905130b9e4, type: 3}
+    doneApply: 0
+  - name: Cyber_When fail to craft a material
+    clip: {fileID: 8300000, guid: c41964232a7d03347869923275d18eae, type: 3}
+    doneApply: 0
+  - name: Cyber_When exit level
+    clip: {fileID: 8300000, guid: 15ebbad7449787348be95517c3bbe23a, type: 3}
+    doneApply: 0
+  - name: Main_When click npc1 to talk
+    clip: {fileID: 0}
+    doneApply: 0
+  - name: Main_When click npc2 to talk
+    clip: {fileID: 0}
+    doneApply: 0
+  - name: Main_When click npc3 to talk
+    clip: {fileID: 0}
+    doneApply: 0
+  - name: Main_When npc1 talk
+    clip: {fileID: 8300000, guid: 2c26f679fe99c5a4782ed52ad657ef7e, type: 3}
+    doneApply: 0
+  - name: Main_When npc1 talk v2
+    clip: {fileID: 8300000, guid: 5c59a751ce0492e478c2e7ab35ef56f2, type: 3}
+    doneApply: 0
+  - name: Main_When npc2 talk
+    clip: {fileID: 0}
+    doneApply: 0
+  - name: Main_When npc3 talk
+    clip: {fileID: 0}
+    doneApply: 0
   musicSource: {fileID: 5742652152617433474}
   sfxSource: {fileID: 6184489532337507130}
 --- !u!1 &1651386013910858476
