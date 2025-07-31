@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
     public static GameManager instance;
+    public float distanceToFacePlayer = 15f;
     
     public float moveDuration = 1f;
     public float moveDurationEnd = 1f;
@@ -197,7 +198,7 @@ public class GameManager : MonoBehaviour
             npcT.localPosition = Vector2.Lerp(npcT.localPosition, position, Mathf.Clamp01(currentTime / moveDuration));
 
             
-            if (Vector2.Distance(npcT.localPosition, position) < 15f)
+            if (Vector2.Distance(npcT.localPosition, position) < distanceToFacePlayer)
             {
                 // Npc should face to player
                 npc.GetComponent<Button>().enabled = true;
