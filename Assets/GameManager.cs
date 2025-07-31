@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
-    [HideInInspector] public static GameManager instance;
-
+    public static GameManager instance;
+    public MovementHelper_original movementHelper;
+    public AnimationCurve npcAnimationCurve;
+    public float moveDuration = 1f;
+    
     public GameObject npc1;
     public GameObject npc2;
     public GameObject npc3;
@@ -128,6 +131,7 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 npc1.SetActive(enable);
+                
                 npc1.GetComponent<RectTransform>().localPosition = position;
                 break;
             
