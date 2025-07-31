@@ -1,14 +1,16 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
     public static GameManager instance;
-    public MovementHelper_original movementHelper;
-    public AnimationCurve npcAnimationCurve;
+    
     public float moveDuration = 1f;
+    public float moveDurationEnd = 1f;
     
     public GameObject npc1;
     public GameObject npc2;
@@ -19,7 +21,8 @@ public class GameManager : MonoBehaviour
     public const string cyberpunkSceneName = "CyberpunkLevel";
     public const string mainMenuSceneName = "MainMenu";
 
-    public Vector2 npcMiddlePosition =  new Vector2(0, 82);
+    public Vector2 npcMiddlePosition =  new Vector2(0f, 82f);
+    public Vector2 npcEndPosition = new Vector2(1570f, 82f);
     public enum PlayMode
     {
         Debug,
@@ -53,8 +56,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         EnableNpc(1, true, npcMiddlePosition);
-        EnableNpc(2, false, npcMiddlePosition);
-        EnableNpc(3, false, npcMiddlePosition);
+        
     }
 
     // Update is called once per frame
@@ -130,19 +132,41 @@ public class GameManager : MonoBehaviour
         switch (npcWhat)
         {
             case 1:
-                npc1.SetActive(enable);
+                if (enable == true)
+                {
+                    npc1.SetActive(true);
+                    StartCoroutine(npcMovementCoroutine(npc1, position));
+                }
+                else
+                {
+                    StartCoroutine(npcMovementCoroutine_End(npc1, position));
+                }
                 
-                npc1.GetComponent<RectTransform>().localPosition = position;
                 break;
             
             case 2:
-                npc2.SetActive(enable);
-                npc2.GetComponent<RectTransform>().localPosition = position;
+                if (enable == true)
+                {
+                    npc2.SetActive(true);
+                    StartCoroutine(npcMovementCoroutine(npc2, position));
+                }
+                else
+                {
+                    StartCoroutine(npcMovementCoroutine_End(npc2, position));
+                }
                 break;
             
             case 3:
-                npc3.SetActive(enable);
-                npc3.GetComponent<RectTransform>().localPosition = position;
+                if (enable == true)
+                {
+                    npc3.SetActive(true);
+                    StartCoroutine(npcMovementCoroutine(npc3, position));
+                }
+                else 
+                {
+                    StartCoroutine(npcMovementCoroutine_End(npc3, position));
+                }
+                
                 break;
         }
     }
@@ -159,6 +183,55 @@ public class GameManager : MonoBehaviour
 //#if UNITY_EDITOR
 //        EditorApplication.isPlaying = false;
 //#endif
+    }
+    
+    private IEnumerator npcMovementCoroutine(GameObject npc, Vector2 position)
+    {
+        // Npc side face to player
+        float currentTime = 0f;
+        RectTransform npcT = npc.GetComponent<RectTransform>();
+        
+        while (currentTime < moveDuration)
+        {
+            currentTime += Time.deltaTime;
+            npcT.localPosition = Vector2.Lerp(npcT.localPosition, position, Mathf.Clamp01(currentTime / moveDuration));
+
+            
+            if (Vector2.Distance(npcT.localPosition, position) < 15f)
+            {
+                // Npc should face to player
+                npc.GetComponent<Button>().enabled = true;
+                npcT.localPosition = position;
+                break;
+            }
+            yield return null;
+        }
+        
+        
+    }
+    
+    private IEnumerator npcMovementCoroutine_End(GameObject npc, Vector2 position)
+    {
+        // Npc side face to player
+        npc.GetComponent<Button>().enabled = false;
+        float currentTime = 0f;
+        RectTransform npcT = npc.GetComponent<RectTransform>();
+        
+        while (currentTime < moveDurationEnd)
+        {
+            currentTime += Time.deltaTime;
+            npcT.localPosition = Vector2.Lerp(npcT.localPosition, position, Mathf.Clamp01(currentTime / moveDurationEnd));
+            
+            if (Vector2.Distance(npcT.localPosition, position) < 10f)
+            {
+                npcT.localPosition = position;
+                break;
+            }
+            
+            yield return null;
+        }
+        
+        npc.SetActive(false);
     }
 
 

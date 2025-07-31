@@ -363,17 +363,17 @@ public class Dialogue_menu : MonoBehaviour
 
         if (gameObject.CompareTag("npc1"))
         {
-            GameManager.instance.EnableNpc(1, false, GameManager.instance.npcMiddlePosition);
+            GameManager.instance.EnableNpc(1, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(2, true, GameManager.instance.npcMiddlePosition);
         }
         else if (gameObject.CompareTag("npc2"))
         {
-            GameManager.instance.EnableNpc(2, false, GameManager.instance.npcMiddlePosition);
+            GameManager.instance.EnableNpc(2, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(3, true, GameManager.instance.npcMiddlePosition);
         }
         else if (gameObject.CompareTag("npc3"))
         {
-            GameManager.instance.EnableNpc(3, false, GameManager.instance.npcMiddlePosition);
+            GameManager.instance.EnableNpc(3, false, GameManager.instance.npcEndPosition);
         }
             
         
