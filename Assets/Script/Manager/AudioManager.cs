@@ -5,20 +5,20 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
-    // ... [所有字段，包括Sliders, sfx/music sounds, sources都保持不变] ...
+    
     [Header("UI Sliders")]
     [SerializeField] Slider volumeSlider;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
     [Header("Music Settings")]
-    [Tooltip("背景音乐淡入/淡出的时间")]
+    [Tooltip("BGM fade time")]
     [SerializeField] float musicFadeDuration = 2.0f;
 
     [Header("SFX Settings")]
-    [Tooltip("音效的最小音高")]
+    
     [SerializeField] float sfxMinPitch = 0.9f;
-    [Tooltip("音效的最大音高")]
+    
     [SerializeField] float sfxMaxPitch = 1.1f;
     
     [Header("Audio Sources & Clips")]
@@ -28,9 +28,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource sfxSource;
 
     public static AudioManager Instance;
-    private Coroutine activeMusicCoroutine; // Coroutine现在管理整个切换流程
+    private Coroutine activeMusicCoroutine; 
     
-    // --- Awake, Start, 音量控制, Load, UpdateVolume 函数都保持原样，无需修改 ---
+    
     private void Awake()
     {
         if (Instance == null)
@@ -109,13 +109,13 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // 如果要播放的已经是当前音乐，则不执行任何操作
+        
         if (musicSource.clip == s.clip && musicSource.isPlaying)
         {
             return; 
         }
 
-        // 停止任何可能正在运行的旧的切换流程，然后开始新的流程
+        
         if (activeMusicCoroutine != null)
         {
             StopCoroutine(activeMusicCoroutine);
@@ -127,39 +127,39 @@ public class AudioManager : MonoBehaviour
   
     private IEnumerator FadeSwitchMusic(AudioClip newClip, float duration)
     {
-        // --- 1. 淡出阶段 ---
-        if (musicSource.isPlaying) // 仅当有音乐正在播放时才执行淡出
+        
+        if (musicSource.isPlaying) 
         {
             float startVolume = musicSource.volume;
             float timer = 0f;
 
             while (timer < duration)
             {
-                // 从当前音量平滑过渡到0
+                
                 musicSource.volume = Mathf.Lerp(startVolume, 0f, timer / duration);
                 timer += Time.deltaTime;
                 yield return null;
             }
         }
 
-        // --- 2. 切换阶段 ---
-        musicSource.Stop(); // 停止旧音乐
+        
+        musicSource.Stop(); 
         musicSource.volume = 0f;
-        musicSource.clip = newClip; // 设置新音乐
-        musicSource.Play(); // 播放新音乐（此时音量为0）
+        musicSource.clip = newClip; 
+        musicSource.Play(); 
 
-        // --- 3. 淡入阶段 ---
+        
         if (duration > 0)
         {
             float fadeInTimer = 0f;
             while (fadeInTimer < duration)
             {
-                // 在每一帧重新计算目标音量，以响应实时滑块调整
+                
                 float masterVol = volumeSlider != null ? volumeSlider.value : 1f;
                 float musicVol = musicSlider != null ? musicSlider.value : 1f;
                 float targetVolume = masterVol * musicVol;
 
-                // 从0平滑过渡到目标音量
+                
                 musicSource.volume = Mathf.Lerp(0f, targetVolume, fadeInTimer / duration);
 
                 fadeInTimer += Time.deltaTime;
@@ -167,15 +167,15 @@ public class AudioManager : MonoBehaviour
             }
         }
         
-        // --- 4. 收尾阶段 ---
-        UpdateMusicVolume(); // 确保最终音量完全准确
-        activeMusicCoroutine = null; // 标志协程已结束
+        
+        UpdateMusicVolume(); 
+        activeMusicCoroutine = null; 
     }
 
     // --- SFX 播放函数保持不变 ---
     public void PlaySfx(bool randomPitch, params string[] _names)
     {
-        // ... (省略未修改代码)
+        
         if (_names == null || _names.Length == 0)
         {
             Debug.LogWarning("PlaySfx called with empty names");
@@ -190,6 +190,12 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        if (s.clip == null)
+        {
+            Debug.Log($"Sfx {nameToPlay} no clip");
+            return;
+        }
+        
         if(randomPitch == true)
         {
             float o_pitch = sfxSource.pitch;
