@@ -311,6 +311,7 @@ public class RopeController : MonoBehaviour
 
     public void Throw(int i)
     {
+        AudioManager.Instance.PlaySfx("Dino_When player is throwing the fireball back and fore");
         
         canThrow = false;
         isThrowing = true;
@@ -350,6 +351,7 @@ public class RopeController : MonoBehaviour
         if (_hitInformation.collider.GetComponent<FireballBehaviour>() != null)
         {
             _hitInformation.collider.GetComponent<FireballBehaviour>().canEndDetection = false;
+            
         }
         
         if (m_playerController.enabled == false) 
@@ -510,6 +512,8 @@ public class RopeController : MonoBehaviour
         if (gotHold == true && Input.GetKeyUp(KeyCode.Mouse1) == true)
         {
             gotHold = false;
+            AudioManager.Instance.PlaySfx("Dino_When player release the rope");
+            
         }
     }
 
@@ -579,6 +583,8 @@ public class RopeController : MonoBehaviour
 
     private void OnGrappleHit(RaycastHit2D successfulHit)
     {
+        AudioManager.Instance.PlaySfx("Dino_When player grab a fire ball");
+        
         // Record
         _hitInformation = successfulHit;
 

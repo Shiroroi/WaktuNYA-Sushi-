@@ -51,16 +51,20 @@ public class FishBehaviour : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         beingTouched = true;
+        
+        
 
         if (isMermaid == true)
         {
             SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
-            
+            AudioManager.Instance.PlaySfx("Fishing_When catch the mermaid");
         }
         
-        if (isWhichItem_Name != null && isWhichItem_Name!= "") 
+        if (isWhichItem_Name != null && isWhichItem_Name!= "" && isMermaid == false) 
         {
             AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(isWhichItem_Name);
+            AudioManager.Instance.PlaySfx("Fishing_When catching fish");
+            
         }
         
     }

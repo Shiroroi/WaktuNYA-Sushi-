@@ -5065,6 +5065,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 92.65619
       objectReference: {fileID: 0}
+    - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeToNewScene, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7282824393601461575, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Name
       value: Canvas

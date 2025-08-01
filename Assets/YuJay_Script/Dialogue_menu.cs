@@ -50,27 +50,27 @@ public class Dialogue_menu : MonoBehaviour
     private void Awake()
     {
         window.SetActive(false);
-        o_musicFadeDuration = AudioManager.Instance.musicFadeDuration;
+        
     }
 
     public void Start()
     {
+        o_musicFadeDuration = AudioManager.Instance.musicFadeDuration;
+
         canContinue = true;
         o_whenEndPossibleDialogueName_1 = whenEndPossibleDialogueName_1;
         o_whenEndPossibleDialogueName_2 = whenEndPossibleDialogueName_2;
         
-        
         o_listSize = dialogues.Count;
         pauseWhenEnd = true;
 
-        
 
     }
 
     void OnEnable()
     {
-        AudioManager.Instance.musicFadeDuration = o_musicFadeDuration;
         
+        AudioManager.Instance.musicFadeDuration = o_musicFadeDuration;
         if (gameObject.CompareTag("npc1"))
         {
             AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");

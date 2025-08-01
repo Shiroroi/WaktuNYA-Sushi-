@@ -30,9 +30,6 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance;
     private Coroutine activeMusicCoroutine; 
     
-    
-    
-    
     private void Awake()
     {
         if (Instance == null)
@@ -56,9 +53,7 @@ public class AudioManager : MonoBehaviour
         if (volumeSlider != null) volumeSlider.onValueChanged.AddListener(ChangeMasterVolume);
         if (musicSlider != null) musicSlider.onValueChanged.AddListener(ChangeMusicVolume);
         if (sfxSlider != null) sfxSlider.onValueChanged.AddListener(ChangeSfxVolume);
-        
-        
-        
+ 
         
     }
 
@@ -217,7 +212,7 @@ public class AudioManager : MonoBehaviour
             
             sfxSource.pitch = UnityEngine.Random.Range(sfxMinPitch, sfxMaxPitch);
             sfxSource.PlayOneShot(s.clip);
-            Debug.Log(sfxSource.pitch);
+            
             
         }
         else

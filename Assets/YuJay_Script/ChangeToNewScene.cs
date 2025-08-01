@@ -39,6 +39,8 @@ public class ChangeToNewScene : MonoBehaviour
         SingletonUICanvas.theStaticCanvas.gameObject.SetActive(true);
         SingletonCharacterCanvas.theStaticChracterCanvas.gameObject.SetActive(true);
         SceneManager.LoadScene(sceneName);
+        AudioManager.Instance.PlaySfx("Fishing_When exit level");
+        
     }
     
     

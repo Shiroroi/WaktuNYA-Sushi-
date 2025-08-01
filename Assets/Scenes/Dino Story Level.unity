@@ -2439,6 +2439,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3078024177173481564, guid: 96e2d3367b2f30649bfca0b92f1c1eaa, type: 3}
+      propertyPath: footstepInterval
+      value: 0.16
+      objectReference: {fileID: 0}
     - target: {fileID: 5437276920027245277, guid: 96e2d3367b2f30649bfca0b92f1c1eaa, type: 3}
       propertyPath: _targetFinalMass
       value: 7.76

@@ -26,6 +26,7 @@ public class SonOfFBBehaviour : MonoBehaviour
         if (other.gameObject.tag == "Vertical wall")
             return;
         
+        AudioManager.Instance.PlaySfx("Dino_When small fireball touch the ground");
         Destroy(gameObject);
     }   
 }

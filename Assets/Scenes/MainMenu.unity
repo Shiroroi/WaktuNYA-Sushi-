@@ -7923,7 +7923,7 @@ PrefabInstance:
       objectReference: {fileID: 1960513959}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.size
-      value: 44
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[4].clip
@@ -8112,66 +8112,66 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[27].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 15ebbad7449787348be95517c3bbe23a, type: 3}
+      objectReference: {fileID: 8300000, guid: cbf118c8996e3b14082110d912955822, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[27].name
-      value: Dino_When exit level
+      value: Cyber_When click eraser
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[28].clip
       value: 
-      objectReference: {fileID: 8300000, guid: cbf118c8996e3b14082110d912955822, type: 3}
+      objectReference: {fileID: 8300000, guid: 3f97b867a3a0b1c4c9d274bdac4ebe8e, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[28].name
-      value: Cyber_When click eraser
+      value: Cyber_When choose color
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[29].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 3f97b867a3a0b1c4c9d274bdac4ebe8e, type: 3}
+      objectReference: {fileID: 8300000, guid: b0330454529a09e4ca6bc4eb0fbb0b4d, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[29].name
-      value: Cyber_When choose color
+      value: Cyber_When erase color
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[30].clip
       value: 
-      objectReference: {fileID: 8300000, guid: b0330454529a09e4ca6bc4eb0fbb0b4d, type: 3}
+      objectReference: {fileID: 8300000, guid: aa9550b944553f3448d6ff8876d0f46d, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[30].name
-      value: Cyber_When erase color
+      value: Cyber_When putting color
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[31].clip
       value: 
-      objectReference: {fileID: 8300000, guid: aa9550b944553f3448d6ff8876d0f46d, type: 3}
+      objectReference: {fileID: 8300000, guid: 5d16b22cff71b7e4fb1720905130b9e4, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[31].name
-      value: Cyber_When putting color
+      value: Cyber_When success craft a material
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[32].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 5d16b22cff71b7e4fb1720905130b9e4, type: 3}
+      objectReference: {fileID: 8300000, guid: c41964232a7d03347869923275d18eae, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[32].name
-      value: Cyber_When success craft a material
+      value: Cyber_When fail to craft a material
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[33].clip
       value: 
-      objectReference: {fileID: 8300000, guid: c41964232a7d03347869923275d18eae, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[33].name
-      value: Cyber_When fail to craft a material
+      value: Main_When click npc1 to talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[34].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 15ebbad7449787348be95517c3bbe23a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[34].name
-      value: Cyber_When exit level
+      value: Main_When click npc2 to talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[35].clip
@@ -8179,31 +8179,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[35].name
-      value: Main_When click npc1 to talk
+      value: Main_When click npc3 to talk
       objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[36].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c26f679fe99c5a4782ed52ad657ef7e, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[36].name
-      value: Main_When click npc2 to talk
+      value: Main_When npc1 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[37].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c59a751ce0492e478c2e7ab35ef56f2, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[37].name
-      value: Main_When click npc3 to talk
+      value: Main_When npc1 talk v2
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[38].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 2c26f679fe99c5a4782ed52ad657ef7e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[38].name
-      value: Main_When npc1 talk
+      value: Main_When npc2 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[39].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 5c59a751ce0492e478c2e7ab35ef56f2, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[39].name
-      value: Main_When npc1 talk v2
+      value: Main_When npc3 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[40].clip
@@ -8211,19 +8219,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[40].name
-      value: Main_When npc2 talk
+      value: Main_When npc3 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[41].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[41].name
-      value: Main_When npc3 talk
+      value: Main_When click X button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[42].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bac182f2a57bd5546bdc290b1e8dfd62, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[42].name
+      value: Dino_Player walking v2
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[43].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+      objectReference: {fileID: 8300000, guid: 4370c0e5f488d2749a34352f8a55e580, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[43].name
-      value: Main_When click X button
+      value: Dino_Player walking v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[44].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 768503b60a5c9a94ba2dd57fbd614bd8, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[44].name
+      value: Dino_Player walking v4
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[1].doneApply
@@ -8259,7 +8287,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[9].doneApply
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[10].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[11].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[12].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[14].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[15].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[16].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[17].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[18].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[19].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[20].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[21].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[22].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[23].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[24].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[25].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[26].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[33].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[34].doneApply
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[35].doneApply
@@ -8295,6 +8395,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[43].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[44].doneApply
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}

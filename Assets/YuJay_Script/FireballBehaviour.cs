@@ -35,6 +35,8 @@ public class FireballBehaviour : MonoBehaviour
         if (shouldBurnOut == true && canEndDetection == false)
         {
   
+            AudioManager.Instance.PlaySfx("Dino_When fireball touch the ground");
+            
             for (int i = 1; i <= numberOfSon_smallThenRaycount; ++i)
             {
                 float randomOfset;

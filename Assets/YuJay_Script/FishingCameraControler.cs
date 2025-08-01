@@ -76,6 +76,8 @@ public class FishingCameraControler : MonoBehaviour
                 {
                     canNormalBgm = false;
                     AudioManager.Instance.PlayMusic("Fishing_Bgm when the game haven't start");
+                    AudioManager.Instance.PlaySfx("Fishing_When the hook is come up from water");
+                    
                 }
                 
             }
@@ -88,6 +90,8 @@ public class FishingCameraControler : MonoBehaviour
     // can force camera move up
     public void ForceMoveUp()
     {
+        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
+        
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
 
@@ -98,6 +102,8 @@ public class FishingCameraControler : MonoBehaviour
 
     public void MoveUp()
     {
+        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
+        
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
 
@@ -113,6 +119,7 @@ public class FishingCameraControler : MonoBehaviour
         if (normalMode == true)
         {
             AudioManager.Instance.PlayMusic("Fishing_Bgm when the game start");
+            AudioManager.Instance.PlaySfx("Fishing_When the hook fall into water and the game start");
             canNormalBgm = true;
         }
         

@@ -67,8 +67,12 @@ public class EnemyThrower : MonoBehaviour
 
     private void ThrowNTimesGO(GameObject thrownGO ,int howManyTimes)
     {
+        
+        AudioManager.Instance.PlaySfx("Dino_When dino spray shoot fireball");
+        
         for (int i = 1; i <= howManyTimes; ++i)
         {
+            
             ThrowCollectible(thrownGO);
         }
     }
@@ -107,6 +111,7 @@ public class EnemyThrower : MonoBehaviour
             return;
         
         Debug.Log("Enemy is stunning");
+        AudioManager.Instance.PlaySfx("Dino_When dino get stun");
         isStunning = true;
         ThrowNTimesGO(collectiblePrefabs,3);
         Destroy(fireBallCollider.gameObject);

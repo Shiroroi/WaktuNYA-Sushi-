@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     public float dashDuration = 0.2f;
     public float dashCooldown = 1f;
 
-
+    public float footstepInterval = 0.5f;
+    private float _lastFootstepTime;
 
     
     private int _jumpCount;
@@ -132,6 +133,15 @@ public class PlayerController : MonoBehaviour
         if (_moveInput != 0)
         {
             _facingDirection = (int)Mathf.Sign(_moveInput);
+
+
+            if (_jumpCount == _maxJumps && Time.time >= _lastFootstepTime + footstepInterval)
+            {
+                Debug.Log("Play walk sound");
+                AudioManager.Instance.PlaySfx(true, "Dino_Player walking", "Dino_Player walking v2", "Dino_Player walking v3", "Dino_Player walking v4");
+                _lastFootstepTime = Time.time;
+            }
+            
         }
             
 
@@ -194,7 +204,7 @@ public class PlayerController : MonoBehaviour
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce); // need modify for rope after release
             _jumpCount--;
 
-            // AudioManager.Instance.PlaySfx("Jump");
+            AudioManager.Instance.PlaySfx("Dino_Player jump");
             
         }
     }
