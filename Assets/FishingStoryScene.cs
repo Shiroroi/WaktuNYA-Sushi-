@@ -20,7 +20,7 @@ public class FishingStoryScene : MonoBehaviour
     public Button nextButton; // assign NextButton here
     public string[] slideNames;
     private int currentSlideIndex = 0;
-    public string sceneToLoad = "MainMenu";
+    public string sceneToLoad = "StartMenu";
 
 
 

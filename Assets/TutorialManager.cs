@@ -6,7 +6,6 @@ public class TutorialManager : MonoBehaviour
 {
     public GameObject tutorialPanel;
     public string tutorialPlayerPrefKey = "HasShownDinoGameTutorial"; // Example key for this mini-game
-    public Button closeTutorialButton;
     public GameObject bG;
 
     
@@ -21,11 +20,6 @@ public class TutorialManager : MonoBehaviour
         else
         {
             HideTutorial(); // Ensure it's hidden and game is running if already shown
-        }
-
-        if (closeTutorialButton != null)
-        {
-            closeTutorialButton.onClick.AddListener(OnCloseTutorialButtonClicked);
         }
     }
 
@@ -72,11 +66,6 @@ public class TutorialManager : MonoBehaviour
 
     void OnDestroy()
     {
-        // Clean up the listener when the object is destroyed to prevent memory leaks
-        if (closeTutorialButton != null)
-        {
-            closeTutorialButton.onClick.RemoveListener(OnCloseTutorialButtonClicked);
-        }
         // Ensure timeScale is reset if the scene is unloaded while paused (e.g., in editor)
         if (Time.timeScale == 0f)
         {
@@ -86,6 +75,8 @@ public class TutorialManager : MonoBehaviour
 
     public void ToggleTutorial()
     {
+        AudioManager.Instance.PlaySfx("Menu_Button click sound");
+
         tutorialPanel.SetActive(true);
         if (Time.timeScale == 1f)
         {
@@ -95,6 +86,12 @@ public class TutorialManager : MonoBehaviour
 
     public void CloseTutorialPanel()
     {
+        AudioManager.Instance.PlaySfx("Menu_Button click sound");
         tutorialPanel.SetActive(false);
+
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+        }
     }
 }

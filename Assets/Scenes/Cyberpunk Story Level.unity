@@ -2120,8 +2120,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 248438077}
   - {fileID: 2108514404}
+  - {fileID: 248438077}
   - {fileID: 1445166805}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4378,7 +4378,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1590120046}
         m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
-        m_MethodName: OnCloseTutorialButtonClicked
+        m_MethodName: CloseTutorialPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4477,7 +4477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 2108514403}
   tutorialPlayerPrefKey: HasShownColorGameTutorial
-  closeTutorialButton: {fileID: 1573860772}
   bG: {fileID: 0}
 --- !u!4 &1590120047
 Transform:

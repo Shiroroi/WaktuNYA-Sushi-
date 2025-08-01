@@ -56,6 +56,8 @@ public class RecipeManager : MonoBehaviour
 
             if (match)
             {
+                AudioManager.Instance.PlaySfx("Cyber_When success craft a material");
+
                 ShowPopup($"Success! You have created a {recipe.recipeName}", recipe.resultSprite);
 
                 if (recipe.recipeName.ToLower() == "carrot")
@@ -76,6 +78,7 @@ public class RecipeManager : MonoBehaviour
                 return;
             }
         }
+        AudioManager.Instance.PlaySfx("Cyber_When fail to craft a material");
 
         ShowPopup("Incorrect! Try Again", null);
     }

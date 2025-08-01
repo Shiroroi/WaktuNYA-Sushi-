@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using Unity.Cinemachine;
+using UnityEngine.SceneManagement;
 
 
 public class Dialogue_menu : MonoBehaviour
@@ -44,7 +45,14 @@ public class Dialogue_menu : MonoBehaviour
     [HideInInspector] public bool pauseWhenEnd;
 
     public float o_musicFadeDuration;
-    
+
+    [Header("Scenes")]
+    public Image slideImage; // assign SlideImage here
+    public Button nextButton; // assign NextButton here
+    public string[] slideNames;
+    private int currentSlideIndex = 0;
+    public string sceneToLoad = "StartMenu";
+
 
     // disable window
     private void Awake()
@@ -415,6 +423,13 @@ public class Dialogue_menu : MonoBehaviour
         else if (gameObject.CompareTag("npc3"))
         {
             GameManager.instance.EnableNpc(3, false, GameManager.instance.npcEndPosition);
+
+            if (slideNames.Length > 0)
+            {
+                StartSlideshow();
+                nextButton.onClick.AddListener(NextSlide);
+
+            }
         }
             
         
@@ -489,7 +504,43 @@ public class Dialogue_menu : MonoBehaviour
             // Debug.Log("Find the possibe dialogue");
         }
     }
+    void StartSlideshow()
+    {
+        Time.timeScale = 0f;
+        slideImage.gameObject.SetActive(true);
+        nextButton.gameObject.SetActive(true);
+        ShowSlide(currentSlideIndex);
+    }
 
-    
+    void ShowSlide(int index)
+    {
+        Sprite slide = Resources.Load<Sprite>("BadEndingScene/" + slideNames[index]);
+        if (slide != null)
+        {
+            slideImage.sprite = slide;
+        }
+        else
+        {
+            Debug.LogWarning("Slide not found: " + slideNames[index]);
+        }
+    }
+    void NextSlide()
+    {
+        currentSlideIndex++;
+        if (currentSlideIndex < slideNames.Length)
+        {
+            ShowSlide(currentSlideIndex);
+        }
+        else
+        {
+            EndSlideshow();
+        }
+    }
 
+    void EndSlideshow()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("Slideshow ended. Loading scene: " + sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad);
+    }
 }
