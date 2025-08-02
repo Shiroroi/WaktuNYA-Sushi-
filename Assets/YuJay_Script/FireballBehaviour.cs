@@ -32,13 +32,17 @@ public class FireballBehaviour : MonoBehaviour
         if (collision2D.gameObject.tag == "sonOfFB")
             return;
         
+        AudioManager.Instance.PlaySfx("Dino_When fireball touch the ground");
+        
         if (shouldBurnOut == true && canEndDetection == false)
         {
-  
-            AudioManager.Instance.PlaySfx("Dino_When fireball touch the ground");
             
             for (int i = 1; i <= numberOfSon_smallThenRaycount; ++i)
             {
+
+                if (collision2D.gameObject.tag == "Player")
+                    break;
+                
                 float randomOfset;
                 float finalAngle;
                 Vector2 direction =Vector2.zero;

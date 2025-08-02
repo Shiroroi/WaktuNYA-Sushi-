@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a646bf541a2414ba2cce4e213439b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorialPanel: {fileID: 1078283332}
+  tutorialPanel: {fileID: 1513947628}
   tutorialPlayerPrefKey: HasShownFishingGameTutorial
   bG: {fileID: 1750174917}
 --- !u!4 &356259640
@@ -2486,7 +2486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1078283333
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3477,7 +3477,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1750174918
 RectTransform:
   m_ObjectHideFlags: 0

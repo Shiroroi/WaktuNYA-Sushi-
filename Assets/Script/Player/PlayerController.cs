@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
 
             if (_jumpCount == _maxJumps && Time.time >= _lastFootstepTime + footstepInterval)
             {
-                Debug.Log("Play walk sound");
+                
                 AudioManager.Instance.PlaySfx(true, "Dino_Player walking", "Dino_Player walking v2", "Dino_Player walking v3", "Dino_Player walking v4");
                 _lastFootstepTime = Time.time;
             }

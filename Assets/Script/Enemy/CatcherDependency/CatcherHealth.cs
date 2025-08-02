@@ -78,7 +78,7 @@ public class CatcherHealth : Health // Inhereit from Health, can make some modif
         }
     }
 
-    public override void TakeDamage(float _damageAmountTake)
+    public override void TakeDamage(int _damageAmountTake)
     {
         if (wantToTakeDamegeByPlayer == true)
         {

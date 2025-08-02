@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class DealDamageOnTouch : MonoBehaviour
 {
+    
+    public int damageAmount = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +23,7 @@ public class DealDamageOnTouch : MonoBehaviour
         {
             if (other.gameObject.GetComponent<Health>() != null)
             {
-                other.gameObject.GetComponent<Health>().TakeDamage(1);
+                other.gameObject.GetComponent<Health>().TakeDamage(damageAmount);
             }
         }
     }

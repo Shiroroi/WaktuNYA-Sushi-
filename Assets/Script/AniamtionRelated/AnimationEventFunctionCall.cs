@@ -37,7 +37,7 @@ public class AnimationEventFunctionCall : MonoBehaviour
         {
             if (_hitCollider.gameObject.GetComponent<Health>() != null)
             {
-                _hitCollider.gameObject.GetComponent<Health>().TakeDamage(attackMultiplier * _attackNum);
+                _hitCollider.gameObject.GetComponent<Health>().TakeDamage((int)(attackMultiplier * _attackNum));
             }
             
             

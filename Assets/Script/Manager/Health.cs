@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
 
-    public float maxHealth = 10f;
-    public float currentHealth = 10f;
+    public int maxHealth = 10;
+    public int currentHealth = 10;
     
     
     public GameObject spawnWhenDead;
@@ -18,6 +19,8 @@ public class Health : MonoBehaviour
     public GameObject erhhGameObjectPrefab;
     protected GameObject _erhhGameObject;
     public float erhhForce;
+    
+    public ChangeToNewScene changeToNewScene;
 
 
 
@@ -49,8 +52,10 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public virtual void TakeDamage(float _damageAmountTake) // First take damage function, will instantly die if health < 0
+    public virtual void TakeDamage(int _damageAmountTake) // First take damage function, will instantly die if health < 0
     {
+        
+        
         if (this.enabled == false)
         {
             return;
@@ -68,8 +73,10 @@ public class Health : MonoBehaviour
 
     }
 
-    public virtual void TakeDamage(float _damageAmountTake, float delayDie) // Second take damage function, will delay {delayDie} second only die if health < 0
+    public virtual void TakeDamage(int _damageAmountTake, float delayDie) // Second take damage function, will delay {delayDie} second only die if health < 0
     {
+        
+        
         if (this.enabled == false)
         {
             Debug.Log($"{gameObject.name} not found");
@@ -103,7 +110,7 @@ public class Health : MonoBehaviour
                 _changeColorCoroutine = StartCoroutine(ChangeColorCoroutine());
                 break;
             case gameObjectType.Player:
-                Debug.Log("PLayerHealthMinus");
+                Debug.LogWarning("Player health minus");
                 break;
         }
     }
@@ -117,22 +124,28 @@ public class Health : MonoBehaviour
         {
             case gameObjectType.LightEnemy:
                 
-                if (this== null)
+                if (this == null)
                     return; 
                 if(_changeColorCoroutine != null)
                     StopCoroutine(_changeColorCoroutine);
-     
+                
                 Destroy(this.gameObject);
                 break;
 
             case gameObjectType.HeavyEnemy:
                 StopCoroutine(_changeColorCoroutine);
-
                 Destroy(this.gameObject);
                 break;
 
             case gameObjectType.Player:
-                Debug.Log("PLayerShouldDie");
+                if (changeToNewScene != null)
+                {
+                    changeToNewScene.ChangeSceneTo("MainMenu");
+                }
+                else
+                {
+                    Debug.LogWarning("Player health change to new scene ref missing");
+                }
                 break;
         }
         

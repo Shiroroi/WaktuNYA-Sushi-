@@ -6,22 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/AudioManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/AniamtionRelated/AnimationEventFunctionCall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/AniamtionRelated/AnimationEventFunctionCall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/CatcherDependency/CatcherHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/CatcherDependency/CatcherHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/AudioManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/AudioManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/ChangeToNewScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/RopeRelated/BlockCollisionDetector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/RopeRelated/BlockCollisionDetector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/DealDamageOnTouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/DealDamageOnTouch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/SonOfFBBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/SonOfFBBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +36,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BgmSoundActivater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CyberStroyButtonEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Nathan_Script/NamedColor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Helper/IgnoreColisionBetween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StartFishingStroyEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Editor/UGUI/UI/GraphicEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Editor/UGUI/UI/SelectableEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -57,7 +58,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;yujay-fix-audio-and-dino-heart-&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -167,6 +168,8 @@
       <workItem from="1753951728564" duration="4571000" />
       <workItem from="1754013949420" duration="1571000" />
       <workItem from="1754019904399" duration="3976000" />
+      <workItem from="1754071437692" duration="257000" />
+      <workItem from="1754071711411" duration="4545000" />
     </task>
     <servers />
   </component>

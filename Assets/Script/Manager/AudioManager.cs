@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
+    public bool tempAudioManager;
+
     [Header("Music Settings")]
     [Tooltip("BGM fade time")]
     public float musicFadeDuration = 2.0f;
@@ -32,6 +34,9 @@ public class AudioManager : MonoBehaviour
     
     private void Awake()
     {
+        if (tempAudioManager == true)
+            return;
+        
         if (Instance == null)
         {
             Instance = this;
@@ -45,6 +50,14 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        if (tempAudioManager == true)
+        {
+
+            PlayMusic("Menu_Bgm");
+            return;
+        }
+           
+        
         if (!PlayerPrefs.HasKey("masterVolume")) PlayerPrefs.SetFloat("masterVolume", 1);
         if (!PlayerPrefs.HasKey("musicVolume")) PlayerPrefs.SetFloat("musicVolume", 1);
         if (!PlayerPrefs.HasKey("sfxVolume")) PlayerPrefs.SetFloat("sfxVolume", 1);
