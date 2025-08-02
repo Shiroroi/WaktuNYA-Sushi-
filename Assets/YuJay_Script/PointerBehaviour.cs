@@ -1,6 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 using System.Collections;
 
@@ -9,6 +11,10 @@ public class PointerBehaviour : MonoBehaviour
     public RectTransform pointA;
     public RectTransform pointB;
     public Collider2D goodAreaCollider;
+    
+    public GameObject resultRroup;
+    public TMP_Text resultText;
+    public Image resultSprite;
 
     public Vector2 leftBound;
     public Vector2 rightBound;
@@ -32,8 +38,8 @@ public class PointerBehaviour : MonoBehaviour
     public Dialogue_menu[]  dialogue_menus;
 
     public bool haveStartCoroutine;
-
-    
+    public string sushiName;
+    public Sprite sushiImage;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -53,8 +59,6 @@ public class PointerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
         PingPongAndCheck();
     }
 
@@ -103,10 +107,13 @@ public class PointerBehaviour : MonoBehaviour
                     (s.m2 == material1 || s.m2 == material2 || s.m2 == material3))
                 {
                     canCraft = true;
+                    sushiName = s.name;
+                    sushiImage = s.sushiImage;
                     break;
                 }
                 else
                 {
+                    
                     canCraft = false;
                 }
  
@@ -114,6 +121,7 @@ public class PointerBehaviour : MonoBehaviour
         }
         else
         {
+            AudioManager.Instance.PlaySfx("Main_When craft fail");
             canCraft = false;
         }
         
@@ -134,7 +142,13 @@ public class PointerBehaviour : MonoBehaviour
             InventoryManager.instance.UseSelectedItem(CraftBlock2);
             InventoryManager.instance.UseSelectedItem(CraftBlock3);
             AudioManager.Instance.PlaySfx("Main_When click craft button");
-            Debug.Log("Sushi has been created");
+            
+            resultRroup.SetActive(true);
+            resultText.text = "You have created a " + sushiName;
+            if (sushiImage != null)
+            {
+                resultSprite.sprite = sushiImage;
+            }
             CanContinueToTrue();
             
             

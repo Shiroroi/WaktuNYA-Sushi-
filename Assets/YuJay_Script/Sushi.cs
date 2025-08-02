@@ -5,4 +5,5 @@ using UnityEngine;
 public class Sushi
 {
     public string name, m1, m2;
+    public Sprite sushiImage;
 }

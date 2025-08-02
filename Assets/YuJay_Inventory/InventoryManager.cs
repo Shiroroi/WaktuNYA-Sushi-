@@ -51,6 +51,13 @@ public class InventoryManager : MonoBehaviour
         AddItem("tamagoyaki");
         AddItem("tamagoyaki");
         
+        AddItem("soySauce");
+        AddItem("soySauce");
+        AddItem("jelloWasabi");
+        AddItem("jelloWasabi");
+        
+        
+        
     }
 
 

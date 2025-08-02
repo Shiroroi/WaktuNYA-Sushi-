@@ -553,11 +553,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 778170140274328228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.95043945, y: 82}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -0.25, y: 173.57709}
   m_SizeDelta: {x: 370.9909, y: 63}
-  m_Pivot: {x: -0.30163231, y: 1.0000001}
+  m_Pivot: {x: 0, y: 2.6102304}
 --- !u!114 &292458061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,6 +1281,10 @@ PrefabInstance:
     - target: {fileID: 5186923126745464362, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964751089784102257, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7282824393601461575, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Name

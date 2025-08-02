@@ -7,7 +7,11 @@
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Manager/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Manager/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Nathan_Script/NamedColor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Helper/IgnoreColisionBetween.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StartFishingStroyEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextBarBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YuJay_Script/Sushi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" root0="FORCE_HIGHLIGHTING" />
@@ -158,6 +163,7 @@
       <workItem from="1754071437692" duration="257000" />
       <workItem from="1754071711411" duration="4545000" />
       <workItem from="1754114142298" duration="2654000" />
+      <workItem from="1754117206396" duration="7128000" />
     </task>
     <servers />
   </component>
