@@ -21,6 +21,7 @@ public class Health : MonoBehaviour
     public float erhhForce;
     
     public ChangeToNewScene changeToNewScene;
+    public HealthGroupBehaviour healthGroupBehaviour;
 
 
 
@@ -110,7 +111,8 @@ public class Health : MonoBehaviour
                 _changeColorCoroutine = StartCoroutine(ChangeColorCoroutine());
                 break;
             case gameObjectType.Player:
-                Debug.LogWarning("Player health minus");
+                healthGroupBehaviour.UpdateHeart();
+                
                 break;
         }
     }
