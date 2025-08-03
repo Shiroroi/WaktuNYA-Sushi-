@@ -8822,7 +8822,83 @@ PrefabInstance:
       objectReference: {fileID: 1960513959}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.size
-      value: 46
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[26].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cbf118c8996e3b14082110d912955822, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[26].name
+      value: Cyber_When click eraser
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[27].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ac57ceff6190f44994b5d92e69d6ca5, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[27].name
+      value: Dino_When player collect the stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[33].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 917fd28765af9344cbf7d610f6f62b3a, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[34].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 917fd28765af9344cbf7d610f6f62b3a, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[35].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 917fd28765af9344cbf7d610f6f62b3a, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[38].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ecb8d85f2699e3248a2f7407f92e2146, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[39].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ecb8d85f2699e3248a2f7407f92e2146, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[40].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[40].name
+      value: Main_When click X button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[41].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bac182f2a57bd5546bdc290b1e8dfd62, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[41].name
+      value: Dino_Player walking v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[42].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4370c0e5f488d2749a34352f8a55e580, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[42].name
+      value: Dino_Player walking v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[43].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 768503b60a5c9a94ba2dd57fbd614bd8, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[43].name
+      value: Dino_Player walking v4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[44].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c41964232a7d03347869923275d18eae, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[44].name
+      value: Main_When craft fail
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[45].clip
@@ -8831,6 +8907,18 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[45].name
       value: Main_When craft fail
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[26].doneApply
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[27].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: sfxSounds.Array.data[32].doneApply
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[45].doneApply
