@@ -52,6 +52,9 @@ public class Dialogue_menu : MonoBehaviour
     public string[] slideNames;
     private int currentSlideIndex = 0;
     public string sceneToLoad = "StartMenu";
+    
+    [Header("RemoveSushi")]
+    public PointerBehaviour pointerBehaviour;
 
 
     // disable window
@@ -91,7 +94,6 @@ public class Dialogue_menu : MonoBehaviour
         {
             AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 3");
         }
-        
         
     }
 
@@ -214,7 +216,7 @@ public class Dialogue_menu : MonoBehaviour
                     
             //  = , after the string start or end with = is being press, will show customer to npc name
             //  - , after the string start or end with - is being press, will shake the camera
-            //  % , after the string start or end with % is being press, will add bracelet to inventory
+            //  % , when the string start or end with % is typing, will immediately add bracelet to inventory
             //  : , after the string end with : is being press, canContinue will truns into false
             //  ; , if current string end with ; and canContinue is false but i still press, will just close and open current dialogue until canContinue is true
             //
@@ -304,7 +306,7 @@ public class Dialogue_menu : MonoBehaviour
                 impulseSource.GenerateImpulse();
             }
 
-            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("%") || dialogues[index].StartsWith("%")))
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("%") || dialogues[index+1].StartsWith("%")))
             {
                 InventoryManager.instance.AddItem("bracelet");
             }
@@ -413,6 +415,8 @@ public class Dialogue_menu : MonoBehaviour
             GameManager.instance.EnableNpc(1, false, GameManager.instance.npcEndPosition);
             GameManager.instance.EnableNpc(2, true, GameManager.instance.npcMiddlePosition);
             
+            
+            
         }
         else if (gameObject.CompareTag("npc2"))
         {
@@ -428,7 +432,7 @@ public class Dialogue_menu : MonoBehaviour
             {
                 StartSlideshow();
                 nextButton.onClick.AddListener(NextSlide);
-
+                
             }
         }
             
@@ -446,7 +450,10 @@ public class Dialogue_menu : MonoBehaviour
         
         if (gameObject.CompareTag("npc1"))
         {
+            AudioManager.Instance.sfxVolumeScale = 5f;
             AudioManager.Instance.PlaySfx(true,"Main_When npc1 talk", "Main_When npc1 talk v2");
+            AudioManager.Instance.sfxVolumeScale = 1f;
+
         }
         else if (gameObject.CompareTag("npc2"))
         {
@@ -470,6 +477,8 @@ public class Dialogue_menu : MonoBehaviour
 
         isWriting = false;
     }
+
+    
 
     public void AddDialogueToButton(string whenEndPossibleDialogueName)
     {
@@ -512,16 +521,16 @@ public class Dialogue_menu : MonoBehaviour
         ShowSlide(currentSlideIndex);
     }
 
-    void ShowSlide(int index)
+    void ShowSlide(int _index)
     {
-        Sprite slide = Resources.Load<Sprite>("BadEndingScene/" + slideNames[index]);
+        Sprite slide = Resources.Load<Sprite>("BadEndingScene/" + slideNames[_index]);
         if (slide != null)
         {
             slideImage.sprite = slide;
         }
         else
         {
-            Debug.LogWarning("Slide not found: " + slideNames[index]);
+            Debug.LogWarning("Slide not found: " + slideNames[_index]);
         }
     }
     void NextSlide()
