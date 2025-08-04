@@ -5,6 +5,7 @@ using System.Linq;
 using TMPro;
 
 using System.Collections;
+using System.Collections.Generic;
 
 public class PointerBehaviour : MonoBehaviour
 {
@@ -33,7 +34,8 @@ public class PointerBehaviour : MonoBehaviour
     public InventorySlot CraftBlock2;
     public InventorySlot CraftBlock3;
 
-    public Sushi[] sushi;
+    public List<Sushi> sushi;
+    
     
     public Dialogue_menu[]  dialogue_menus;
 
@@ -109,6 +111,7 @@ public class PointerBehaviour : MonoBehaviour
                     canCraft = true;
                     sushiName = s.name;
                     sushiImage = s.sushiImage;
+                    sushi.RemoveAt(0);
                     break;
                 }
                 else
