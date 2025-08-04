@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] float sfxMinPitch = 0.8f;
     
     [SerializeField] float sfxMaxPitch = 1.5f;
+    public float sfxVolumeScale = 1f;
     
     [Header("Audio Sources & Clips")]
     public Sound[] musicSounds;
@@ -50,6 +51,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        
+        
         if (tempAudioManager == true)
         {
 
@@ -196,7 +199,7 @@ public class AudioManager : MonoBehaviour
     }
 
     // 
-    public void PlaySfx(bool randomPitch, params string[] _names)
+    public void PlaySfx(bool randomPitch,  params string[] _names )
     {
         
         
@@ -219,19 +222,21 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning($"Sfx {nameToPlay} no clip");
             return;
         }
+
+        
+        
         
         if(randomPitch == true)
         {
             
             sfxSource.pitch = UnityEngine.Random.Range(sfxMinPitch, sfxMaxPitch);
-            sfxSource.PlayOneShot(s.clip);
-            
+            sfxSource.PlayOneShot(s.clip, sfxVolumeScale);
             
         }
         else
         {
             sfxSource.pitch = 1f;
-            sfxSource.PlayOneShot(s.clip);
+            sfxSource.PlayOneShot(s.clip, sfxVolumeScale);
         }
     }
 
@@ -245,4 +250,8 @@ public class AudioManager : MonoBehaviour
     {
         PlaySfx(false, _name);
     }
+    
+    
+
+    
 }
