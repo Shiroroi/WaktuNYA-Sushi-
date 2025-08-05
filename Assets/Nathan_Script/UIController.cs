@@ -82,7 +82,9 @@ public class UIController : MonoBehaviour
     {
         recipePanel.SetActive(true);
         recipePanelAnimator.OpenUI();
-
+        AudioManager.Instance.sfxVolumeScale = 7f;
+        AudioManager.Instance.PlaySfx("Main_When click recipe button");
+        AudioManager.Instance.sfxVolumeScale = 1f;
 
         //if (isJournalOpen && isPauseOpen)
         //{

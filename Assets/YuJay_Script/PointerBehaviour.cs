@@ -111,7 +111,7 @@ public class PointerBehaviour : MonoBehaviour
                     canCraft = true;
                     sushiName = s.name;
                     sushiImage = s.sushiImage;
-                    sushi.RemoveAt(0);
+                    
                     break;
                 }
                 else
@@ -145,7 +145,7 @@ public class PointerBehaviour : MonoBehaviour
             InventoryManager.instance.UseSelectedItem(CraftBlock2);
             InventoryManager.instance.UseSelectedItem(CraftBlock3);
             AudioManager.Instance.PlaySfx("Main_When click craft button");
-            
+            sushi.RemoveAt(0);
             resultRroup.SetActive(true);
             resultText.text = "You have created a " + sushiName;
             if (sushiImage != null)
