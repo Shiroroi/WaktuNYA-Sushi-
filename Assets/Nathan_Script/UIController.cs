@@ -119,6 +119,9 @@ public class UIController : MonoBehaviour
 
     public void OpenCraftingMenu()
     {
+        AudioManager.Instance.sfxVolumeScale = 8f;
+        AudioManager.Instance.PlaySfx("Main_When press crafting table button");
+        AudioManager.Instance.sfxVolumeScale = 1f;
         inventoryTransform.SetParent(inventoryCraftingParent,false);
     }
     public void CloseCraftingMenu()

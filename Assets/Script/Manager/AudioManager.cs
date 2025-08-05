@@ -224,7 +224,7 @@ public class AudioManager : MonoBehaviour
         }
 
         
-        
+        Debug.Log("Playing Sfx: "+s.clip.name);
         
         if(randomPitch == true)
         {

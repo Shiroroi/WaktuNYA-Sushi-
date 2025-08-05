@@ -19,6 +19,8 @@ public class FishingCameraControler : MonoBehaviour
     
     private bool canNormalBgm = false;
 
+    public GameObject waterSpalshFrefab;
+
 
     // private variable
     private Camera _camera;
@@ -61,22 +63,24 @@ public class FishingCameraControler : MonoBehaviour
             // the mouse pointer is under the sea top
             if (_camera.ScreenToWorldPoint(Input.mousePosition).y < seaTop.position.y && _canStartDescent)
             {
+                
                 StartMovingDown();
-                
-                
                 
                 
             }
             // the mouse pointer is above the sea top
             else if (_camera.ScreenToWorldPoint(Input.mousePosition).y > seaTop.position.y)
             {
+                
                 _canStartDescent = true;
                 
                 if (canNormalBgm == true)
                 {
                     canNormalBgm = false;
+                    
                     AudioManager.Instance.PlayMusic("Fishing_Bgm when the game haven't start");
                     AudioManager.Instance.PlaySfx("Fishing_When the hook is come up from water");
+                    Instantiate(waterSpalshFrefab, new Vector3(_camera.ScreenToWorldPoint(Input.mousePosition).x, _camera.ScreenToWorldPoint(Input.mousePosition).y, 0),  Quaternion.identity);
                     
                 }
                 
@@ -90,11 +94,12 @@ public class FishingCameraControler : MonoBehaviour
     // can force camera move up
     public void ForceMoveUp()
     {
-        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
+        
         
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
-
+        
+        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
         movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, forceGoUpCurve);
@@ -102,12 +107,12 @@ public class FishingCameraControler : MonoBehaviour
 
     public void MoveUp()
     {
-        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
+        
         
         // if is going up or is stationary, return
         if (_currentMotion == CameraMotion.goUp || _currentMotion == CameraMotion.stationary) return;
 
-
+        AudioManager.Instance.PlaySfx("Fishing_When the rope get stretch");
         _currentMotion = CameraMotion.goUp;
         movementHelper.StopMoving(); // stop thr going down coroutine
         movementHelper.MoveToBySpeed(_camera.transform, targetPositionUp.transform.position, cameraSpeed, goUpCurve);
@@ -118,6 +123,7 @@ public class FishingCameraControler : MonoBehaviour
     {
         if (normalMode == true)
         {
+            
             AudioManager.Instance.PlayMusic("Fishing_Bgm when the game start");
             AudioManager.Instance.PlaySfx("Fishing_When the hook fall into water and the game start");
             canNormalBgm = true;

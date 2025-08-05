@@ -25,17 +25,26 @@ public class FishingHookBehaviour : MonoBehaviour
 
     public List<Collider2D> _myFishesCollider = new List<Collider2D>();
     public List<SpriteRenderer> _myFishesSprite = new List<SpriteRenderer>();
-
+    public List<Collider2D> allFishesCollider = new List<Collider2D>();
+    
+    private int fishCount = 0;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        foreach (Collider2D col in allFishesCollider)
+        {
+            col.isTrigger = true;
+        }
+        fishCount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        
         FollowingMouse();
         
         TryCatchFish();
@@ -86,9 +95,29 @@ public class FishingHookBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D fishCollider)
     {
+        if (fishCollider.gameObject.layer == LayerMask.NameToLayer("Water"))
+            return;
+        
+        ++fishCount;
+        
+        if (fishCount <= 5)
+        {
+            AudioManager.Instance.PlaySfx("Fishing_When catching fish");
+            _myFishesCollider.Add(fishCollider);
+            _myFishesSprite.Add(fishCollider.GetComponentInChildren<SpriteRenderer>());
 
-        _myFishesCollider.Add(fishCollider);
-        _myFishesSprite.Add(fishCollider.GetComponentInChildren<SpriteRenderer>());
+            if (fishCount == 5)
+            {
+                Debug.Log("LLL");
+                foreach (Collider2D col in allFishesCollider)
+                {
+                    col.isTrigger = false;
+                }
+                
+            }
+        }
+        
+        
 
         fisihingCameraController.ForceMoveUp();
 

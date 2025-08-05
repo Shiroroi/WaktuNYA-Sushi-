@@ -1381,6 +1381,7 @@ MonoBehaviour:
   musicFadeDuration: 2
   sfxMinPitch: 1.5
   sfxMaxPitch: 0.8
+  sfxVolumeScale: 1
   musicSounds:
   - name: Menu_Bgm
     clip: {fileID: 8300000, guid: c4eb66d8b5180cc44a8bb9bfd6fd1c01, type: 3}

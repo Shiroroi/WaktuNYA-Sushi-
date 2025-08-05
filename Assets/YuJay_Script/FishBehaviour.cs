@@ -63,7 +63,7 @@ public class FishBehaviour : MonoBehaviour
         if (isWhichItem_Name != null && isWhichItem_Name!= "" && isMermaid == false) 
         {
             AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(isWhichItem_Name);
-            AudioManager.Instance.PlaySfx("Fishing_When catching fish");
+            
             
         }
         
