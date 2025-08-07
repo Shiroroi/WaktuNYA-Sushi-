@@ -924,6 +924,8 @@ MonoBehaviour:
   spawnWhenDead: {fileID: 0}
   erhhGameObjectPrefab: {fileID: 0}
   erhhForce: 0
+  changeToNewScene: {fileID: 0}
+  healthGroupBehaviour: {fileID: 0}
   type: 2
 --- !u!4 &683222072 stripped
 Transform:
@@ -1198,7 +1200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1206,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 97
+      value: 138
       objectReference: {fileID: 0}
     - target: {fileID: 1387154185622722736, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1800,7 +1802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 1401481401}
   tutorialPlayerPrefKey: HasShownDinoGameTutorial
-  closeTutorialButton: {fileID: 1483459913}
   bG: {fileID: 1930513981}
 --- !u!4 &940357640
 Transform:

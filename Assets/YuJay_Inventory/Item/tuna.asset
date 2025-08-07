@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: tuna
   m_EditorClassIdentifier: 
   image: {fileID: 9190165816156621279, guid: b6a2fde8743152a4189012a637148645, type: 3}
+  displayName: Tuna

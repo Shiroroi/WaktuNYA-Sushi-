@@ -5196,7 +5196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5204,7 +5204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 966239450769286907, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 99
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 1387154185622722736, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5277,6 +5277,10 @@ PrefabInstance:
     - target: {fileID: 3240044437030930827, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3381633133621661093, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: rTOffset.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3381633133621661093, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: itemsToPickUp.Array.size
@@ -5357,6 +5361,10 @@ PrefabInstance:
     - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ChangeToNewScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964751089784102257, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7282824393601461575, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Name
