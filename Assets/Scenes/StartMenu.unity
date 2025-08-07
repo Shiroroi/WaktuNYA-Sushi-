@@ -1420,6 +1420,9 @@ MonoBehaviour:
   - name: Cyber_Bgm
     clip: {fileID: 8300000, guid: 6b00743cd54c13c4996a3ad75d8245ea, type: 3}
     doneApply: 1
+  - name: Main_when game ends
+    clip: {fileID: 8300000, guid: 5df769d305b4b3942b287c89bf5ac480, type: 3}
+    doneApply: 1
   sfxSounds:
   - name: Menu_Button click sound
     clip: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}

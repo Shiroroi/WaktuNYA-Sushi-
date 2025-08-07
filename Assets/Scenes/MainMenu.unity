@@ -8824,6 +8824,10 @@ PrefabInstance:
       value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: musicSounds.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[1].clip
       value: 
       objectReference: {fileID: 8300000, guid: b34c48df1f3d5fb48a971b7b50f3e0da, type: 3}
@@ -9200,6 +9204,14 @@ PrefabInstance:
       value: Main_When press crafting table button
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: musicSounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5df769d305b4b3942b287c89bf5ac480, type: 3}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: musicSounds.Array.data[11].name
+      value: Main_when game ends
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[0].doneApply
       value: 1
       objectReference: {fileID: 0}
@@ -9257,6 +9269,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: musicSounds.Array.data[0].doneApply
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
+      propertyPath: musicSounds.Array.data[11].doneApply
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12512,8 +12528,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6377179181788446669, guid: 15c347ade0172f446aedf19852cb8c90, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12804,8 +12820,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1254, y: 82}
-  m_SizeDelta: {x: 174.532, y: 385.108}
+  m_AnchoredPosition: {x: -1245.44, y: 113.02}
+  m_SizeDelta: {x: 191.66, y: 447.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3285932346858407272
 GameObject:

@@ -513,6 +513,9 @@ public class Dialogue_menu : MonoBehaviour
             // Debug.Log("Find the possibe dialogue");
         }
     }
+
+    //  ---------------- Bad End Slideshow Codes ----------------
+
     void StartSlideshow()
     {
         Time.timeScale = 0f;
@@ -550,6 +553,7 @@ public class Dialogue_menu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Debug.Log("Slideshow ended. Loading scene: " + sceneToLoad);
+        AudioManager.Instance.PlayMusic("Main_when game ends");
         SceneManager.LoadScene(sceneToLoad);
     }
 }
