@@ -461,7 +461,7 @@ public class Dialogue_menu : MonoBehaviour
         }
         else if (gameObject.CompareTag("npc3"))
         {
-            AudioManager.Instance.PlaySfx(true, "Main_When npc3 talk");
+            AudioManager.Instance.PlaySfx(true, "Main_When npc3 talk", "Main_When npc3 talk V2");
         }
         
         

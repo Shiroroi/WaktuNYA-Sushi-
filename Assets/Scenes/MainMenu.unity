@@ -9091,11 +9091,11 @@ PrefabInstance:
       objectReference: {fileID: 55667830}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxMaxPitch
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxMinPitch
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: volumeSlider
@@ -9103,7 +9103,7 @@ PrefabInstance:
       objectReference: {fileID: 1960513959}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.size
-      value: 46
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: musicSounds.Array.size
@@ -9384,7 +9384,7 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[35].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 2c26f679fe99c5a4782ed52ad657ef7e, type: 3}
+      objectReference: {fileID: 8300000, guid: 578d588affca5d746bc828e18e451a3b, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[35].name
       value: Main_When npc1 talk
@@ -9392,7 +9392,7 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[36].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 5c59a751ce0492e478c2e7ab35ef56f2, type: 3}
+      objectReference: {fileID: 8300000, guid: 1d398e65ab33daa4f9fd461332976e7d, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[36].name
       value: Main_When npc1 talk v2
@@ -9400,79 +9400,79 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[37].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ecb8d85f2699e3248a2f7407f92e2146, type: 3}
+      objectReference: {fileID: 8300000, guid: 373ac9bfd34fe534e9cf9bfc47fd4fac, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[37].name
-      value: Main_When npc2 talk
+      value: Main_When npc1 talk v3
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[38].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 6e2e9b4df3748ae42b5f7f4928effafe, type: 3}
+      objectReference: {fileID: 8300000, guid: ecb8d85f2699e3248a2f7407f92e2146, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[38].name
-      value: Main_When npc3 talk
+      value: Main_When npc2 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[39].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+      objectReference: {fileID: 8300000, guid: 6e89bafc3a4674f46b301c8ff3cffba7, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[39].name
-      value: Main_When click X button
+      value: Main_When npc3 talk
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[40].clip
       value: 
-      objectReference: {fileID: 8300000, guid: bac182f2a57bd5546bdc290b1e8dfd62, type: 3}
+      objectReference: {fileID: 8300000, guid: 0c1db3abe7d334745a237bab21208b12, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[40].name
-      value: Dino_Player walking v2
+      value: Main_When npc3 talk V2
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[41].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 4370c0e5f488d2749a34352f8a55e580, type: 3}
+      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[41].name
-      value: Dino_Player walking v3
+      value: Main_When click X button
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[42].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 768503b60a5c9a94ba2dd57fbd614bd8, type: 3}
+      objectReference: {fileID: 8300000, guid: bac182f2a57bd5546bdc290b1e8dfd62, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[42].name
-      value: Dino_Player walking v4
+      value: Dino_Player walking v2
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[43].clip
       value: 
-      objectReference: {fileID: 8300000, guid: e5997615bd1cc4e4c84903795720326d, type: 3}
+      objectReference: {fileID: 8300000, guid: 4370c0e5f488d2749a34352f8a55e580, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[43].name
-      value: Main_When craft fail
+      value: Dino_Player walking v3
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[44].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 653373cd884519046863eabe98b9217a, type: 3}
+      objectReference: {fileID: 8300000, guid: 768503b60a5c9a94ba2dd57fbd614bd8, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[44].name
-      value: Main_When press crafting table button
+      value: Dino_Player walking v4
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[45].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 12715e721079c504ebf42bb514254c9f, type: 3}
+      objectReference: {fileID: 8300000, guid: e5997615bd1cc4e4c84903795720326d, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[45].name
-      value: Main_When click craft button
+      value: Main_When craft fail
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[46].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+      objectReference: {fileID: 8300000, guid: 653373cd884519046863eabe98b9217a, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[46].name
       value: Main_When press crafting table button
@@ -9480,10 +9480,10 @@ PrefabInstance:
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[47].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 59d8de967760e3544baa97c6da82e535, type: 3}
+      objectReference: {fileID: 8300000, guid: 12715e721079c504ebf42bb514254c9f, type: 3}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: sfxSounds.Array.data[47].name
-      value: Main_When press crafting table button
+      value: Main_When click craft button
       objectReference: {fileID: 0}
     - target: {fileID: 7069743670014100898, guid: 5fa57f31ceebbfb4aada6b32d5820ac7, type: 3}
       propertyPath: musicSounds.Array.data[11].clip
