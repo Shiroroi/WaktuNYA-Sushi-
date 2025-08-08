@@ -19,7 +19,9 @@ public class EnemyThrower : MonoBehaviour
     public bool isStunning;
     public float stunningTime;
     private bool canStartCoroutine;
-    
+    public Animator animator;
+    public bool isThrowing;
+    public float throwinmgAnimationDuration = 1f;
 
     void Start()
     {
@@ -38,6 +40,7 @@ public class EnemyThrower : MonoBehaviour
 
     private void Update()
     {
+        SetAnimation();
         if (isStunning == true)
         {
             if(canStartCoroutine == true)
@@ -62,17 +65,18 @@ public class EnemyThrower : MonoBehaviour
         
 
         cooldownTimer = 0f;
+        
+        
     }
     
 
     private void ThrowNTimesGO(GameObject thrownGO ,int howManyTimes)
     {
-        
+        animator.SetTrigger("isThrowing");
         AudioManager.Instance.PlaySfx("Dino_When dino spray shoot fireball");
         
         for (int i = 1; i <= howManyTimes; ++i)
         {
-            
             ThrowCollectible(thrownGO);
         }
     }
@@ -115,10 +119,15 @@ public class EnemyThrower : MonoBehaviour
         isStunning = true;
         ThrowNTimesGO(collectiblePrefabs,3);
         Destroy(fireBallCollider.gameObject);
-        
-        
-        
+
             
+    }
+
+    
+
+    public void SetAnimation()
+    {
+        animator.SetBool("isStun", isStunning);
     }
 }
 

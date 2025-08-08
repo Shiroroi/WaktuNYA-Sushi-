@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="" />
+    <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/EnemyThrower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/RopeVerlet2_original.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/RopeVerlet2_original.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,6 +172,8 @@
       <workItem from="1754378869027" duration="2195000" />
       <workItem from="1754412316912" duration="1395000" />
       <workItem from="1754550442487" duration="2750000" />
+      <workItem from="1754570348952" duration="1206000" />
+      <workItem from="1754644775586" duration="5478000" />
     </task>
     <servers />
   </component>

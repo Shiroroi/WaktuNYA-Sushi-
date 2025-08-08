@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7833339278847867627}
   - component: {fileID: 5820153174900263829}
   - component: {fileID: 2331608974826192064}
-  m_Layer: 7
+  - component: {fileID: 2847014707076303931}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -55,9 +56,12 @@ MonoBehaviour:
   dashSpeed: 20
   dashDuration: 0.2
   dashCooldown: 0
+  footstepInterval: 0.16
   currentMoveInput: 0
   isMeleeAttack: 0
   attackSpeed: 1.5
+  isWalking: 0
+  isJumping: 0
 --- !u!50 &7833339278847867627
 Rigidbody2D:
   serializedVersion: 5
@@ -143,6 +147,26 @@ SpringJoint2D:
   m_Distance: 0.7267049
   m_DampingRatio: 1
   m_Frequency: 0.83
+--- !u!114 &2847014707076303931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635342865302985109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2178d54a4de7ea47a25a59eab119193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 6
+  currentHealth: 6
+  spawnWhenDead: {fileID: 0}
+  erhhGameObjectPrefab: {fileID: 0}
+  erhhForce: 0
+  changeToNewScene: {fileID: 0}
+  healthGroupBehaviour: {fileID: 0}
+  type: 2
 --- !u!1 &916200530620113427
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +179,7 @@ GameObject:
   - component: {fileID: 773978276847317018}
   - component: {fileID: 2590956772210146701}
   - component: {fileID: 1470863225821066872}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: ThrowPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +276,7 @@ GameObject:
   - component: {fileID: 7264831084808534965}
   - component: {fileID: 4510762477794667133}
   - component: {fileID: 8740439772993649893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ThrowRope
   m_TagString: ThrowRope
   m_Icon: {fileID: 0}
@@ -399,7 +423,7 @@ MonoBehaviour:
   _dampingFactor: 0.98
   _collisionMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 55
   _collisionRadius: 0.1
   _bounceFactor: 0.1
   _numOfConstraintRuns: 200
@@ -424,7 +448,7 @@ GameObject:
   - component: {fileID: 8536236376850957618}
   - component: {fileID: 3952740048113327258}
   - component: {fileID: 6420315219847337257}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +514,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1670995327, guid: fbaab84148a3f154fab5b573fdfd7f13, type: 3}
+  m_Sprite: {fileID: -1881368757124626867, guid: 7df28efff41bf324ba110175395cb5c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -511,7 +535,7 @@ Animator:
   m_GameObject: {fileID: 2426419111866936976}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1abbb8ad48cbbf6499d322eb2f6b7d9b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8d1c420e9e21e164d8af58e4f8f742fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -553,7 +577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3589628348084430205}
   - component: {fileID: 218650256639549226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MovementHelper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +624,7 @@ GameObject:
   - component: {fileID: 5437276920027245277}
   - component: {fileID: 1435844364947191508}
   - component: {fileID: 5642689870394009116}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: RopeController
   m_TagString: RopeController
   m_Icon: {fileID: 0}
@@ -640,7 +664,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   interstedLayer:
     serializedVersion: 2
-    m_Bits: 576
+    m_Bits: 128
   maxDistnace: 12.44
   gotHold: 0
   m_playerController: {fileID: 3078024177173481564}
@@ -694,8 +718,8 @@ MonoBehaviour:
   _targetOriginalInterepolation: 0
   _targetBpdyType: 0
   _targetOriginalFreezeRotation: 0
-  _targetOriginalGravity: 0
-  _targetOriginalMass: 0
+  _targetFinalGravity: 15
+  _targetFinalMass: 7.76
   distaceJointInitialDistance: 5
   whenThrowDistance: 0
   playerController: {fileID: 3078024177173481564}
@@ -703,6 +727,7 @@ MonoBehaviour:
   rayCountEvenNumber: 10
   targetTransform: {fileID: 0}
   targetOriginalPosiiton: {x: 0, y: 0, z: 0}
+  shouldReset: 1
 --- !u!120 &1435844364947191508
 LineRenderer:
   serializedVersion: 2
@@ -902,24 +927,33 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
+      inSlope: 5810.5635
+      outSlope: 5810.5635
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.0001720488
+      value: 0.99970055
+      inSlope: 0.06452715
+      outSlope: 0.06452715
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.061273128
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
+      inSlope: 0.00029950525
+      outSlope: 0.00029950525
       tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ropeProgressionSpeed: 11.1
+  ropeProgressionSpeed: 50
   _finishDrawingRope: 0
   isGrappling: 1

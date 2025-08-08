@@ -42,7 +42,8 @@ public class PlayerController : MonoBehaviour
     [Range(1,3)] public float attackSpeed = 1; // 3 is maximum
 
     private PlatformEffector2D[] _allPlatformEffectors;
-
+    public bool isWalking;
+    public bool isJumping;
 
 
 
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
         HandleDash();
 
-        DoAttack();
+       
 
         SetAnimation();
 
@@ -132,6 +133,7 @@ public class PlayerController : MonoBehaviour
 
         if (_moveInput != 0)
         {
+            isWalking = true;
             _facingDirection = (int)Mathf.Sign(_moveInput);
 
 
@@ -142,6 +144,10 @@ public class PlayerController : MonoBehaviour
                 _lastFootstepTime = Time.time;
             }
             
+        }
+        else
+        {
+            isWalking = false;
         }
             
 
@@ -206,6 +212,15 @@ public class PlayerController : MonoBehaviour
 
             AudioManager.Instance.PlaySfx("Dino_Player jump");
             
+        }
+
+        if (_jumpCount == _maxJumps)
+        {
+            isJumping = false;
+        }
+        else
+        {
+            isJumping = true;
         }
     }
     private IEnumerator Dash()
@@ -273,20 +288,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void DoAttack()
-    {
-        if (Input.GetButtonDown("Fire1"))
-        {
-
-            _animator.SetTrigger("meleeAttack");
-            isMeleeAttack = true;
-        }
-    }
+    
 
     private void SetAnimation()
     {
-        _animator.SetBool("isMeleeAttack", isMeleeAttack);
-        _animator.SetFloat("attackSpeed", attackSpeed);
+        _animator.SetBool("isWalking", isWalking);
+        _animator.SetBool("isJumping", isJumping);
 
     }
 }

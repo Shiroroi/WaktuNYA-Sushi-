@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RopeVerlet2_original : MonoBehaviour
@@ -10,10 +11,15 @@ public class RopeVerlet2_original : MonoBehaviour
     public int segmentlength = 35; // how many point
     public Vector2 gravityForce = new Vector2(0f, 0f);
     public Transform fishingHookTop;
-
+    public Vector2 ropeStartPosition;
     private float lineWidth = 0.1f;
+    public float ropeTestRadius;
 
-
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(ropeStartPosition, ropeTestRadius);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -117,7 +123,7 @@ public class RopeVerlet2_original : MonoBehaviour
 
         }
         RopeSegment lastSegment = ropeSegments[ropeSegments.Count - 1];
-        lastSegment.posNow = Vector2.zero;
+        lastSegment.posNow = ropeStartPosition;
         ropeSegments[ropeSegments.Count - 1] = lastSegment;
 
     }
