@@ -5927,19 +5927,7 @@ MonoBehaviour:
   CraftBlock1: {fileID: 1768904841}
   CraftBlock2: {fileID: 1397916721}
   CraftBlock3: {fileID: 98178676}
-  sushi:
-  - name: Bob sushi
-    m1: tamagoyaki
-    m2: tBoneSteak
-    sushiImage: {fileID: 3197753711279462982, guid: 5f4afa7c8aff57a43a59ccbd04830968, type: 3}
-  - name: Semicolon 3 Sushi
-    m1: soySauce
-    m2: jelloWasabi
-    sushiImage: {fileID: -4976434911308818209, guid: 3c2f2cb762691e541b23e4cad26dea32, type: 3}
-  - name: Chelley Sushi
-    m1: tuna
-    m2: seaweed
-    sushiImage: {fileID: 0}
+  sushi: []
   dialogue_menus:
   - {fileID: 641786141}
   - {fileID: 276647019}
@@ -5947,6 +5935,7 @@ MonoBehaviour:
   haveStartCoroutine: 0
   sushiName: 
   sushiImage: {fileID: 0}
+  gameManager: {fileID: 1465832240}
 --- !u!1 &1038771265
 GameObject:
   m_ObjectHideFlags: 0
@@ -8224,11 +8213,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   singletonCraftingCanvas: {fileID: 891032399}
   distanceToFacePlayer: 15
+  sushiCanCraft:
+  - name: Bob sushi
+    m1: tamagoyaki
+    m2: tBoneSteak
+    sushiImage: {fileID: 3197753711279462982, guid: 5f4afa7c8aff57a43a59ccbd04830968, type: 3}
+  - name: Semicolon 3 Sushi
+    m1: soySauce
+    m2: jelloWasabi
+    sushiImage: {fileID: -4976434911308818209, guid: 3c2f2cb762691e541b23e4cad26dea32, type: 3}
+  - name: Chelley Sushi
+    m1: tuna
+    m2: seaweed
+    sushiImage: {fileID: 0}
+  pointerBehaviour: {fileID: 1020720425}
   moveDuration: 1014
   moveDurationEnd: 449.2
   npc1: {fileID: 9102070247744153980}
   npc2: {fileID: 7404232801253819858}
   npc3: {fileID: 7932294324955026508}
+  currentNpc: 0
   npcMiddlePosition: {x: 0, y: 82}
   npcEndPosition: {x: 1570, y: 82}
 --- !u!4 &1465832241

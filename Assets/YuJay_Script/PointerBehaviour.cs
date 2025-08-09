@@ -43,6 +43,8 @@ public class PointerBehaviour : MonoBehaviour
     public string sushiName;
     public Sprite sushiImage;
     
+    public GameManager gameManager;
+    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,6 +53,8 @@ public class PointerBehaviour : MonoBehaviour
         rightBound = pointB.position;
         target = leftBound;
         canCraft = false;
+        
+        
     }
 
     void OnEnable()
@@ -102,25 +106,23 @@ public class PointerBehaviour : MonoBehaviour
         
         if (material1 == "rice" || material2 == "rice" || material3 == "rice")
         {
-            
-            foreach (Sushi s in sushi)
+
+            for (int i = 0; i < sushi.Count; ++i)
             {
-                if ((s.m1 == material1 || s.m1 == material2 || s.m1 == material3) &&
-                    (s.m2 == material1 || s.m2 == material2 || s.m2 == material3))
+                if ((sushi[i].m1 == material1 || sushi[i].m1 == material2 || sushi[i].m1 == material3) &&
+                    (sushi[i].m2 == material1 || sushi[i].m2 == material2 || sushi[i].m2 == material3))
                 {
                     canCraft = true;
-                    sushiName = s.name;
-                    sushiImage = s.sushiImage;
+                    sushiName = sushi[i].name;
+                    sushiImage = sushi[i].sushiImage;
                     
                     break;
                 }
-                else
-                {
-                    
-                    canCraft = false;
-                }
- 
+                
+                 canCraft = false;
+                
             }
+            
         }
         else
         {
@@ -135,8 +137,30 @@ public class PointerBehaviour : MonoBehaviour
         // if(haveStartCoroutine == false)
         //     StartCoroutine(GoAutoOnceLater());
         
+        // if continue == false then cannot craft //
+        switch (gameManager.currentNpc)
+        {
+            case GameManager.CurrentNpc.Bob:
+                if (dialogue_menus[0].canContinue != false)
+                    return;
+                break;
+            case GameManager.CurrentNpc.Robot:
+                if (dialogue_menus[1].canContinue != false)
+                    return;
+                break;
+            case GameManager.CurrentNpc.Chelly:
+                if (dialogue_menus[2].canContinue != false)
+                    return;
+                break;
+        }
+
+        
+        
+        
         CheckCanCraft();
         nowCheck = !nowCheck;
+
+        
         
         if (contain == true && canCraft == true && nowCheck)
         {
@@ -154,8 +178,7 @@ public class PointerBehaviour : MonoBehaviour
             }
             CanContinueToTrue();
             
-            
-            
+
         }
         
     }

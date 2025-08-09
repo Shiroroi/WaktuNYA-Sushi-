@@ -3,12 +3,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
+
 
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
     public static GameManager instance;
     public float distanceToFacePlayer = 15f;
+
+    public List<Sushi> sushiCanCraft;
+    public PointerBehaviour pointerBehaviour;
     
     public float moveDuration = 1f;
     public float moveDurationEnd = 1f;
@@ -17,7 +22,14 @@ public class GameManager : MonoBehaviour
     public GameObject npc2;
     public GameObject npc3;
 
+    public enum CurrentNpc
+    {
+        Bob,
+        Robot,
+        Chelly,
+    }
     
+    public CurrentNpc currentNpc;
     
     public const string mainMenuSceneName = "MainMenu";
 
@@ -75,7 +87,8 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc1.SetActive(true);
-                    
+                    currentNpc =  CurrentNpc.Bob;
+                    pointerBehaviour.sushi.Add(sushiCanCraft[0]);
                     StartCoroutine(npcMovementCoroutine(npc1, position));
                 }
                 else
@@ -90,7 +103,8 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc2.SetActive(true);
-                    
+                    currentNpc =  CurrentNpc.Robot;
+                    pointerBehaviour.sushi.Add(sushiCanCraft[1]);
                     StartCoroutine(npcMovementCoroutine(npc2, position));
                 }
                 else
@@ -104,7 +118,8 @@ public class GameManager : MonoBehaviour
                 if (enable == true)
                 {
                     npc3.SetActive(true);
-                    
+                    currentNpc =  CurrentNpc.Chelly;
+                    pointerBehaviour.sushi.Add(sushiCanCraft[2]);
                     StartCoroutine(npcMovementCoroutine(npc3, position));
                 }
                 else 
