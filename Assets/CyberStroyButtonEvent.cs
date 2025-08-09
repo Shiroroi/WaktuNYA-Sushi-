@@ -7,6 +7,8 @@ public class CyberStroyButtonEvent : MonoBehaviour
     {
         AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc("realMouse");
         AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc("pcMouse");
+        AudioManager.Instance.PlaySfx("Menu_Button click sound");
         SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
+        
     }
 }

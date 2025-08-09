@@ -148,8 +148,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.90588236, g: 0.32754812, b: 0.11372546, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6ea34082f4fd5654d8475427993093f6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -207,7 +207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df329509b0ceaf44aa9fce318edc5e9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canBeCollected: 0
+  playerInRange: 0
   itemName: tamagoyaki
+  isRock: 0
 --- !u!50 &-9124462408421647316
 Rigidbody2D:
   serializedVersion: 5

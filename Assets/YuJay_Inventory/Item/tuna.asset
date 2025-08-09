@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: tuna
   m_EditorClassIdentifier: 
-  image: {fileID: 9190165816156621279, guid: b6a2fde8743152a4189012a637148645, type: 3}
+  image: {fileID: 21300000, guid: bbf1539634633f94dbf0c89e0b916078, type: 3}
   displayName: Tuna

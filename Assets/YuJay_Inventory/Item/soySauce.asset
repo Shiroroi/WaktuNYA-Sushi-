@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: soySauce
   m_EditorClassIdentifier: 
-  image: {fileID: -2167334305135057038, guid: 06888c9f2e230c64fa8b73b00ba512fd, type: 3}
+  image: {fileID: 21300000, guid: f9b6757ab0915604cb520548bb07d508, type: 3}
   displayName: 
