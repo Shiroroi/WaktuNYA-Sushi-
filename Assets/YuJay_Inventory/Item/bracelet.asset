@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: bracelet
   m_EditorClassIdentifier: 
-  image: {fileID: -728629639, guid: fbaab84148a3f154fab5b573fdfd7f13, type: 3}
+  image: {fileID: 21300000, guid: dcabac4fe36336f4dad1fe3bc2fd2e2c, type: 3}
   displayName: 

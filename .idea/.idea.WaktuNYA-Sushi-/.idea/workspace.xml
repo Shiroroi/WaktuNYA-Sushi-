@@ -6,8 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Heart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Heart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Collectible 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Collectible 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/bracelet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/bracelet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/coconutPufferfish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/coconutPufferfish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/jelloWasabi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/jelloWasabi.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/nanoCarrot.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/nanoCarrot.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/pcMouse.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/pcMouse.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/realMouse.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Item/realMouse.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +183,7 @@
       <workItem from="1754570348952" duration="1206000" />
       <workItem from="1754644775586" duration="6897000" />
       <workItem from="1754725857833" duration="3592000" />
+      <workItem from="1754731722899" duration="810000" />
     </task>
     <servers />
   </component>

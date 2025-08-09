@@ -25,7 +25,8 @@ public class AddToSmallInventory : MonoBehaviour
             Destroy(gameObject);
         }
         
-        gameObject.GetComponent<RectTransform>().pivot = new  Vector2(0f, 1.3f);
+        gameObject.GetComponent<RectTransform>().pivot = new  Vector2(0f, 1f);
+        
     }
 
     public void AddToSmallInventoryAndBigFunc(string itemName)

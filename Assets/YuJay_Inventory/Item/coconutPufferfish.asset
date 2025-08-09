@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 798cd18d206ae9e40b05e2359938dffe, type: 3}
   m_Name: coconutPufferfish
   m_EditorClassIdentifier: 
-  image: {fileID: -1057465175307866207, guid: c17d2e7e7fe60c049afdde50e3fe0ffe, type: 3}
+  image: {fileID: 21300000, guid: b8faf334f50a4654c939d471ca5f5902, type: 3}
+  displayName: 

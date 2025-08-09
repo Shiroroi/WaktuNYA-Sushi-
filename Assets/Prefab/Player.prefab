@@ -123,8 +123,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.027328968, y: 0.07287687}
-  m_Size: {x: 0.7004113, y: 1.163973}
+  m_Offset: {x: -0.027328968, y: 0.7569616}
+  m_Size: {x: 0.7004113, y: 1.5165939}
   m_Direction: 0
 --- !u!231 &2331608974826192064
 SpringJoint2D:
