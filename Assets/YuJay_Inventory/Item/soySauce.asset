@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: soySauce
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: f9b6757ab0915604cb520548bb07d508, type: 3}
-  displayName: 
+  displayName: Gear Grease Soy Sauce

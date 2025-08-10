@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: nanoCarrot
   m_EditorClassIdentifier: 
   image: {fileID: 6187714994450428053, guid: 0434eb059e578674287355caacddb57f, type: 3}
-  displayName: 
+  displayName: Nano Carrot

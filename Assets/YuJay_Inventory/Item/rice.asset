@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: rice
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 9cf00cca1c5d6ca46866cb2617c134a1, type: 3}
-  displayName: 
+  displayName: Rice

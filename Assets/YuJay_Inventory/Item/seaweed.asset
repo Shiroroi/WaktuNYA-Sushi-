@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: seaweed
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 04927f3aec1a0214282480e79b758456, type: 3}
-  displayName: 
+  displayName: Seaweed

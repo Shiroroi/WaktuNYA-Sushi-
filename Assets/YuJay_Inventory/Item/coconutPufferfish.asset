@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: coconutPufferfish
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b8faf334f50a4654c939d471ca5f5902, type: 3}
-  displayName: 
+  displayName: Coconut Pufferfish

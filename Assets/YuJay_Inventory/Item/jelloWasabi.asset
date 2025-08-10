@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: jelloWasabi
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: d63aa12dfb6567c4f83a1d0c4524fbe8, type: 3}
-  displayName: 
+  displayName: Jello Wasabi

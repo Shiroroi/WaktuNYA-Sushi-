@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: tBoneSteak
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: b71b638e2cc120b439c9c7492969bd57, type: 3}
-  displayName: 
+  displayName: T-Bone Steak

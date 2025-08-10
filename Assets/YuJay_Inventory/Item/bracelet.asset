@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: bracelet
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: dcabac4fe36336f4dad1fe3bc2fd2e2c, type: 3}
-  displayName: 
+  displayName: Chelley's Bracelet

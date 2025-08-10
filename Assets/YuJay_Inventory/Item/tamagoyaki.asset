@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: tamagoyaki
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 6ea34082f4fd5654d8475427993093f6, type: 3}
-  displayName: 
+  displayName: Egg Roll

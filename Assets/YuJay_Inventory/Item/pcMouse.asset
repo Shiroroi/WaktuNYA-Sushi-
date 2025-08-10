@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: pcMouse
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: 506f7273237da574fb7bf4ba121bdaa3, type: 3}
-  displayName: 
+  displayName: PC Mouse

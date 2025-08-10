@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: realMouse
   m_EditorClassIdentifier: 
   image: {fileID: 21300000, guid: e3c0996fa79531d4fac7bf624cf50bc0, type: 3}
-  displayName: 
+  displayName: Regular Mouse
