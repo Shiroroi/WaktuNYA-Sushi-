@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector] public SingletonCraftingCanvas singletonCraftingCanvas;
+    public SingletonCraftingCanvas singletonCraftingCanvas;
     public static GameManager instance;
     public float distanceToFacePlayer = 15f;
 
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         
-        if(SingletonCharacterCanvas.theStaticChracterCanvas == null)
+        if(SingletonCraftingCanvas.theStaticCraftingCanvas == null)
             singletonCraftingCanvas.HelpCraftingCanvasSingelton();
     }
     
