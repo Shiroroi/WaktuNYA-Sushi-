@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 941cdb6ec775c0b4aa91308d039bc3ab
+guid: 94e1ca550b6d29549a099b1f873e4968
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6890615073342473669
-    second: Screenshot 2025-06-30 173807_0
+      213: 3412321819697912751
+    second: craftbutton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot 2025-06-30 173807_0
+      name: craftbutton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2559
-        height: 1177
+        width: 21
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c5c782b6e160af50800000000000000
-      internalID: 6890615073342473669
+      spriteID: fab9862ad900b5f20800000000000000
+      internalID: 3412321819697912751
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screenshot 2025-06-30 173807_0: 6890615073342473669
+      craftbutton_0: 3412321819697912751
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

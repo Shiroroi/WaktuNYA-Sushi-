@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ScreenTransition_Unlit
-  m_Shader: {fileID: -6465566751694194690, guid: 5bce0e89b41c2ed44b068833a308f163, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 45491583356f79849b949994c9ef18ba, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 941cdb6ec775c0b4aa91308d039bc3ab, type: 3}
+        m_Texture: {fileID: 2800000, guid: e3fb5febe6c061f499abc9c6a04e3fc2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _Progress: 1
     m_Colors:
-    - _TranssitionColor: {r: 0, g: 0.116161495, b: 0.3333333, a: 1}
+    - _TranssitionColor: {r: 0.48427665, g: 0.48427665, b: 0.48427665, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8172405254106686620

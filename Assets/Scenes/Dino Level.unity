@@ -650,7 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 683222067}
   heartPrefab: {fileID: 7300168667382659604, guid: e969cce883a4a4f4f9bdc05c6f196904, type: 3}
-  heartDamageImage: {fileID: -4976434911308818209, guid: 3c2f2cb762691e541b23e4cad26dea32, type: 3}
+  heartDamageImage: {fileID: 21300000, guid: 9983527a518d3e545b010c55f061d039, type: 3}
   finalHeartList: []
 --- !u!1 &336965194
 GameObject:
