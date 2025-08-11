@@ -21,6 +21,8 @@ public class FishingCameraControler : MonoBehaviour
 
     public GameObject waterSpalshFrefab;
 
+    public float delayStartTime  = 1.1f;
+    private float delayCounter;
 
     // private variable
     private Camera _camera;
@@ -48,12 +50,21 @@ public class FishingCameraControler : MonoBehaviour
             Debug.Log(gameObject.name + " missing something");
             this.enabled = false; // disable this script
         }
+
+        delayCounter = 0f;
+
     }
 
 
     void Update()
     {
-
+        if (delayCounter < delayStartTime)
+        {
+            Debug.Log(delayCounter);
+            delayCounter += Time.deltaTime;
+            return;
+        }
+        
         if (Mathf.Approximately(Time.timeScale, 0f))
             return;
 

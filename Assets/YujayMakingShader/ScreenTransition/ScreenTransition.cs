@@ -7,11 +7,13 @@ public class ScreenTransition : MonoBehaviour
     [SerializeField]
     private Material screenTransitionMaterial;
 
+    [Range(0.1f, 1f)]
     [SerializeField] private float transitionTime = 1f;
 
     [SerializeField] private string propertyName = "_Progress";
 
-    private float delayTime = 1f;
+    [Range(0.1f, 1f)]
+    public float delayTime = 1f;
     public UnityEvent OnTransitionDone;
     
     

@@ -126,6 +126,7 @@ public class PointerBehaviour : MonoBehaviour
         }
         else
         {
+            
             AudioManager.Instance.PlaySfx("Main_When craft fail");
             canCraft = false;
         }
