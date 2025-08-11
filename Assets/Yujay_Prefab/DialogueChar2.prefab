@@ -178,6 +178,94 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5332705467789626135}
   m_maskType: 0
+--- !u!1 &2072572426637477248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5177853467352020458}
+  - component: {fileID: 775195000541928547}
+  m_Layer: 0
+  m_Name: NameIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5177853467352020458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072572426637477248}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.08, y: 0.9949907, z: 0}
+  m_LocalScale: {x: 2.2979996, y: 0.584, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3583143150114252069}
+  m_Father: {fileID: 8923503000165311310}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &775195000541928547
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072572426637477248}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 05284d18b326b9f4da14ebef7795a9e4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &4446557388600149552
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +385,7 @@ Transform:
   m_Children:
   - {fileID: 676392060353966735}
   - {fileID: 119335087564675208}
+  - {fileID: 5177853467352020458}
   m_Father: {fileID: 4752978235476682656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8918862277632765114
@@ -355,9 +444,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4752978235476682656}
   - component: {fileID: 6921581727298191966}
+  - component: {fileID: 8288047471244005651}
   m_Layer: 0
   m_Name: DialogueChar2
-  m_TagString: Untagged
+  m_TagString: npc2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,7 +462,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.13, y: -1.42, z: 0}
-  m_LocalScale: {x: 108.38043, y: 108.38043, z: 94.95395}
+  m_LocalScale: {x: 108.38043, y: 108.38043, z: 94.95394}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8923503000165311310}
@@ -392,9 +482,344 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   window: {fileID: 6462026533409736007}
   dialogueText: {fileID: 7649335877925650226}
+  nameText: {fileID: 3500483537870187009}
+  npcName: Semicolon 3
+  toDinoButton: {fileID: 0}
+  toFishingButton: {fileID: 0}
+  toCyberButton: {fileID: 0}
+  impulseSource: {fileID: 8288047471244005651}
+  canContinue: 0
   dialogues:
-  - Heya!
-  - I'm Character 2! I've come from the future!
-  - Beep boop bop
-  allPossibleDialogue: []
+  - ...
+  - Smells nice in here.
+  - You're the chef right?=
+  - "Name\u2019s Semicolon 3. Long story."
+  - 'I used to work security. Now I mostly wander and think about jazz. '
+  - "Anyway\u2026"
+  - 'Got anything for this old machine? '
+  whenEndPossibleDialogueName_1: I always have something for anyone. What are you
+    feeling?
+  whenEndPossibleDialogueName_2: "I\u2019ve got a few things. What are you in the
+    mood for?"
+  allPossibleDialogue:
+  - dialogueName: I always have something for anyone. What are you feeling?
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - ':'
+    - "I\u2019ll take one sushi with some gear grease soy sauce and jello wasabi.; "
+    - '*eating*'
+    - "\u2026"
+    - "Wow. That\u2019s\u2026 unexpectedly nostalgic."
+    - "You\u2019ve got talent, Chef. "
+    - "Actually\u2026 while I\u2019ve got you\u2026"
+    - Have you seen a mouse wandering here?
+    - I used to be a guard robot. All sharp edges and yelling.
+    - Then I met Mousey.
+    - Small. Soft. Squeaky.
+    - "Mousey taught me kindness\u2026 then disappeared."
+    - "I\u2019ve been looking ever since. "
+    - 'Will you help me find them? '
+    whenEndPossibleDialogueName_1: "Of course. I\u2019ll keep an eye out."
+    whenEndPossibleDialogueName_2: "Sorry, I don\u2019t have the time mate."
+  - dialogueName: "I\u2019ve got a few things. What are you in the mood for?"
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - ':'
+    - "I\u2019ll take one sushi with some gear grease soy sauce and jello wasabi.; "
+    - '*eating*'
+    - "\u2026"
+    - "Wow. That\u2019s\u2026 unexpectedly nostalgic."
+    - "You\u2019ve got talent, Chef. "
+    - "Actually\u2026 while I\u2019ve got you\u2026"
+    - Have you seen a mouse wandering here?
+    - I used to be a guard robot. All sharp edges and yelling.
+    - Then I met Mousey.
+    - Small. Soft. Squeaky.
+    - "Mousey taught me kindness\u2026 then disappeared."
+    - "I\u2019ve been looking ever since. "
+    - 'Will you help me find them? '
+    whenEndPossibleDialogueName_1: "Of course. I\u2019ll keep an eye out."
+    whenEndPossibleDialogueName_2: "Sorry, I don\u2019t have the time mate."
+  - dialogueName: "Of course. I\u2019ll keep an eye out."
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - '{:'
+    - "You\u2019re a good one, Chef, I\u2019ll be around.;"
+    - ...
+    whenEndPossibleDialogueName_1: I found this. Thought it might be Mousey. (Give
+      a real mouse)
+    whenEndPossibleDialogueName_2: I found this. Thought it might be Mousey. (Give
+      a PC mouse)
+  - dialogueName: "Sorry, I don\u2019t have the time mate."
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - "That\u2019s fair."
+    - Thanks for the sushi, though.
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  - dialogueName: I found this. Thought it might be Mousey. (Give a real mouse)
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Ah, You're back.
+    - ...
+    - "That\u2019s them.}"
+    - "That\u2019s really them."
+    - "You found Mousey\u2026"
+    - I owe you, Chef. Big time.
+    - I gotta go now, but I'll be back to return the favor.
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  - dialogueName: I found this. Thought it might be Mousey. (Give a PC mouse)
+    dialogue_LEAVE_A_BLANK_ON_FIRST_ONE:
+    - 
+    - Ah, You're back.
+    - ...
+    - "}Huh\u2026"
+    - "Not sure if this is Mousey\u2026"
+    - But it kinda feels like them.
+    - Thank you, Chef.
+    - For trying.
+    whenEndPossibleDialogueName_1: 
+    whenEndPossibleDialogueName_2: 
+  o_whenEndPossibleDialogueName_1: 
+  o_whenEndPossibleDialogueName_2: 
+  o_listSize: 0
   writingSpeed: 0.01
+  playerReactPanel: {fileID: 0}
+  firstChoiceButton: {fileID: 0}
+  secondChoiceButton: {fileID: 0}
+  stopBefore: 0
+  pauseWhenEnd: 0
+  o_musicFadeDuration: 0
+  slideImage: {fileID: 0}
+  nextButton: {fileID: 0}
+  slideNames: []
+  sceneToLoad: StartMenu
+  pointerBehaviour: {fileID: 0}
+  animator: {fileID: 0}
+--- !u!114 &8288047471244005651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119529071298233483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
+--- !u!1 &8268713097451835543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3583143150114252069}
+  - component: {fileID: 119718703555072780}
+  - component: {fileID: 3500483537870187009}
+  m_Layer: 0
+  m_Name: NameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3583143150114252069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268713097451835543}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.43516096, y: 1.7123287, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5177853467352020458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.4138379, y: -0.49657476}
+  m_SizeDelta: {x: 3.5602, y: 0.9896}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!23 &119718703555072780
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268713097451835543}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1921728231
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3500483537870187009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8268713097451835543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Customer
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 3
+  m_fontSizeBase: 3
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -0.22401524, y: -0.08821949, z: 1.583011, w: 0.49577817}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 119718703555072780}
+  m_maskType: 0

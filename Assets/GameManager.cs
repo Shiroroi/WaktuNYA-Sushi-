@@ -21,7 +21,22 @@ public class GameManager : MonoBehaviour
     public GameObject npc1;
     public GameObject npc2;
     public GameObject npc3;
-
+    
+    [Header("Aniamtion Ref")]
+    public Animator bobAnimator;
+    public Animator robotAnimator;
+    public Animator chellyAnimator;
+    
+    private Vector2 AngryCoor = new Vector2(-1, 1);
+    private Vector2 HappyCoor = new Vector2(0, 1);
+    private Vector2 HeyheyheyCoor = new Vector2(1, 1);
+    private Vector2 NormalCoor = new Vector2(-1, -1);
+    private Vector2 SadCoor = new Vector2(0, -1);
+    private Vector2 SideCoor = new Vector2(1, -1);
+    private Vector2 bobDefaultEmoCoor;
+    private Vector2 robotDefaultEmoCoor;
+    private Vector2 chellyDefaultEmoCoor;
+    
     public enum CurrentNpc
     {
         Bob,
@@ -35,9 +50,15 @@ public class GameManager : MonoBehaviour
 
     public Vector2 npcMiddlePosition =  new Vector2(0f, 82f);
     public Vector2 npcEndPosition = new Vector2(1570f, 82f);
-    
-    
-    
+
+
+    public void SetEmoCoor(Animator targetAnimator, Vector2 emoCoor)
+    {
+        targetAnimator.SetFloat("EmoX", emoCoor.x);
+        targetAnimator.SetFloat("EmoY", emoCoor.y);
+        
+        Debug.Log("Set animation coor to " + emoCoor);
+    }
     
     
     
@@ -57,11 +78,20 @@ public class GameManager : MonoBehaviour
         
         if(SingletonCraftingCanvas.theStaticCraftingCanvas == null)
             singletonCraftingCanvas.HelpCraftingCanvasSingelton();
+        
+        
     }
     
     
     void Start()
     {
+        // change default emotion to corresponding coor
+        bobDefaultEmoCoor = SadCoor;
+        robotDefaultEmoCoor = NormalCoor;
+        chellyDefaultEmoCoor = NormalCoor;
+        
+        
+        
         EnableNpc(1, true, npcMiddlePosition);
     }
 
@@ -73,10 +103,6 @@ public class GameManager : MonoBehaviour
         
     }
 
-    
-    
-    
-      
     
 
     public void EnableNpc(int npcWhat, bool enable, Vector2 position )
@@ -90,11 +116,13 @@ public class GameManager : MonoBehaviour
                     currentNpc =  CurrentNpc.Bob;
                     pointerBehaviour.sushi.Add(sushiCanCraft[0]);
                     StartCoroutine(npcMovementCoroutine(npc1, position));
+                    SetEmoCoor(bobAnimator, SideCoor);
                 }
                 else
                 {
                     
                     StartCoroutine(npcMovementCoroutine_End(npc1, position));
+                    SetEmoCoor(bobAnimator, SideCoor);
                 }
                 
                 break;
@@ -106,11 +134,13 @@ public class GameManager : MonoBehaviour
                     currentNpc =  CurrentNpc.Robot;
                     pointerBehaviour.sushi.Add(sushiCanCraft[1]);
                     StartCoroutine(npcMovementCoroutine(npc2, position));
+                    SetEmoCoor(robotAnimator, SideCoor);
                 }
                 else
                 {
                     
                     StartCoroutine(npcMovementCoroutine_End(npc2, position));
+                    SetEmoCoor(robotAnimator, SideCoor);
                 }
                 break;
             
@@ -121,11 +151,13 @@ public class GameManager : MonoBehaviour
                     currentNpc =  CurrentNpc.Chelly;
                     pointerBehaviour.sushi.Add(sushiCanCraft[2]);
                     StartCoroutine(npcMovementCoroutine(npc3, position));
+                    SetEmoCoor(chellyAnimator, SideCoor);
                 }
                 else 
                 {
                     
                     StartCoroutine(npcMovementCoroutine_End(npc3, position));
+                    SetEmoCoor(chellyAnimator, SideCoor);
                 }
                 
                 break;
@@ -163,6 +195,23 @@ public class GameManager : MonoBehaviour
                 // Npc should face to player
                 npc.GetComponent<Button>().enabled = true;
                 npcT.localPosition = position;
+
+                if (npc.CompareTag("npc1"))
+                {
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoX", bobDefaultEmoCoor.x);
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoY", bobDefaultEmoCoor.y);
+                }
+                else if (npc.CompareTag("npc2"))
+                {
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoX", robotDefaultEmoCoor.x);
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoY", robotDefaultEmoCoor.y);
+                }
+                else if (npc.CompareTag("npc3"))
+                {
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoX", chellyDefaultEmoCoor.x);
+                    npc.GetComponentInChildren<Animator>().SetFloat("EmoY", chellyDefaultEmoCoor.y);
+                }
+                
                 break;
             }
             yield return null;

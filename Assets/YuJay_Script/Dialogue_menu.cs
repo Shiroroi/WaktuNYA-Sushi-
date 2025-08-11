@@ -53,8 +53,19 @@ public class Dialogue_menu : MonoBehaviour
     private int currentSlideIndex = 0;
     public string sceneToLoad = "StartMenu";
     
+    
     [Header("RemoveSushi")]
     public PointerBehaviour pointerBehaviour;
+
+    [Header("Animation Ref")]
+    public Animator animator;
+    private Vector2 AngryCoor = new Vector2(-1, 1);
+    private Vector2 HappyCoor = new Vector2(0, 1);
+    private Vector2 HeyheyheyCoor = new Vector2(1, 1);
+    private Vector2 NormalCoor = new Vector2(-1, -1);
+    private Vector2 SadCoor = new Vector2(0, -1);
+    private Vector2 SideCoor = new Vector2(1, -1);
+    private Vector2 lastEmoCoor;
 
 
     // disable window
@@ -82,25 +93,29 @@ public class Dialogue_menu : MonoBehaviour
     {
         
         AudioManager.Instance.musicFadeDuration = o_musicFadeDuration;
-        if (gameObject.CompareTag("npc1"))
-        {
-            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");
-        }
-        else if (gameObject.CompareTag("npc2"))
-        {
-            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 2");
-        }
-        else if (gameObject.CompareTag("npc3"))
-        {
-            AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 3");
-        }
+        
+        AudioManager.Instance.PlayMusic("Main_Bgm when npc is npc 1");
+        
+        SetEmoCoor(animator, lastEmoCoor);
+        
         
     }
 
+    
+
+    public void SetEmoCoor(Animator targetAnimator, Vector2 emoCoor)
+    {
+        targetAnimator.SetFloat("EmoX", emoCoor.x);
+        targetAnimator.SetFloat("EmoY", emoCoor.y);
+        
+        Debug.Log("Set animation coor to " + emoCoor);
+    }
+    
     // when every frame
     private void Update() 
     {
-        
+        lastEmoCoor.x = animator.GetFloat("EmoX");
+        lastEmoCoor.y = animator.GetFloat("EmoY");
         
         // first two return condition is use to return when im not clicking
         if (  !started || !Input.GetMouseButtonDown(0))  
@@ -217,7 +232,7 @@ public class Dialogue_menu : MonoBehaviour
             //  = , after the string start or end with = is being press, will show customer to npc name
             //  - , after the string start or end with - is being press, will shake the camera
             //  % , when the string start or end with % is typing, will immediately add bracelet to inventory
-            //  : , after the string end with : is being press, canContinue will truns into false
+            //  : , after the string start or end with : is being press, canContinue will truns into false
             //  ; , if current string end with ; and canContinue is false but i still press, will just close and open current dialogue until canContinue is true
             //
             //  if i say being press means, the dialogue showing current string, and when i try to press to show the next string
@@ -225,7 +240,7 @@ public class Dialogue_menu : MonoBehaviour
             //  not put ; on element 0
             //  not put comment on the last element in list (not last char in string) except }
 
-            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("{")||dialogues[index].StartsWith("{")))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("{") || dialogues[index].StartsWith("{")))
             {
                 
                 if (gameObject.CompareTag("npc1"))
@@ -291,17 +306,13 @@ public class Dialogue_menu : MonoBehaviour
                 }
             }
             
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].StartsWith("="))
+            
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("=") || dialogues[index].StartsWith("=")))
             {
                 nameText.text = npcName;
             }
             
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith("="))
-            {
-                nameText.text = npcName;
-            }
-            
-            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("-")||dialogues[index].StartsWith("-")))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith("-") || dialogues[index].StartsWith("-")))
             {
                 impulseSource.GenerateImpulse();
             }
@@ -311,20 +322,55 @@ public class Dialogue_menu : MonoBehaviour
                 InventoryManager.instance.AddItem("bracelet");
             }
             
-            if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(":"))
+            if (string.IsNullOrEmpty(dialogues[index]) == false && (dialogues[index].EndsWith(":") || dialogues[index].StartsWith(":")))
             {
                 canContinue = false;
             }
             
-            // i want to stop, but got condition
+            // emotion check
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("1") || dialogues[index+1].StartsWith("1")))
+            {
+                SetEmoCoor(animator, AngryCoor);
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("2") || dialogues[index+1].StartsWith("2")))
+            {
+                SetEmoCoor(animator, HappyCoor);
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("3") || dialogues[index+1].StartsWith("3")))
+            {
+                SetEmoCoor(animator, HeyheyheyCoor);
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("4") || dialogues[index+1].StartsWith("4")))
+            {
+                SetEmoCoor(animator, NormalCoor);
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("5") || dialogues[index+1].StartsWith("5")))
+            {
+                SetEmoCoor(animator, SadCoor);
+            }
+            
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("6") || dialogues[index+1].StartsWith("6")))
+            {
+                SetEmoCoor(animator, SideCoor);
+            }
+            
+            
+            
             if (string.IsNullOrEmpty(dialogues[index]) == false && dialogues[index].EndsWith(";") && canContinue == false)
             {
+                
                 if (stopBefore == true && canContinue == true)
                 {
+                    Debug.LogWarning("Use ; actualy 1");
                     stopBefore = false;
                 }
                 else if (stopBefore == false)
                 {
+                    Debug.LogWarning("Use ; actualy 2");
                     stopBefore = true;
                     window.SetActive(false);
                     return;
@@ -447,6 +493,13 @@ public class Dialogue_menu : MonoBehaviour
         currentDialogue = currentDialogue.Replace("-", "");
         currentDialogue = currentDialogue.Replace(":", "");
         currentDialogue = currentDialogue.Replace("%", "");
+        
+        currentDialogue = currentDialogue.Replace("1", "");
+        currentDialogue = currentDialogue.Replace("2", "");
+        currentDialogue = currentDialogue.Replace("3", "");
+        currentDialogue = currentDialogue.Replace("4", "");
+        currentDialogue = currentDialogue.Replace("5", "");
+        currentDialogue = currentDialogue.Replace("6", "");
         
         if (gameObject.CompareTag("npc1"))
         {

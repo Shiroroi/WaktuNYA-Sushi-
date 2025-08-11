@@ -6,8 +6,49 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob_Normal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob_Normal.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob_Walking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Bob_Walking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly_Normal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly_Normal.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly_Walking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Chelly_Walking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot_Normal.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot_Normal.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot_Walking.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/NPC_Robot_Walking.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2433.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2433.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2434.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2434.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2441.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2441.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2442.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Bob's Sprites/IMG_2442.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2429.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2429.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2430.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2430.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2432.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Chelley's Sprites/IMG_2432.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2438.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2438.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2439.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2439.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2440.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/S3's Sprites/IMG_2440.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/DialogueChar3.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +211,7 @@
       <workItem from="1754731722899" duration="810000" />
       <workItem from="1754742881976" duration="2788000" />
       <workItem from="1754817934327" duration="1084000" />
+      <workItem from="1754916964902" duration="8465000" />
     </task>
     <servers />
   </component>
