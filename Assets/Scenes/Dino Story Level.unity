@@ -904,11 +904,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2695910200884565492, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 2695910200884565492, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 2697795374897679711, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1012,11 +1012,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897894041455528677, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 4897894041455528677, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 4913447695202792009, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Color.a
@@ -1068,11 +1068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5367830095093812785, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 5367830095093812785, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 5599838023119566493, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Color.a
@@ -1092,19 +1092,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8052323493719447434, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 8052323493719447434, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 8487182302554578698, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 8487182302554578698, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 86
       objectReference: {fileID: 0}
     - target: {fileID: 8901022694712976242, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Color.a

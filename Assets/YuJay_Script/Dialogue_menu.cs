@@ -338,7 +338,7 @@ public class Dialogue_menu : MonoBehaviour
                 SetEmoCoor(animator, HappyCoor);
             }
             
-            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("3") || dialogues[index+1].StartsWith("3")))
+            if (string.IsNullOrEmpty(dialogues[index+1]) == false && (dialogues[index+1].EndsWith("8") || dialogues[index+1].StartsWith("8")))
             {
                 SetEmoCoor(animator, HeyheyheyCoor);
             }
@@ -496,7 +496,7 @@ public class Dialogue_menu : MonoBehaviour
         
         currentDialogue = currentDialogue.Replace("1", "");
         currentDialogue = currentDialogue.Replace("2", "");
-        currentDialogue = currentDialogue.Replace("3", "");
+        currentDialogue = currentDialogue.Replace("8", "");
         currentDialogue = currentDialogue.Replace("4", "");
         currentDialogue = currentDialogue.Replace("5", "");
         currentDialogue = currentDialogue.Replace("6", "");

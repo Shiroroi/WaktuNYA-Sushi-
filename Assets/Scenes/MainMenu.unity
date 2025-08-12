@@ -9588,6 +9588,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 476893851}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[1].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[3]'
+      value: Bob wants Sushi!!!8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: 'allPossibleDialogue.Array.data[3].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[2]'
+      value: nom nom nom nom nom8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: 'allPossibleDialogue.Array.data[5].dialogue_LEAVE_A_BLANK_ON_FIRST_ONE.Array.data[1]'
       value: "Bob sad\u2026.5"
       objectReference: {fileID: 0}

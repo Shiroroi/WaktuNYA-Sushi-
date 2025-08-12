@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/Chelley's Sprites/Chelly_Blink.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/Chelley's Sprites/Chelly_Blink.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Blink.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Blink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Happy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Happy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FUKCUKFCUJKFCUk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/FUKCUKFCUJKFCUk.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/RecipeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
@@ -18,11 +17,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventoryItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Inventory/Prefab/InventoryItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FishingCameraControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/PointerBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/ScreenTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/ScreenTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +182,7 @@
       <workItem from="1754817934327" duration="1084000" />
       <workItem from="1754916964902" duration="12582000" />
       <workItem from="1754943554689" duration="2943000" />
+      <workItem from="1754992678428" duration="1227000" />
     </task>
     <servers />
   </component>

@@ -58,7 +58,7 @@ public class RecipeManager : MonoBehaviour
             {
                 AudioManager.Instance.PlaySfx("Cyber_When success craft a material");
 
-                ShowPopup($"Success! You have created a {recipe.recipeName}", recipe.resultSprite);
+                ShowPopup($"", recipe.resultSprite);
 
                 if (recipe.recipeName.ToLower() == "carrot")
                 {
