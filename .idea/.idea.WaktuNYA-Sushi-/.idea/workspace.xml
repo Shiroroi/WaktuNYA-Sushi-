@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/Chelley's Sprites/Chelly_Blink.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/Chelley's Sprites/Chelly_Blink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Blink.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Blink.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AnimationStuff/NPC_Animation/S3's Sprites/Robot_Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/RecipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/RecipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/Dialogue_menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2DWater/Code/MeshRendererSortingLayersEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2DWater/Code/MeshRendererSortingLayersEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +59,17 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Downloads/SushiTempBuild\WaktuNYA~ Sushi!.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\user\Downloads\SushiTempBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.34f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath X:\GithubLocalRepository\WaktuNYA-Sushi- -debugCodeOptimization" />
@@ -183,6 +185,7 @@
       <workItem from="1754916964902" duration="12582000" />
       <workItem from="1754943554689" duration="2943000" />
       <workItem from="1754992678428" duration="1227000" />
+      <workItem from="1754994328223" duration="373000" />
     </task>
     <servers />
   </component>
