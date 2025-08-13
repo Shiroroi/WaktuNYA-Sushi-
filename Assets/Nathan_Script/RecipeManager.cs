@@ -22,6 +22,8 @@ public class RecipeManager : MonoBehaviour
     public GameObject resultPopupPanel;
     public TextMeshProUGUI resultText;
     public Image resultImage;
+    public Sprite failImage;
+
 
     void Start()
     {
@@ -80,7 +82,7 @@ public class RecipeManager : MonoBehaviour
         }
         AudioManager.Instance.PlaySfx("Cyber_When fail to craft a material");
 
-        ShowPopup("Incorrect! Try Again", null);
+        ShowPopup("Incorrect! Try Again", failImage);
     }
 
     private void ShowPopup(string message, Sprite image)

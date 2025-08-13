@@ -510,7 +510,9 @@ public class Dialogue_menu : MonoBehaviour
         }
         else if (gameObject.CompareTag("npc2"))
         {
+            AudioManager.Instance.sfxVolumeScale = 10f;
             AudioManager.Instance.PlaySfx(true,"Main_When npc2 talk");
+            AudioManager.Instance.sfxVolumeScale = 1f;
         }
         else if (gameObject.CompareTag("npc3"))
         {
