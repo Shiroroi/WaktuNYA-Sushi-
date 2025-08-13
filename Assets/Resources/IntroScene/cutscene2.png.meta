@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 572c2917f17016845ac942705e195b3b
+guid: 4afcd8d61b13c6a4db4aaf79f0ddd1cd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 316049518327472274
-    second: Nier-Automata-PS4-Wallpapers-11_0
+      213: -154269249030348198
+    second: cutscene2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nier-Automata-PS4-Wallpapers-11_0
+      name: cutscene2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 290a757cc55d26400800000000000000
-      internalID: 316049518327472274
+      spriteID: a52a7c37fecebddf0800000000000000
+      internalID: -154269249030348198
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Nier-Automata-PS4-Wallpapers-11_0: 316049518327472274
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

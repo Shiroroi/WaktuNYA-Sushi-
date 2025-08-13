@@ -2433,9 +2433,9 @@ MonoBehaviour:
   slideImage: {fileID: 1589384544}
   nextButton: {fileID: 1589384543}
   slideNames:
-  - fishScene1
-  - fishScene2
-  - fishScene3
+  - cutscene4
+  - cutscene5
+  - cutscene6
   sceneToLoad: StartMenu
 --- !u!114 &1272847932 stripped
 MonoBehaviour:

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 433341bde383fa64ea61952341212d3e
+guid: 21cbd2ccaf37fea40a94cb3e6950bb84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8596942568478826387
-    second: HD-wallpaper-malenia-blade-of-miquella-elden-ring-elden-ring-2022-games-games-artstation_0
+      213: -6047493898223882553
+    second: cutscene5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HD-wallpaper-malenia-blade-of-miquella-elden-ring-elden-ring-2022-games-games-artstation_0
+      name: cutscene5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 449
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39f5d9ca7b97e4770800000000000000
-      internalID: 8596942568478826387
+      spriteID: 7cee50f275cf21ca0800000000000000
+      internalID: -6047493898223882553
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HD-wallpaper-malenia-blade-of-miquella-elden-ring-elden-ring-2022-games-games-artstation_0: 8596942568478826387
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

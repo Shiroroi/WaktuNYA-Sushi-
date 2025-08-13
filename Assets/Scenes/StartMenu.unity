@@ -1305,9 +1305,9 @@ MonoBehaviour:
   slideImage: {fileID: 694417098}
   nextButton: {fileID: 694417097}
   slideNames:
-  - IntroScene1
-  - IntroScene2
-  - IntroScene3
+  - cutscene1
+  - cutscene2
+  - cutscene3
   sceneToLoad: MainMenu
 --- !u!1 &1551463771
 GameObject:
