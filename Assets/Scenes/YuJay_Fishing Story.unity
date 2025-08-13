@@ -2436,6 +2436,7 @@ MonoBehaviour:
   - cutscene4
   - cutscene5
   - cutscene6
+  - goodending2
   sceneToLoad: StartMenu
 --- !u!114 &1272847932 stripped
 MonoBehaviour:
