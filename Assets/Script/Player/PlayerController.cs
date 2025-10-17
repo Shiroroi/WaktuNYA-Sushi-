@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
             if (_jumpCount == _maxJumps && Time.time >= _lastFootstepTime + footstepInterval)
             {
                 
-                AudioManager.Instance.PlaySfx(true, "Dino_Player walking", "Dino_Player walking v2", "Dino_Player walking v3", "Dino_Player walking v4");
+                // AudioManager.Instance.PlaySfx(true, "Dino_Player walking", "Dino_Player walking v2", "Dino_Player walking v3", "Dino_Player walking v4");
                 _lastFootstepTime = Time.time;
             }
             
@@ -210,7 +210,7 @@ public class PlayerController : MonoBehaviour
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce); // need modify for rope after release
             _jumpCount--;
 
-            AudioManager.Instance.PlaySfx("Dino_Player jump");
+            // AudioManager.Instance.PlaySfx("Dino_Player jump");
             
         }
 

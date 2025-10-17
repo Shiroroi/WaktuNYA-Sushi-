@@ -17,7 +17,7 @@ public class UITransition : MonoBehaviour
 
     public void ShowUI()
     {
-        StartCoroutine(ShowCoroutine());
+        // StartCoroutine(ShowCoroutine());
     }
 
     private IEnumerator ShowCoroutine()

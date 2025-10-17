@@ -37,7 +37,7 @@ public class Collectible : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezeAll;
             }
 
-            StartCoroutine(BlinkAndTimeout());
+            // StartCoroutine(BlinkAndTimeout());
         }
     }
 
@@ -59,29 +59,29 @@ public class Collectible : MonoBehaviour
 
     void Update()
     {
-        if (canBeCollected && playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E))
         {
             ScoreManager scoreManager = FindFirstObjectByType<ScoreManager>();
             
             if (scoreManager != null)
             {
-                AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(itemName);
+                // AddToSmallInventory.instance.AddToSmallInventoryAndBigFunc(itemName);
                 
-                scoreManager.AddScore(1);
+                // scoreManager.AddScore(1);
             }
 
             if (isRock == true)
             {
-                SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
-                AudioManager.Instance.PlaySfx("Dino_When player collect the stone");
+                // SingletonCraftingCanvas.theStaticCraftingCanvas.GetComponentInChildren<PointerBehaviour>().CanContinueToTrue();
+                // AudioManager.Instance.PlaySfx("Dino_When player collect the stone");
             }
             else
             {
-                AudioManager.Instance.PlaySfx(true,"Dino_When player collect the item");
+                // AudioManager.Instance.PlaySfx(true,"Dino_When player collect the item");
             }
 
             Destroy(gameObject);
-            Debug.Log("Collectible added");
+            // Debug.Log("Collectible added");
         }
     }
 

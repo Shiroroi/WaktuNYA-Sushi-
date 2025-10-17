@@ -214,6 +214,7 @@ public class RopeController : MonoBehaviour
     private void RopeSwing() // this need continuos update anchor
     {
 
+        
         if (swingType == SwingType.Physic)
         {
             m_springJoint2D.connectedAnchor = grapplePoint + ((Vector2)(targetTransform.position - targetOriginalPosiiton)); // connect to transform as point
@@ -342,17 +343,16 @@ public class RopeController : MonoBehaviour
 
     
 
-    private void InitializePlayerAndTarget()
+    public void InitializePlayerAndTarget()
     {
-        if (gotHold == true)
-            return;
-
         
-        if (_hitInformation.collider.GetComponent<FireballBehaviour>() != null)
-        {
-            _hitInformation.collider.GetComponent<FireballBehaviour>().canEndDetection = false;
-            
-        }
+
+        //
+        // if (_hitInformation.collider.GetComponent<FireballBehaviour>() != null)
+        // {
+        //     _hitInformation.collider.GetComponent<FireballBehaviour>().canEndDetection = false;
+        //     
+        // }
         
         if (m_playerController.enabled == false) 
         {
@@ -500,7 +500,7 @@ public class RopeController : MonoBehaviour
         
     }
 
-    void CloseGrappleRopeAndInitialize()
+    public void CloseGrappleRopeAndInitialize()
     {
         
         grappleRope.enabled = false;
@@ -512,7 +512,7 @@ public class RopeController : MonoBehaviour
         if (gotHold == true && Input.GetKeyUp(KeyCode.Mouse1) == true)
         {
             gotHold = false;
-            AudioManager.Instance.PlaySfx("Dino_When player release the rope");
+            // AudioManager.Instance.PlaySfx("Dino_When player release the rope");
             
         }
     }
@@ -583,7 +583,7 @@ public class RopeController : MonoBehaviour
 
     private void OnGrappleHit(RaycastHit2D successfulHit)
     {
-        AudioManager.Instance.PlaySfx("Dino_When player grab a fire ball");
+        // AudioManager.Instance.PlaySfx("Dino_When player grab a fire ball");
         
         // Record
         _hitInformation = successfulHit;
@@ -617,7 +617,7 @@ public class RopeController : MonoBehaviour
         grappleRope.enabled = true;
 
         // enable jump
-        playerController.CanJumpAgain();
+        // playerController.CanJumpAgain();
 
     }
 
