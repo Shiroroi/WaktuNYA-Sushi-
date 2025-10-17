@@ -12336,6 +12336,10 @@ PrefabInstance:
       value: "This is no family\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
+      propertyPath: allPossibleDialogue.Array.data[0].whenEndPossibleDialogueName_1
+      value: Halo-nyan..?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921581727298191966, guid: a9b5bfccceb7c3e459403ede75c5d0dd, type: 3}
       propertyPath: allPossibleDialogue.Array.data[1].whenEndPossibleDialogueName_1
       value: "I\u2019VE GOT THAT! What\u2019ll it be.. nyan!"
       objectReference: {fileID: 0}
