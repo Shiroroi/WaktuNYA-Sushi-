@@ -6,21 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/MainArt/badending.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainArt/badending.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/BadEndingScene/badending.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/BadEndingScene/badending.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/goodending2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/goodending2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/RopeRelated/RopeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YujayMakingShader/ScreenTransition/UITransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlatformRandomizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlatformRandomizer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +192,7 @@
       <workItem from="1755016794109" duration="3972000" />
       <workItem from="1760681713438" duration="1946000" />
       <workItem from="1760685547802" duration="2966000" />
+      <workItem from="1760965535513" duration="321000" />
     </task>
     <servers />
   </component>

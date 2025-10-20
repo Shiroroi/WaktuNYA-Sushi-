@@ -45,18 +45,7 @@ public class PlatformRandomizer : MonoBehaviour
         currentPlatformSet = Instantiate(platformLocationsSet[ramdomIndex]);
     }
     
-    //
-    // private IEnumerator Delay()
-    // {
-    //     yield return new WaitForSeconds(changePlatformSetTime);
-    //     
-    //     Destroy(currentPlatformSet);
-    //     
-    //     int ramdomIndex = Random.Range(0, platformLocationsSet.Count);
-    //
-    //     currentPlatformSet = Instantiate(platformLocationsSet[ramdomIndex]);
-    //     
-    // }
+    
 
     
 }
