@@ -6,17 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="3d39f7d2-79a9-47d1-a7d3-36d63a495fa1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WaktuNYA-Sushi-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Cyberpunk Story Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/MainArt/badending.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/MainArt/badending.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Nathan_Script/Collectible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/BadEndingScene/badending.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/BadEndingScene/badending.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/cutscene6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/goodending2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishStoryScene/goodending2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/IntroScene/cutscene3.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Dino Story Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing Story.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/YuJay_Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/AddToSmallInventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/FireBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Yujay_Prefab/SonOfFB.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Yujay_Prefab/SonOfFB.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/YuJay_Script/FireballBehaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,7 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
@@ -87,6 +90,7 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -98,6 +102,7 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -195,6 +200,7 @@
       <workItem from="1754992678428" duration="1227000" />
       <workItem from="1754994328223" duration="373000" />
       <workItem from="1755016794109" duration="3972000" />
+      <workItem from="1761209893189" duration="544000" />
     </task>
     <servers />
   </component>

@@ -59,7 +59,7 @@ public class Collectible : MonoBehaviour
 
     void Update()
     {
-        if (canBeCollected && playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (canBeCollected && playerInRange)
         {
             ScoreManager scoreManager = FindFirstObjectByType<ScoreManager>();
             

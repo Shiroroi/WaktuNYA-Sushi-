@@ -13,6 +13,7 @@ public class FireballBehaviour : MonoBehaviour
     public int numberOfSon_smallThenRaycount;
 
     public GameObject SonOfFireball;
+    
     public float sonForce;
     
     
@@ -79,6 +80,5 @@ public class FireballBehaviour : MonoBehaviour
 
     }
     
-
     
 }
