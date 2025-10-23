@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +23,13 @@ public class EnemyThrower : MonoBehaviour
     public bool isThrowing;
     public float throwinmgAnimationDuration = 1f;
 
+    // Modified Code
+    public float throwcounter;
+    public float burstamount = 8; // number of quick fireballs
+    public float burstfirecooldown = 0.15f; // time between quick shots
+
+    private bool isBursting; // prevent normal shooting during burst
+
     void Start()
     {
         canStartCoroutine = true;
@@ -33,60 +40,77 @@ public class EnemyThrower : MonoBehaviour
         canStartCoroutine = false;
         yield return new WaitForSeconds(stunningTime);
         isStunning = false;
-        
         canStartCoroutine = true;
-
     }
 
     private void Update()
     {
         SetAnimation();
-        if (isStunning == true)
+
+        if (isStunning)
         {
-            if(canStartCoroutine == true)
+            if (canStartCoroutine)
                 StartCoroutine(isStunningTimeHAHA());
-            
+
             cooldownTimer = 0f;
             return;
         }
-        
+
+        if (isBursting) return; // pause normal shooting during burst
+
         if (cooldownTimer < cooldown)
         {
             cooldownTimer += Time.deltaTime;
             return;
         }
 
-        if (isStunning == false) 
+        if (!isStunning)
         {
-            ThrowNTimesGO(fireBallPrefab,1);
+            ThrowNTimesGO(fireBallPrefab, 1);
+            throwcounter++;
         }
-        
-        
-        
+
+        if (throwcounter >= 3)
+        {
+            StartCoroutine(BurstFireSequence());
+            throwcounter = 0;
+        }
 
         cooldownTimer = 0f;
-        
-        
     }
-    
 
-    private void ThrowNTimesGO(GameObject thrownGO ,int howManyTimes)
+    private IEnumerator BurstFireSequence()
+    {
+        isBursting = true;
+        // Wait same cooldown duration before burst starts
+        yield return new WaitForSeconds(cooldown);
+
+        // Burst fire phase
+        for (int i = 0; i < burstamount; i++)
+        {
+            ThrowNTimesGO(fireBallPrefab, 1);
+            yield return new WaitForSeconds(burstfirecooldown);
+        }
+
+        isBursting = false;
+    }
+
+    private void ThrowNTimesGO(GameObject thrownGO, int howManyTimes)
     {
         animator.SetTrigger("isThrowing");
         AudioManager.Instance.PlaySfx("Dino_When dino spray shoot fireball");
-        
+
         for (int i = 1; i <= howManyTimes; ++i)
         {
             ThrowCollectible(thrownGO);
         }
     }
-    
-    private void ThrowNTimesGO(GameObject[] thrownGO ,int howManyTimes)
+
+    private void ThrowNTimesGO(GameObject[] thrownGO, int howManyTimes)
     {
         for (int i = 1; i <= howManyTimes; ++i)
         {
             int randomArrayIndex = Random.Range(0, thrownGO.Length);
-            
             ThrowCollectible(thrownGO[randomArrayIndex]);
         }
     }
@@ -96,16 +120,13 @@ public class EnemyThrower : MonoBehaviour
         GameObject thingToThrow = Instantiate(prefab, throwPoint.position, Quaternion.identity);
         exsitsThingToThrow.Add(thingToThrow);
         Rigidbody2D rb = thingToThrow.GetComponent<Rigidbody2D>();
-        
+
         if (rb != null)
         {
             float forceX = Random.Range(7f, 12f); // Horizontal push
             float forceY = Random.Range(8f, 12f); // Upward lift
-
-            // Throw to the left (negative X)
             Vector2 throwForce = new Vector2(-forceX, forceY);
             rb.AddForce(throwForce, ForceMode2D.Impulse);
- 
         }
     }
 
@@ -113,17 +134,13 @@ public class EnemyThrower : MonoBehaviour
     {
         if (fireBallCollider.collider.tag != "LightEnemy")
             return;
-        
+
         Debug.Log("Enemy is stunning");
         AudioManager.Instance.PlaySfx("Dino_When dino get stun");
         isStunning = true;
-        ThrowNTimesGO(collectiblePrefabs,3);
+        ThrowNTimesGO(collectiblePrefabs, 3);
         Destroy(fireBallCollider.gameObject);
-
-            
     }
-
-    
 
     public void SetAnimation()
     {
