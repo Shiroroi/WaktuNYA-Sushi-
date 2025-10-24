@@ -396,6 +396,28 @@ MonoBehaviour:
   transitionTime: 0.5
   startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}
+--- !u!95 &493215257
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493215254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9b5a3fb8da784546bb7c2c609a0ad52, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &557772637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6731549488177889984, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7057657526344477682, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -1118,6 +1144,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6806229806542890800, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493215256}
+    - targetCorrespondingSourceObject: {fileID: 6806229806542890800, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 493215257}
     - targetCorrespondingSourceObject: {fileID: 8168943123214880502, guid: cd6a021b1306a9c4d83a68690aba4225, type: 3}
       insertIndex: -1
       addedObject: {fileID: 627644807}
@@ -2157,6 +2186,7 @@ GameObject:
   - component: {fileID: 1467573664}
   - component: {fileID: 1467573663}
   - component: {fileID: 1467573666}
+  - component: {fileID: 1467573667}
   m_Layer: 5
   m_Name: TutorialButton
   m_TagString: Untagged
@@ -2203,7 +2233,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2294,6 +2324,28 @@ MonoBehaviour:
   transitionTime: 0.5
   startPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}
+--- !u!95 &1467573667
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467573661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e73878839ec5ace4b98da62e49755e7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1472291440
 PrefabInstance:
   m_ObjectHideFlags: 0
