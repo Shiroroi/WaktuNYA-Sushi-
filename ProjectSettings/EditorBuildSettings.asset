@@ -6,28 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
+    path: Assets/Scenes/Game Menu/StartMenu.unity
     guid: 8d778bfebc5301b4db71b90b198f1376
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Game Menu/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/YuJay_Fishing.unity
+    path: Assets/Scenes/Fish Story/YuJay_Fishing.unity
     guid: df06bec295fef3b48b4d4f534ad25f0e
   - enabled: 1
-    path: Assets/Scenes/Cyberpunk Level.unity
+    path: Assets/Scenes/Cyber Level/Cyberpunk Level.unity
     guid: 86812c9802955374a82902cb3d417849
   - enabled: 1
-    path: Assets/Scenes/Dino Level.unity
+    path: Assets/Scenes/Dino Level/Dino Level.unity
     guid: 9e371d7e83bf105498dcf29e5a144ca4
   - enabled: 1
-    path: Assets/Scenes/Dino Story Level.unity
+    path: Assets/Scenes/Dino Level/Dino Story Level.unity
     guid: 3996a7d87c066a248a5c5962afa19b91
   - enabled: 1
-    path: Assets/Scenes/Cyberpunk Story Level.unity
+    path: Assets/Scenes/Cyber Level/Cyberpunk Story Level.unity
     guid: bc4db7b11755aea4995daaa86b22dfdc
   - enabled: 1
-    path: Assets/Scenes/YuJay_Fishing Story.unity
+    path: Assets/Scenes/Fish Story/YuJay_Fishing Story.unity
     guid: 7718cd634ab3b964db6a9e6a6d280ca5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
