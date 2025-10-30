@@ -29,9 +29,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/84f0d810adef4e6c8deab33e4ae93f7c1dec00/29/598d8241/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/947c566dcd374e379abfce2ae0b65eaf2f200/95/26b343d2/Rigidbody2D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BgmSoundActivater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CyberStroyButtonEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Nathan_Script/NamedColor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -198,6 +195,7 @@
       <workItem from="1754994328223" duration="373000" />
       <workItem from="1755016794109" duration="3972000" />
       <workItem from="1761209893189" duration="544000" />
+      <workItem from="1761802709015" duration="376000" />
     </task>
     <servers />
   </component>
