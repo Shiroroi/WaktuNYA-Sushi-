@@ -7,25 +7,26 @@ public class StartMenu : MonoBehaviour
 {
     [Header("Scenes")]
     public Image slideImage;              // assign SlideImage here
-    public string[] slideNames;           // names of sprites in Resources/IntroScene/
+    public Button nextButton;             // assign NextButton here
+    public string[] slideNames;           // list of slide sprite names
     public string sceneToLoad = "MainMenu";
-    public float slideDuration = 3f;      // how long each slide stays visible
+    public float slideDuration = 3f;      // how long each slide stays visible before auto-transition
     public float fadeDuration = 1f;       // how long fade in/out lasts
 
     private int currentSlideIndex = 0;
+    private bool isTransitioning = false;
 
     public void OnNewGameClicked()
     {
         if (slideNames.Length > 0)
-            StartCoroutine(SlideshowCoroutine());
+        {
+            StartSlideshow();
+            nextButton.onClick.AddListener(SkipToNextSlide);
+        }
 
-        // Clear saved data
         PlayerPrefs.DeleteAll();
-
-        // Reset time in case it was frozen
         Time.timeScale = 1f;
 
-        // Destroy any DontDestroyOnLoad managers
         foreach (var obj in GameObject.FindObjectsByType<GameObject>(FindObjectsSortMode.None))
         {
             if (obj.scene.name == "DontDestroyOnLoad")
@@ -36,30 +37,53 @@ public class StartMenu : MonoBehaviour
         SingletonCharacterCanvas.theStaticChracterCanvas = null;
     }
 
-    private IEnumerator SlideshowCoroutine()
+    void StartSlideshow()
     {
-        Time.timeScale = 0f; // pause gameplay
+        Time.timeScale = 0f;
         slideImage.gameObject.SetActive(true);
+        nextButton.gameObject.SetActive(true);
+        StartCoroutine(SlideshowCoroutine());
+    }
 
-        for (currentSlideIndex = 0; currentSlideIndex < slideNames.Length; currentSlideIndex++)
+    IEnumerator SlideshowCoroutine()
+    {
+        while (currentSlideIndex < slideNames.Length)
         {
             Sprite slide = Resources.Load<Sprite>("IntroScene/" + slideNames[currentSlideIndex]);
             if (slide == null)
             {
                 Debug.LogWarning("Slide not found: " + slideNames[currentSlideIndex]);
+                currentSlideIndex++;
                 continue;
             }
 
             slideImage.sprite = slide;
             yield return StartCoroutine(FadeImage(0f, 1f)); // fade in
-            yield return new WaitForSecondsRealtime(slideDuration);
+
+            float elapsed = 0f;
+            isTransitioning = false;
+
+            // Wait for duration or button press
+            while (elapsed < slideDuration && !isTransitioning)
+            {
+                elapsed += Time.unscaledDeltaTime;
+                yield return null;
+            }
+
             yield return StartCoroutine(FadeImage(1f, 0f)); // fade out
+            currentSlideIndex++;
         }
 
         EndSlideshow();
     }
 
-    private IEnumerator FadeImage(float startAlpha, float endAlpha)
+    void SkipToNextSlide()
+    {
+        if (!isTransitioning)
+            isTransitioning = true;
+    }
+
+    IEnumerator FadeImage(float startAlpha, float endAlpha)
     {
         float elapsed = 0f;
         Color color = slideImage.color;
@@ -74,7 +98,7 @@ public class StartMenu : MonoBehaviour
         }
     }
 
-    private void EndSlideshow()
+    void EndSlideshow()
     {
         Time.timeScale = 1f;
         Debug.Log("Slideshow ended. Loading scene: " + sceneToLoad);
@@ -87,4 +111,3 @@ public class StartMenu : MonoBehaviour
         Application.Quit();
     }
 }
-
