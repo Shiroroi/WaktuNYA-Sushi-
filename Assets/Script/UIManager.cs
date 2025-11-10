@@ -10,11 +10,12 @@ public class UIManager : MonoBehaviour
     public GameObject Recipe;
     public GameObject colorGuide;
 
-    public void SelectRed() => selectedNamedColor = new NamedColor("Red", Color.red);
-    public void SelectYellow() => selectedNamedColor = new NamedColor("Yellow", Color.yellow);
-    public void SelectBlue() => selectedNamedColor = new NamedColor("Blue", Color.blue);
+    public void SelectOrange() => selectedNamedColor = new NamedColor("Orange", new Color(1f, 0.5f, 0f));
+    public void SelectDarkRed() => selectedNamedColor = new NamedColor("DarkRed", new Color(0.55f, 0f, 0f));
+    public void SelectGreen() => selectedNamedColor = new NamedColor("Green", Color.green);
     public void SelectWhite() => selectedNamedColor = new NamedColor("White", Color.white);
     public void SelectBlack() => selectedNamedColor = new NamedColor("Black", Color.black);
+
 
     public void SelectTool(int toolId)
     {

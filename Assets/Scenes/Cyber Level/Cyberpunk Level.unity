@@ -1425,7 +1425,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 808294583}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectRed
+        m_MethodName: SelectOrange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6167,7 +6167,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 808294583}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectYellow
+        m_MethodName: SelectDarkRed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8426,7 +8426,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 808294583}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: SelectBlue
+        m_MethodName: SelectGreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
