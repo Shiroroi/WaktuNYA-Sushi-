@@ -3574,6 +3574,10 @@ MonoBehaviour:
     colorValue: {r: 0, g: 0, b: 0, a: 0}
   Recipe: {fileID: 434753638}
   colorGuide: {fileID: 505083615}
+  tiles:
+  - {fileID: 7832930}
+  - {fileID: 765577260}
+  - {fileID: 1913565750}
 --- !u!4 &808294584
 Transform:
   m_ObjectHideFlags: 0

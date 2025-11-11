@@ -34,11 +34,18 @@ public class TileSlot : MonoBehaviour
     public void EraseColor()
     {
         stack.Clear();
-        tileImage.color = new Color(0, 0, 0, 0.294f);
+        tileImage.color = new Color(0, 0, 0, 0.294f); // semi-transparent background
     }
 
     public Color GetColor()
     {
         return tileImage.color;
+    }
+
+    // 🔹 New method for UIManager auto-fill
+    public bool HasColor()
+    {
+        // If the alpha is greater than 0.3, assume it's filled
+        return tileImage.color.a > 0.3f;
     }
 }
